@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_actionbar"
+            style="@style/item_click_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/collect_image"
+                android:layout_width="@dimen/px120dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_alignStart="@+id/tv_circle_home_name"
+                android:layout_marginBottom="@dimen/px20dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/bg"/>
+
+            <TextView
+                android:id="@+id/tv_circle_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/collect_image"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_marginStart="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px10dp"
+                android:layout_toEndOf="@+id/collect_image"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_m"
+                tools:text="我的圈子"/>
+
+            <View
+                android:id="@+id/line"
+                style="@style/item_line"
+                android:layout_below="@+id/collect_image"/>
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="@dimen/px20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:padding="@dimen/px10dp"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    tools:text="1111111"/>
+
+                <ImageView
+                    android:id="@+id/iv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:maxWidth="200dp"
+                    android:maxHeight="280dp"
+                    android:padding="@dimen/px10dp"
+                    android:src="@drawable/bg"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    tools:visibility="visible"/>
+
+            </LinearLayout>
+
+            <com.gxtc.huchuan.widget.ExpandVideoPlayer
+                android:id="@+id/play_video"
+                android:layout_below="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px360dp"
+                android:layout_marginLeft="@dimen/px180dp"
+                android:layout_marginRight="@dimen/px180dp"
+                android:layout_marginTop="@dimen/px15dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="@dimen/px20dp"
+            android:padding="@dimen/px10dp"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            tools:text="收藏于今天"/>
+
+    </LinearLayout>
+</ScrollView>

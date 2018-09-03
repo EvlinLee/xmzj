@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        app:tabMode="scrollable"
+        android:id="@+id/tl_live_host_page_series_course"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:tabIndicatorColor="@color/color_price_ec6b46"
+        app:tabSelectedTextColor="@color/color_price_ec6b46"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Small"
+        app:tabTextColor="@color/text_color_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+    <!--<com.gxtc.huchuan.widget.WrapContentHeightViewPager-->
+        <!--android:id="@+id/vp_live_host_page_series_course"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <io.rong.imkit.plugin.image.HackyViewPager
+        android:id="@+id/vp_live_host_page_series_course"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swipe_serier"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/grey_F4F4F4">-->
+
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/rl_serier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/tv_emptyview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+android:src="@drawable/no_message_live_content"
+
+            android:padding="@dimen/margin_large"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->

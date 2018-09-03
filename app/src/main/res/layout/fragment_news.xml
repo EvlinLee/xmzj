@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        >
+        <!--android:layout_height="@dimen/px80dp"-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/px38dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/margin_10"-->
+            <!--android:src="@drawable/navigation_icon_back"-->
+            <!--android:visibility="gone"-->
+            <!--tool:visibility="visible" />-->
+
+        <com.gxtc.huchuan.widget.MPagerSlidingTabStrip
+            android:id="@+id/pss_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_toLeftOf="@+id/iv_news_search"
+            android:layout_toRightOf="@+id/iv_back"
+            app:pstsShouldExpand="true"
+            app:pstsDividerColor="#00ffffff"
+            app:pstsIndicatorColor="@color/btn_nornal"
+            app:pstsIndicatorHeight="@dimen/px4dp"
+            app:pstsTabPaddingLeftRight="@dimen/px16dp"
+            app:pstsTabSelectedTextColor="@color/colorAccent"
+            app:pstsDividerPadding="@dimen/px4dp"
+            app:pstsTabSelectedTextSize="@dimen/textSize_ml"
+            app:pstsTabTextColor="#333"
+            app:pstsTabTextSize="@dimen/textSize_ml"
+            app:pstsUnderlineHeight="0dp"/>
+        <ImageView
+            android:id="@+id/iv_news_search"
+            android:layout_width="@dimen/actionBar_height"
+            android:layout_height="@dimen/actionBar_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/news_tab"
+            android:layout_alignBottom="@+id/news_tab"
+            android:scaleType="centerInside"
+            android:foreground="?android:selectableItemBackground"
+            android:src="@drawable/news_icon_search"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

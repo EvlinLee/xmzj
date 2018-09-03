@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_circle_new_new_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:gravity="center"
+                android:text="推荐的圈子"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+            <View
+                android:layout_width="@dimen/px100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_hint"
+                android:layout_alignTop="@+id/tv_hint"
+                android:layout_toLeftOf="@+id/tv_hint"
+                android:background="@drawable/follow_line" />
+
+            <View
+                android:layout_width="@dimen/px100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_hint"
+                android:layout_alignTop="@+id/tv_hint"
+                android:layout_toRightOf="@+id/tv_hint"
+                android:background="@drawable/follow_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/px36dp"
+                android:text="@string/nocircle"
+                android:textSize="@dimen/textSize_s"
+                android:textColor="@color/text_color_999" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_have_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/top_top_line"
+                style="@style/model_line" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px400dp"
+                android:focusable="true"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <com.gxtc.commlibrary.widget.MyRadioGroup
+                    android:id="@+id/layoutIndicator"
+                    android:layout_width="100dp"
+                    android:layout_height="7dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/model_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_circle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px98dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_my_cicle"
+            style="@style/item_click_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingTop="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle_home_icon_wode" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:text="我的圈子"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_e5e5" />
+
+        <LinearLayout
+            android:id="@+id/ll_cicle_find"
+            style="@style/item_click_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingTop="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle_home_icon_jiaru" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:text="加入圈子"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_e5e5" />
+
+        <LinearLayout
+            android:id="@+id/ll_cicle_mine_issue"
+            style="@style/item_click_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingTop="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle_home_icon_dongtai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:text="我的动态"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <include layout="@layout/layout_top_hint_message" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/botton_line"
+        style="@style/model_line" />
+
+</LinearLayout>
+

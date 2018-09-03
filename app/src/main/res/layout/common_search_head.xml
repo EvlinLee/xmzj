@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/app_bar_search"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/margin_middle"
+        android:paddingBottom="@dimen/margin_middle"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_input_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap_search_bg"
+            android:drawableLeft="@drawable/news_icon_search"
+            android:drawablePadding="@dimen/px20dp"
+            android:textColorHint="@color/text_color_999"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l"
+            android:padding="@dimen/px10dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/textSize_m"
+            android:text="取消"
+            android:textColor="@color/btn_nornal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_e5e5" />
+
+</RelativeLayout>
+
+</android.support.design.widget.AppBarLayout>

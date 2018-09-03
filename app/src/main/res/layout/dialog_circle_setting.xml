@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="付费"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <EditText
+            android:id="@+id/et_circle_setting_free"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:maxLength="13"
+            android:textColor="@color/text_color_666"
+            android:theme="@style/MyEditText" />
+    </LinearLayout>
+
+    <TextView style="@style/item_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_circle_setting_fencheng"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="5"
+            android:text="设置分成"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <EditText
+            android:id="@+id/et_circle_setting_fencheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:maxLength="13"
+            android:hint="0"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_666"
+            android:theme="@style/MyEditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px10dp"
+            android:text="%"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+    </LinearLayout>
+
+    <TextView style="@style/item_line" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/label_cancel"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/label_confirm"
+            android:textColor="@color/btn_nornal"
+            android:textSize="@dimen/textSize_m" />
+    </LinearLayout>
+</LinearLayout>

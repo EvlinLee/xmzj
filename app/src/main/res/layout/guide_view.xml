@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/guide_start"/>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/px190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_start"
+        android:src="@drawable/guide_msg_text"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginTopPercent="35%"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/px220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img"
+        android:src="@drawable/bootpage_font_ztqz"
+        app:layout_marginLeftPercent="29%"/>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/px180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img"
+        android:layout_below="@id/img_start"
+        android:src="@drawable/bootpage_font_zyjy"
+        app:layout_marginLeftPercent="65%"/>
+
+</android.support.percent.PercentRelativeLayout>

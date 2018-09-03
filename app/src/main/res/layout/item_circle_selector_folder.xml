@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View style="@style/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="@dimen/px140dp"
+            android:layout_height="@dimen/px140dp"
+            android:src="@drawable/circle_details_icon_folder"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_666"
+            android:text="3分钟前"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_bg"
+            android:layout_toLeftOf="@id/tv_time"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:maxLines="2"
+            android:text="新手写的推广文案.docx"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"/>
+
+        <TextView
+
+            android:id="@+id/tv_file_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg"
+            android:layout_toRightOf="@id/img_bg"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            android:text="333.6k 来自"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg"
+            android:layout_toRightOf="@id/tv_size"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s"
+            android:text="空城旧梦"/>
+
+
+       <ImageView
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/margin_medium"
+           android:layout_centerVertical="true"
+           android:src="@drawable/circle_file_icon_gou"
+           android:id="@+id/iv_selected_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

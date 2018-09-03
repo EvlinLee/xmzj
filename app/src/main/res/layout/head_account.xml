@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="51dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center">
+
+    <com.flyco.tablayout.SegmentTabLayout
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/stl_account"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@color/colorPrimary"
+        tl:tl_tab_padding="@dimen/margin_small"
+        tl:tl_indicator_color="@color/colorAccent"
+        tl:tl_indicator_corner_radius="4dp"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/colorAccent" />
+
+</LinearLayout>
+

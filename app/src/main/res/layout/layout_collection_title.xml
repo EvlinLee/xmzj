@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/headBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:minWidth="48dp"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:scaleType="centerInside"
+        android:src="@drawable/navigation_icon_back" />
+
+    <TextView
+        android:id="@+id/headTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="我的收藏"
+        android:textColor="@color/actionbar_text_color"
+        android:textSize="@dimen/textSize_xl" />
+
+    <ImageView
+        android:id="@+id/cb_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:button="@null"
+        android:minWidth="48dp"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:src="@drawable/nav_icon_add"
+        android:visibility="gone" />
+
+    <View
+        style="@style/item_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+    

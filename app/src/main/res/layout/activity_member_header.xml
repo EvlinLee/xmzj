@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_invite_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/iv_inivite_teacherimg"
+            android:layout_width="@dimen/px48dp"
+            android:layout_height="@dimen/px48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:src="@drawable/live_navigation_icon_js"/>
+
+        <TextView
+            android:id="@+id/tv_inivite_teacher"
+            style="@style/TextViewMatchStyle"
+            android:layout_toRightOf="@+id/iv_inivite_teacherimg"
+            android:text="邀请讲师"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:src="@drawable/person_icon_more"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_invite_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/iv_inivite_managerimg"
+            android:layout_width="@dimen/px48dp"
+            android:layout_height="@dimen/px48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:src="@drawable/live_navigation_icon_gly"/>
+
+        <TextView
+            android:id="@+id/tv_invite_manager"
+            style="@style/TextViewMatchStyle"
+            android:layout_toRightOf="@+id/iv_inivite_managerimg"
+            android:text="邀请管理员"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:src="@drawable/person_icon_more"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_invite_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/iv_inivite_studentimg"
+            android:layout_width="@dimen/px48dp"
+            android:layout_height="@dimen/px48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:src="@drawable/live_navigation_icon_xy"/>
+
+        <TextView
+            android:id="@+id/tv_invite_student"
+            style="@style/TextViewMatchStyle"
+            android:layout_toRightOf="@+id/iv_inivite_studentimg"
+            android:text="免费邀请学员"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:src="@drawable/person_icon_more"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

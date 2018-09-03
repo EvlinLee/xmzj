@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_topic_history_image_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/margin_middle">
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/live_white_bg">
+
+            <ImageView
+                android:id="@+id/iv_item_topic_history_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/live_class_icon_temp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_tiny"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/rl_item_topic_history_image_area"
+        android:layout_toRightOf="@id/rl_item_topic_history_image_area"
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_item_topic_history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            tools:text="如何扭转命运？如何扭转命运？如何扭转命运？如何扭转命运？如何扭转命运？如何扭转命运？如何扭转命运？"/>
+
+        <TextView
+            android:id="@+id/tv_item_topic_history_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLength="35"
+            tools:text="tkljslkdjglaskhfglskdjlfkhgoirjglaskfjglsdkhfglskjdflgisjdfgjsldfjl"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divide_line"/>
+
+    <ImageView
+        android:id="@+id/iv_item_topic_history_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:src="@drawable/person_icon_more"/>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_root"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/px10dp">
+
+
+    <com.gxtc.huchuan.widget.RoundImageView
+        android:id="@+id/iv_circle_home_img"
+        android:layout_width="@dimen/px90dp"
+        android:layout_height="@dimen/px90dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_default_play_picture" />
+
+    <TextView
+        android:id="@+id/tv_circle_home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px22dp"
+        android:layout_toRightOf="@id/iv_circle_home_img"
+        android:textColor="@color/circle_name_color"
+        android:textSize="15sp"
+        tools:text="没事盼盼" />
+
+
+    <TextView
+        android:id="@+id/tv_circle_home_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_circle_home_name"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px12dp"
+        android:layout_toRightOf="@id/iv_circle_home_img"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"
+        tools:text="昨天" />
+
+    <ImageView
+        android:id="@+id/iv_circle_home_delete"
+        style="@style/item_click_bg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:padding="@dimen/px25dp"
+        android:src="@drawable/circle_search_icon_delete"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_attention"
+            style="@style/item_click_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px20dp"
+            android:text="+ 关注"
+            android:textSize="@dimen/textSize_xs"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_shield"
+            style="@style/item_click_bg"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circle_home_icon_cha"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

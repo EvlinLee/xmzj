@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/px30dp">
+    <ImageView
+        android:id="@+id/iv_dynamic_img"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_dynamic_img"
+        android:layout_marginLeft="@dimen/px20dp">
+        <TextView
+            android:id="@+id/tv_dynamic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="美食之旅；各地旅游的美食实在是太多，发不过来了，每天就是吃吃吃"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l"/>
+        <TextView
+            android:id="@+id/tv_dymic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分钟前"
+            android:layout_below="@id/tv_dynamic_title"
+            android:layout_marginTop="@dimen/px30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

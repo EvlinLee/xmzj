@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px172dp"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/img_bg_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px172dp"
+        android:layout_alignBottom="@id/view_line"
+        android:scaleType="centerCrop"
+        android:src="@drawable/deal_gou_gb"
+        android:visibility="invisible" />
+</RelativeLayout>

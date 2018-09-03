@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/bri_bg"
+            android:layout_width="@dimen/px450dp"
+            android:layout_height="@dimen/px180dp"
+            android:background="@drawable/_bg_from_hongbao">
+
+            <TextView
+                android:id="@+id/tv_bri_mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px130dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/px30dp"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="恭喜发财，大吉大利恭喜发财，大吉大利恭喜发财，大吉大利"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_bri_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px130dp"
+                android:layout_marginTop="@dimen/px80dp"
+                android:gravity="center|left"
+                android:text="领取红包"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_bri_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_tiny"
+                android:layout_marginLeft="@dimen/px25dp"
+                android:gravity="center|left"
+                android:text="红包"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textSize_s" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

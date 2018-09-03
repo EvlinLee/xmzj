@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_normal_other"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <!--自动播放-->
+    <LinearLayout
+        android:id="@+id/ll_auto_play_other"
+        style="@style/item_click_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_setting_autoplay_other"
+            style="@style/liveSettingAutoPlayCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px20dp"
+            android:text="自动播放"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+    <!--课堂介绍-->
+    <LinearLayout
+        android:id="@+id/ll_live_intro_other"
+        style="@style/item_click_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/live_set_icon_introduce" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px20dp"
+            android:text="课堂介绍"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+    <!--投诉-->
+    <LinearLayout
+        android:id="@+id/ll_live_inform_other"
+        style="@style/item_click_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/live_set_icon_whistle_blowing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px20dp"
+            android:text="投诉"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+    <!--申请退款-->
+    <LinearLayout
+        android:id="@+id/ll_psd_refund"
+        style="@style/item_click_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/tuikuan_icon" />
+
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px20dp"
+            android:text="申请退款"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+    <!--占位图-->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+</LinearLayout>

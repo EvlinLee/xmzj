@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/head_pic"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:layout_margin="@dimen/margin_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"/>
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_pic"
+        android:layout_alignTop="@+id/head_pic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="购买人:哈哈哈"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/head_pic"
+        android:layout_marginRight="@dimen/margin_10"
+        android:text="2017-12-22"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付:100"
+        android:layout_toRightOf="@+id/head_pic"
+        android:layout_alignBottom="@+id/head_pic"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/text_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/head_pic"
+        android:layout_marginRight="@dimen/margin_10"
+        android:text="来源：微信分享"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m" />
+
+
+    <View
+        android:id="@+id/line"
+        style="@style/item_line"
+        android:layout_below="@+id/head_pic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/pent_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="佣金:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/platform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="平台:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="实收:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m" />
+    </LinearLayout>
+
+    <View
+        style="@style/model_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

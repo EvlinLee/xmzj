@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="HiddeStatus" parent="AppBaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="item_click_bg">
+        <item name="android:background">@drawable/selector_touch</item>
+    </style>
+
+    <style name="rippleBg">
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+</resources>

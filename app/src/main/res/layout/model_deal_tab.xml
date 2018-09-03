@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_menu_head"
+            android:layout_width="@dimen/px50dp"
+            android:layout_height="@dimen/px50dp"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person_icon_head"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/deal_title_big_bg">
+
+            <TextView
+                android:id="@+id/tv_deal_tab_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:background="@drawable/select_deal_tab_bg"
+                android:text="@string/tab_deal"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@drawable/select_deal_tab_color"/>
+
+            <TextView
+                android:id="@+id/tv_deal_tab_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:background="@drawable/select_deal_tab_bg"
+                android:text="@string/tab_flow"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@drawable/select_deal_tab_color"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

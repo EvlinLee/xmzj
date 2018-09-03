@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/update_page_bg"
+        android:orientation="vertical">
+
+    <com.gxtc.huchuan.widget.RoundImageView
+        android:id="@+id/iv_update_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:type="1"
+        app:topLeft="5"
+        app:topRight="5"
+        android:src="@drawable/deal_page_updata_icon_tc_bg"/>
+
+    <TextView
+        android:id="@+id/tv_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_l"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_below="@+id/iv_update_logo"
+        android:textColor="@color/color_000000"
+        android:text="软件更新提示"/>
+    <TextView
+        android:id="@+id/tv_update_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_m"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_below="@+id/iv_update_logo"
+        android:text="新增项目更新通知"/>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即更新"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:background="@drawable/deal_page_icon_tc_an"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议在wifi环境下更新哦"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:layout_marginBottom="@dimen/fab_margin" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_content"
+        android:layout_marginTop="@dimen/margin_larger"
+        android:src="@drawable/deal_guarantee_page_icon_cha2"/>
+
+
+</RelativeLayout>

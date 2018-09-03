@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#E7F0F3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_invitation_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:textColor="@color/color_fb4717"
+        android:textSize="@dimen/textSize_ml"
+        tools:text="分享赚￥9.9" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_middle"
+        android:textColor="@color/color_fb4717"
+        android:textSize="@dimen/textSize_s"
+        tools:text="每当有1个人通过你分享的连接购买成功，你就可以获得订单金额5%(即9.9)的佣金奖励哦" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle">
+
+        <LinearLayout
+            android:id="@+id/btn_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_middle"
+            android:paddingBottom="@dimen/margin_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share_icon_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="微信"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_xs" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_middle"
+            android:paddingBottom="@dimen/margin_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share_icon_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="朋友圈"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_xs" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/btn_qq"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="@dimen/margin_middle"-->
+            <!--android:paddingBottom="@dimen/margin_middle">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/share_icon_qq" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/margin_small"-->
+                <!--android:text="QQ好友"-->
+                <!--android:textColor="@color/text_color_666"-->
+                <!--android:textSize="@dimen/textSize_xs" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/btn_kongjian"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="@dimen/margin_middle"-->
+            <!--android:paddingBottom="@dimen/margin_middle">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/share_icon_kongjian"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/margin_small"-->
+                <!--android:text="QQ空间"-->
+                <!--android:textColor="@color/text_color_666"-->
+                <!--android:textSize="@dimen/textSize_xs" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/btn_invitation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_middle"
+            android:paddingBottom="@dimen/margin_middle">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share_icon_invitation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="邀请卡"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_xs" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dimiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffff"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/margin_middle"
+        android:text="取消分享"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m" />
+
+</LinearLayout>

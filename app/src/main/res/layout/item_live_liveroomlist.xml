@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_10"
+              android:layout_marginRight="@dimen/margin_10"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_live_liveroomlist_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_10"
+            tools:src="@drawable/live_head_icom_temp"/>
+
+
+        <LinearLayout
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_live_liveroomlist_roomname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_m"
+                android:layout_marginRight="@dimen/margin_10"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_333"
+                tools:text="测试一lksdmgks.fmg.df,mhd,h/下文字"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_live_liveroomlist_live_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_xs"
+                    android:lines="1"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:textColor="@color/text_color_999"
+                    android:text="课程：666"/>
+
+            <TextView
+                android:id="@+id/item_live_liveroomlist_attention_count"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_xs"
+                tools:text="粉丝：1180"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/item_live_liveroomlist_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/live_attention_normal"/>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e5e5e5"/>
+</LinearLayout>

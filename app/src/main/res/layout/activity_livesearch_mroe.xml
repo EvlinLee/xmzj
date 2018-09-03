@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_search_keyword_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginTop="@dimen/px50dp"
+                android:text="搜索指定内容"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/search_key_1"
+                    style="@style/search_keyword_style"
+                    android:text="动态" />
+
+                <TextView
+                    android:id="@+id/search_key_2"
+                    style="@style/search_keyword_style"
+                    android:text="文章" />
+
+                <TextView
+                    android:id="@+id/search_key_3"
+                    style="@style/search_keyword_style"
+                    android:text="课堂" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/px60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/search_key_4"
+                    style="@style/search_keyword_style"
+                    android:text="找人" />
+
+                <TextView
+                    android:id="@+id/search_key_5"
+                    style="@style/search_keyword_style"
+                    android:text="圈子" />
+
+                <TextView
+                    android:id="@+id/search_key_6"
+                    style="@style/search_keyword_style"
+                    android:text="交易" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

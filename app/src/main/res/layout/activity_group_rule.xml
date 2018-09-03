@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/module_divide_line">
+
+    <RelativeLayout
+        android:id="@+id/rl_post_redpack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1px"
+        android:background="@color/color_ffffff"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:padding="@dimen/margin_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="进群是否发红包"
+            android:textColor="@color/text_color_333"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_post_redpack"
+            style="@style/GroupRuleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_post_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_middle"
+        android:background="@color/color_ffffff"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:padding="@dimen/margin_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="新人进群是否发送圈规"
+            android:textColor="@color/text_color_333"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_post_rule"
+            style="@style/GroupRuleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_input_rule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:gravity="left|top"
+        android:hint="请输入群规则"
+        android:minHeight="@dimen/px400dp"
+        android:padding="@dimen/margin_middle"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+</LinearLayout>

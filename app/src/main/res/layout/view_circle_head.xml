@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_circle_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <com.gxtc.huchuan.widget.MPagerSlidingTabStrip
+        android:id="@+id/circle_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@+id/iv_news_search"
+        android:layout_toRightOf="@+id/iv_back"
+        app:pstsDividerColor="#00ffffff"
+        app:pstsShouldExpand="true"
+        android:layout_centerHorizontal="true"
+        app:pstsIndicatorColor="@color/btn_nornal"
+        app:pstsIndicatorHeight="@dimen/px4dp"
+        app:pstsTabPaddingLeftRight="@dimen/px30dp"
+        app:pstsTabSelectedTextColor="@color/colorAccent"
+        app:pstsTabSelectedTextSize="@dimen/textSize_ml"
+        app:pstsTabTextColor="#333"
+        app:pstsTabTextSize="@dimen/textSize_ml"
+        app:pstsUnderlineHeight="0dp" />
+
+    <TextView
+        android:id="@+id/headRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:drawablePadding="@dimen/margin_tiny"
+        android:gravity="center_vertical"
+        android:textColor="@color/actionbar_text_color"
+        android:foreground= "?android:selectableItemBackground"
+        android:drawableLeft="@drawable/issue_dongtai"
+        android:textSize="@dimen/textSize_m"
+        android:text="发动态"/>
+
+    <com.flyco.tablayout.widget.MsgView
+        android:id="@+id/msgView"
+        android:layout_width="@dimen/px16dp"
+        android:layout_height="@dimen/px16dp"
+        android:textColor="#ffffff"
+        android:textSize="11.5sp"
+        android:layout_marginTop="@dimen/px21dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@+id/circle_tab"
+        mv:mv_backgroundColor="#FD481F"
+        mv:mv_isRadiusHalfHeight="true"
+        mv:mv_isWidthHeightEqual="true"
+        mv:mv_strokeColor="#ffffff"
+        android:visibility="gone"
+        mv:mv_strokeWidth="1dp"/>
+
+</RelativeLayout>

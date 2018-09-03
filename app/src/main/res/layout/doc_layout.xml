@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_dot"
+    android:layout_width="@dimen/px20dp"
+    android:layout_height="@dimen/px20dp"
+    android:layout_marginLeft="@dimen/px20dp"
+    android:background="@drawable/shape_while_circle">
+</TextView>

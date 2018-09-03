@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <io.rong.imkit.widget.RCMessageFrameLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <io.rong.imkit.widget.AsyncImageView
+            android:id="@+id/img_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_efef"
+            android:scaleType="centerCrop"
+            android:maxWidth="100dp"
+            android:maxHeight="140dp"
+            app:RCMask="true"
+            app:RCMinShortSideSize="140dp"/>
+
+    </io.rong.imkit.widget.RCMessageFrameLayout>
+
+
+    <com.gxtc.huchuan.widget.CircularProgress
+        android:id="@+id/progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:TRadius="15dp"
+        app:circleColor="#99ffffff"/>
+
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@id/progress"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:alpha="0.9"
+        android:src="@drawable/conversation_bofang"/>
+
+
+    <ImageView
+        android:id="@+id/img_reUpload"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@id/progress"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:alpha="0.9"
+        android:src="@drawable/conversation_shuaxin"/>
+
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/layout_bg"
+        android:layout_alignEnd="@id/layout_bg"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_middle"
+        android:textSize="@dimen/textSize_xs"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

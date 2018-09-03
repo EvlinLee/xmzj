@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_live_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px420dp"
+        android:background="@drawable/list_error_img"
+        />
+
+    <com.gxtc.huchuan.widget.MyGridView
+        android:id="@+id/logo_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:focusable="true"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/px30dp"
+        android:numColumns="4"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/px46dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/live_foreshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+</LinearLayout>

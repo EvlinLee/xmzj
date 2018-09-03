@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commentTv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1px"
+    android:paddingBottom="1px"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:textColor="#232323"
+    android:textSize="@dimen/textSize_s"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="12312"/>

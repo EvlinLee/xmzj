@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_middle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deal_icon_buy"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_color_333"
+            android:text="官方代购，代售权3以上高质量文档网站"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <!-- <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deal_icon_top"/>-->
+        <!--<TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝宝"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_999"
+            android:layout_marginRight="@dimen/px20dp"/>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_999"
+            android:text="2016-12-7  15:02"/>-->
+
+    </LinearLayout>
+
+    <View style="@style/item_line"
+        android:layout_marginTop="@dimen/margin_medium"/>
+</LinearLayout>

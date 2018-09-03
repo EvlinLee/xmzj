@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headArea"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/headTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="不看他的动态"
+            android:textColor="@color/actionbar_text_color"
+            android:textSize="@dimen/textSize_xl" />
+
+        <ImageButton
+            android:id="@+id/headBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:src="@drawable/navigation_icon_back" />
+
+
+        <CheckBox
+            android:id="@+id/cb_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:text="解除" />
+
+        <View
+            android:id="@+id/head_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/headBackButton"
+            android:background="@color/grey_e5e5" />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/vs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/empty_error" />
+
+    <TextView
+        android:id="@+id/tv_shield_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/px10dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:visibility="gone" />
+
+    <com.gxtc.huchuan.widget.CircleRecyclerView
+        android:id="@+id/rv_shield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="@dimen/px20dp" />
+
+</LinearLayout>

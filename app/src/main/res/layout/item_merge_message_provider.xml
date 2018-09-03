@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="@dimen/px480dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rc_ic_bubble_left_file"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/px460dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/text_color_333"
+                android:text="聊天记录"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_middle"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_ms"
+                tools:text="好友可见。0：所有人可见；1、好友可见"/>
+
+        </LinearLayout>
+
+        <View style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_tiny"
+            android:text="聊天记录"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_xs"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

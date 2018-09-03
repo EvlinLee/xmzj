@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_live_room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_ml"
+            tools:text="微课！新年规划九宫格法--找到这9种资源，2017想不成功也难"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_live_room_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px400dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/live_room_icon_temp"/>
+
+
+            <ImageView
+                android:id="@+id/bg_play_status"
+                android:layout_width="@dimen/px120dp"
+                android:layout_height="@dimen/px40dp"
+                android:layout_alignBottom="@+id/item_live_room_image"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:src="@drawable/bg_unstart"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/play_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_live_room_image"
+                android:layout_alignLeft="@id/item_live_room_image"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:paddingRight="@dimen/margin_middle"
+                android:background="@drawable/live_icon_wkk"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:gravity="center"
+                android:padding="@dimen/px5dp"
+                android:text="讲课中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"/>
+
+            <TextView
+                android:id="@+id/item_live_room_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/item_live_room_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:layout_marginRight="@dimen/px10dp"
+                android:background="@drawable/shape_whit_bg_radius"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:padding="@dimen/px5dp"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_xs"
+                tools:text="10000000报名"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_live_room_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/px20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            android:visibility="gone"
+            tools:text="微课！新年规划九宫格法--找到这9种资源，2017想不成功也难"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginRight="@dimen/margin_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp">
+
+                <ImageView
+                    android:id="@+id/iv_news_ads1_property"
+                    android:layout_width="@dimen/px50dp"
+                    android:layout_height="@dimen/px40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:src="@drawable/news_icon_advertisement"
+                    android:visibility="gone"
+                    />
+
+                <com.gxtc.huchuan.widget.CircleImageView
+                    android:id="@+id/item_live_room_head"
+                    android:layout_width="@dimen/px50dp"
+                    android:layout_height="@dimen/px50dp"
+                    android:layout_toRightOf="@id/iv_news_ads1_property"
+                    android:visibility="gone"
+                    tools:src="@drawable/person_icon_head_120"/>
+
+                <TextView
+                    android:id="@+id/item_live_room_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_xs"
+                    tools:text="￥:9.9"/>
+
+                <TextView
+                    android:id="@+id/living_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/px10dp"
+                    android:layout_toLeftOf="@+id/item_live_room_price"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_xs"
+                    tools:text="6/5"/>
+
+
+                <TextView
+                    android:id="@+id/item_live_room_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_live_room_head"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_xs"
+                    tools:text="小Y老师的家"/>
+
+                <ImageView
+                    android:id="@+id/iv_fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:layout_toRightOf="@id/item_live_room_name"
+                    android:src="@drawable/live_icon_hot"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_live_room_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"
+            android:visibility="gone"
+            tools:text="当我们意识到为时已晚的时候，恰恰是在最早的时候..."/>
+    </LinearLayout>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginTop="@dimen/margin_tiny"/>
+</LinearLayout>

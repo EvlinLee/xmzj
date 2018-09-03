@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_dialog_box_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px30dp"
+    android:paddingRight="@dimen/px30dp">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px10dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:drawablePadding="@dimen/px50dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/head_pic_2x"
+        android:text="通过实名认证有以下优势"
+        android:textColor="#111111"
+        android:textSize="@dimen/sp_12" />
+
+    <View style="@style/horizontal_line"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px62dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_vertican"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="认证标签"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#111111"
+            android:textSize="@dimen/px20dp"
+            android:background="@drawable/selector_touch"
+            android:drawablePadding="@dimen/px36dp"
+            android:drawableTop="@drawable/verification_2x"/>
+        <TextView
+            android:id="@+id/btn_writer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="成为作者"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#111111"
+            android:background="@drawable/selector_touch"
+            android:textSize="@dimen/px20dp"
+            android:drawablePadding="@dimen/px36dp"
+            android:drawableTop="@drawable/layer_2x"/>
+        <TextView
+            android:id="@+id/btn_profeess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="课堂讲师"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_touch"
+            android:textColor="#111111"
+            android:textSize="@dimen/px20dp"
+            android:drawablePadding="@dimen/px36dp"
+            android:drawableTop="@drawable/classroom_2x"/>
+        <TextView
+            android:id="@+id/btn_pay_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="开通收费圈子"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_touch"
+            android:textColor="#111111"
+            android:textSize="@dimen/px20dp"
+            android:drawablePadding="@dimen/px36dp"
+            android:drawableTop="@drawable/get_2x"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px72dp"
+        android:layout_marginBottom="@dimen/px58dp"
+        android:layout_marginTop="@dimen/px70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector_stroke"
+            android:gravity="center"
+            android:text="暂不认证"
+            android:textSize="@dimen/px30dp"
+            android:textColor="@color/text_color_999" />
+
+        <View
+            android:layout_width="@dimen/px22dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/btn_issue"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_blue_selector_no_stroke_"
+            android:gravity="center"
+            android:text="马上认证"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

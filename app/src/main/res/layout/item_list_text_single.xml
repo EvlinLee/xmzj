@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_middle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_single_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="云南要火，国民男神向全球说了一句对云南超级有爱的话"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_single_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_single_title"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:text="@string/text_single_temp"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_single_count"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:text="2017-02-03"/>
+
+</RelativeLayout>

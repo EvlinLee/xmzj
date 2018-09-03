@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <!-- <TextView
+            android:id="@+id/tv_personal_edit"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_homepage_icon_compile"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="编辑资料"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:layout_marginTop="@dimen/px20dp"/>
+        <View style="@style/item_line" />-->
+        <TextView
+            android:id="@+id/tv_release_dynamic"
+            style="@style/TextViewMatchStyle"
+            android:text="发布动态"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:drawableLeft="@drawable/person_homepage_icon_dongtai"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:background="@color/color_ffffff"/>
+
+        <TextView
+            android:id="@+id/tv_my_friend"
+            style="@style/TextViewMatchStyle"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_homepage_icon_my_friend"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="我的好友"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+        <TextView
+            android:id="@+id/tv_my_subscriptions"
+            style="@style/TextViewMatchStyle"
+            android:text="我的订阅"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:drawableLeft="@drawable/person_homepage_icon_my_subscription"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:background="@color/color_ffffff"/>
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_my_collection"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_homepage_icon_red_packet"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="我的收藏"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            style="@style/TextViewMatchStyle"
+            android:text="消息通知"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:drawableLeft="@drawable/person_homepage_icon_inforrm"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/color_ffffff"/>
+        <View style="@style/item_line" />
+        <TextView
+            android:id="@+id/tv_my_wallet"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_homepage_icon_wallet"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="我的钱包"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_reward_record"
+            style="@style/TextViewMatchStyle"
+            android:text="打赏记录"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:drawableLeft="@drawable/person_homepage_icon_red_packet"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:background="@color/color_ffffff"
+            android:layout_marginBottom="@dimen/px60dp"
+            />
+        <!--<TextView
+            android:id="@+id/tv_contact_service"
+            style="@style/TextViewMatchStyle"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_homepage_icon_kefu"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="联系客服"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:layout_marginBottom="@dimen/px60dp"/>-->
+
+    </LinearLayout>
+
+</ScrollView>

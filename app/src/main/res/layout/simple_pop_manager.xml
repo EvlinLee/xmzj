@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:padding="@dimen/margin_tiny"
+        android:id="@+id/tv_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:text="删除"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_ml" />
+    <View
+        android:background="@color/text_color_666"
+        android:layout_width="1px"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:padding="@dimen/margin_tiny"
+        android:id="@+id/tv_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:text="黑名单"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_ml" />
+    <View
+        android:background="@color/text_color_666"
+        android:layout_width="1px"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:padding="@dimen/margin_tiny"
+        android:id="@+id/tv_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:text="禁言"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_ml" />
+</LinearLayout>

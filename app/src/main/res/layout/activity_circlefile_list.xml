@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:id="@+id/ll_search_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_F4F4F4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:id="@+id/et_input_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey_F4F4F4"
+            android:drawableLeft="@drawable/news_icon_search"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:hint="@string/label_file_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/px10dp"
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:text="@string/circle_file_download_hint"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View style="@style/item_line"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

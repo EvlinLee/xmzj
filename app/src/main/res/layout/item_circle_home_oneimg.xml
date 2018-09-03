@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/item_click_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_circle_home_item_head" />
+
+    <TextView
+        android:id="@+id/tv_circle_home_one_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px15dp"
+        android:text="愿你行走万里，归来仍是少年。"
+        android:textColor="@color/text_color_333"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_circle_home_one_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px360dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px15dp"
+        android:scaleType="centerCrop"
+        />
+
+    <include layout="@layout/model_circle_home_item_foot" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20dp"
+        android:background="@color/module_divide_line" />
+</LinearLayout>

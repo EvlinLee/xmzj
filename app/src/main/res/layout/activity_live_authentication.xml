@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/grey_F4F4F4"
+              android:orientation="vertical">
+
+    <View style="@style/horizontal_line"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/px96dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/px30dp"
+                android:paddingRight="@dimen/px30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="课堂名字："
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/et_liveroom_name"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:hint="请输入名称"
+                    android:textColorHint="@color/text_color_999"
+                    android:paddingLeft="@dimen/margin_tiny"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_m"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_live_intro_module_space"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/px96dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px30dp"
+                android:paddingRight="@dimen/px30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="类型选择："
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_type_selector"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/px20dp"
+                    android:drawableRight="@drawable/person_icon_more"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/margin_medium"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px30dp"
+                android:paddingRight="@dimen/px30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="简介："
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:id="@+id/et_intro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minHeight="@dimen/px300dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="@dimen/margin_middle"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/px30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:layout_margin="@dimen/margin_medium"
+                android:text="选择您的身份"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/px30dp"/>
+
+            <com.gxtc.huchuan.widget.MultiRadioGroup
+
+                android:id="@id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px40dp"
+                android:paddingTop="@dimen/px36dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_middle"
+                        android:drawableTop="@drawable/live_create_lecturer"
+                        android:gravity="center_vertical"
+                        android:text="我是讲师"
+                        android:textColor="@color/text_color_333"
+                        android:textSize="@dimen/px26dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_lecturer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+
+                        android:button="@drawable/selector_live_authentication_rb"
+                        android:checked="false"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_middle"
+                        android:drawableTop="@drawable/live_create_organization"
+                        android:text="我是机构"
+                        android:textColor="@color/text_color_333"
+                        android:textSize="@dimen/px26dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_institution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+
+                        android:button="@drawable/selector_live_authentication_rb"
+                        android:checked="false"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_middle"
+                        android:drawableTop="@drawable/live_create_audience"
+                        android:text="我是听众"
+                        android:textColor="@color/text_color_333"
+                        android:textSize="@dimen/px26dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_audience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+
+                        android:button="@drawable/selector_live_authentication_rb"
+                        android:checked="false"
+                        />
+                </LinearLayout>
+            </com.gxtc.huchuan.widget.MultiRadioGroup>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/px30dp"-->
+                <!--android:layout_marginTop="@dimen/px26dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/btn_attention_teacher_college"-->
+                    <!--android:layout_width="@dimen/px30dp"-->
+                    <!--android:layout_height="@dimen/px30dp"-->
+                    <!--android:button="@null"-->
+                    <!--android:background="@drawable/selector_live_authentication_rbv2"-->
+                    <!--android:checked="true"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="@dimen/margin_tiny"-->
+                    <!--android:text="关注讲师学院"-->
+                    <!--android:textColor="@color/text_color_999"-->
+                    <!--android:textSize="@dimen/px26dp"/>-->
+            <!--</LinearLayout>-->
+
+
+            <!--android:lineSpacingExtra="@dimen/space_06"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginRight="@dimen/px30dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="讲师学院为新媒之家官方课堂，官方会定期给课堂运营者提供功能的使用和运营技巧培训。关注才可以及时收到培训通知。"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/px24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginTop="@dimen/px28dp"
+                android:text="认证后的课堂会有以下特权"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/px26dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="1.使用基本课堂功能"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/px24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="2.新媒之家客服一对一服务您创建和使用课堂"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/px24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginRight="@dimen/px30dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="3.加入新媒之家交流群，和众多运营者交流经验，互相学习"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/px24dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_foot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px130dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:paddingLeft="@dimen/margin_tiny"
+        android:paddingRight="@dimen/margin_tiny"
+        android:background="@drawable/circle_friend_comment_bg_white"
+        android:orientation="vertical">
+
+        <com.gxtc.huchuan.widget.PraiseTextView
+            android:id="@+id/praisetextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize_s"
+            tools:text="哈哈哈哈"/>
+
+        <View
+            android:id="@+id/v_commentline"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:background="@color/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <com.gxtc.huchuan.widget.commentlistview.CommentListView
+            android:id="@+id/commentList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:orientation="vertical"
+            app:item_color="@color/color_676980" />
+
+        <TextView
+            android:id="@+id/tv_show_more_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="显示更多评论"
+            android:textSize="@dimen/textSize_s"
+            tools:visibility="visible"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

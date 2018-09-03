@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px100dp"
+    android:background="@color/color_4d2167bf"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_usable_account">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_frozen_amount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_frozen_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="待结算金额"
+            android:textColor="@color/color_ffffff"
+            android:layout_below="@id/tv_frozen_amount"
+            android:layout_marginTop="@dimen/px10dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <View
+        style="@style/item_line_vertical"
+        android:layout_marginTop="@dimen/px10dp"
+        android:layout_marginBottom="@dimen/px10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_take_money"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_take_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="申请提现金额"
+            android:textColor="@color/color_ffffff"
+            android:layout_below="@id/tv_take_money"
+            android:layout_marginTop="@dimen/px10dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>

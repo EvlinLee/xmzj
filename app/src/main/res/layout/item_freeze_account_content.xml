@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:id="@+id/ll_freeze_root"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_marginLeft="@dimen/px20dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px10dp">
+
+        <TextView
+            android:id="@+id/tv_freeze_account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/text_color_333"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="交易推广" />
+
+        <TextView
+            android:id="@+id/tv_freeze_account_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"
+            tools:text="3-22" />
+        <TextView
+            android:id="@+id/result_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_freeze_account_time"
+            android:layout_alignBaseline="@+id/tv_freeze_account_time"
+            android:textColor="@color/text_color_999"
+            android:layout_marginLeft="@dimen/px25dp"
+            android:textSize="@dimen/textSize_m"
+            tools:text="未结算" />
+
+        <TextView
+            android:id="@+id/tv_freeze_account_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20dp"
+            android:drawablePadding="@dimen/px20dp"
+            android:text="5300.00"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_freeze_account_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/px10dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_toLeftOf="@id/tv_freeze_account_money"
+            android:layout_toRightOf="@id/tv_freeze_account_title"
+            android:singleLine="true"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m"
+            tools:text="文案[自媒体人推广文案]" />
+
+
+        <View
+            style="@style/item_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

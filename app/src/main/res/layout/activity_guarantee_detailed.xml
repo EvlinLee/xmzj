@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/common_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_middle"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="230dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_middle"
+                android:layout_marginEnd="@dimen/margin_middle"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_ml"
+                tools:text="打包出售宠物类公众号"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginStart="@dimen/margin_middle"
+                android:layout_marginEnd="@dimen/margin_middle"
+                android:maxLines="8"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_m"
+                android:text="打包出售宠物类公众号"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_alignStart="@id/tv_content"
+                android:layout_marginTop="@dimen/margin_middle"
+                android:textColor="@color/guarantee_orange_confirm"
+                android:textSize="@dimen/textSize_m"
+                tools:text="打包出售宠物类公众号"/>
+
+            <TextView
+                android:id="@+id/tv_dbfee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_price"
+                android:layout_alignStart="@id/tv_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/guarantee_orange_confirm"
+                android:textSize="@dimen/textSize_m"
+                tools:text="打包出售宠物类公众号"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dbfee"
+                android:layout_margin="@dimen/margin_middle"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_images"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/margin_middle"
+                android:layout_marginBottom="@dimen/margin_middle"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_tiny"
+                    android:text="@string/guarantee_detailed_sender"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/text_color_666"/>
+
+                <ImageView
+                    android:id="@+id/img_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:src="@drawable/person_icon_head_120"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/colorAccent"
+                    android:text="12312323"/>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/layout_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_below="@id/layout"
+                android:orientation="horizontal">
+                
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/select_guarantee_detailed_left"
+                    android:text="@string/comment_disagree"/>
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/select_guarantee_detailed_right"
+                    android:text="@string/comment_agree"/>
+                
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_go_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginStart="1px"
+                android:layout_marginEnd="1px"
+                android:layout_below="@id/layout"
+                android:textColor="@color/white"
+                android:background="@drawable/select_guarantee_detailed_order"
+                android:text="@string/guarantee_look_order"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

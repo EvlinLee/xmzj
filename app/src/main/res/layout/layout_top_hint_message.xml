@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_note_layout"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/px20dp"
+        android:background="@drawable/shape_top_hint_msg"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+        android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/message_note_pic"
+        android:layout_width="@dimen/px60dp"
+        android:layout_height="@dimen/px60dp"
+        android:src="@drawable/circle_head_icon_80"/>
+
+    <TextView
+        android:id="@+id/message_note_unReadcount"
+        android:layout_width="@dimen/px250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="2条消息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_m"/>
+
+    </LinearLayout>
+
+</LinearLayout>

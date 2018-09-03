@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_special_detail_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--style="@style/AppTheme.Toolbar"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--app:layout_collapseMode="pin">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/navigation_icon_back" />-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="专题详情"-->
+                <!--android:textColor="@color/actionbar_text_color"-->
+                <!--android:textSize="@dimen/textSize_xl" />-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_special_detail_title"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_background"
+                    android:padding="@dimen/margin_10"
+                    tools:text="干货：详解操作小程序关键点（附案例分析及操作思路）"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/textSize_xl" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_background"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:id="@+id/tv_special_detail_label"
+                    tools:text="#资讯  #创业"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/textSize_s" />
+
+                <com.gxtc.huchuan.widget.ExpandableTextView
+                    android:id="@+id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_special_detail_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:lineSpacingExtra="@dimen/margin_tiny"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/textSize_m" />
+
+                    <ImageView
+                        android:id="@+id/iv_expand_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:padding="@dimen/margin_middle"
+                        android:src="@drawable/intro_down" />
+                </com.gxtc.huchuan.widget.ExpandableTextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/headTitle"
+                android:background="@color/grey_e5e5" />
+            <com.gxtc.huchuan.widget.MPagerSlidingTabStrip
+                android:id="@+id/special_detail_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/iv_news_search"
+                android:layout_toRightOf="@+id/iv_back"
+                android:background="@color/white"
+                app:pstsDividerColor="#00ffffff"
+                app:pstsIndicatorColor="@color/btn_nornal"
+                app:pstsIndicatorHeight="@dimen/px4dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="@dimen/px30dp"
+                app:pstsTabSelectedTextColor="@color/colorAccent"
+                app:pstsTabSelectedTextSize="@dimen/textSize_ml"
+                app:pstsTabTextColor="#333"
+                app:pstsTabTextSize="@dimen/textSize_ml"
+                app:pstsUnderlineHeight="0dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/headTitle"
+                android:background="@color/grey_e5e5" />
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_specail_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_special_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px88dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_larger"
+            android:layout_marginRight="@dimen/margin_larger"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/select_btn_special_detail"
+            tools:text="免费订阅专题"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

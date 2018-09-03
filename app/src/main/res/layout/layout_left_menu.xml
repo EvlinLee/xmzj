@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_layout"
+    android:layout_width="@dimen/px520dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_large"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle">
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/px120dp"
+            android:layout_height="@dimen/px120dp"
+            android:src="@drawable/person_icon_head_120"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_menu"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:text="粉丝溜两圈"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_alignBottom="@id/img_menu"
+            android:padding="2dp"
+            android:text="订阅号"
+            android:textSize="@dimen/textSize_xs"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_tiny"
+            android:background="@drawable/shape_btn_white"
+            android:text="退出"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_login_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?android:selectableItemBackground">
+
+        <ImageView
+            android:layout_width="@dimen/px60dp"
+            android:layout_height="@dimen/px60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/use_icon_add"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:drawableRight="@drawable/person_icon_more"
+            android:text="添加公众号"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"/>
+
+    </LinearLayout>
+    <View style="@style/item_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?android:selectableItemBackground">
+
+        <ImageView
+            android:layout_width="@dimen/px60dp"
+            android:layout_height="@dimen/px60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/use_icon_add"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:drawableRight="@drawable/person_icon_more"
+            android:text="添加公众号"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"/>
+
+    </LinearLayout>
+    <View style="@style/item_line"/>
+
+
+
+
+</LinearLayout>

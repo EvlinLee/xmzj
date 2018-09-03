@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_F4F4F4">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rl_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_circle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/margin_large"
+        android:src="@drawable/circle_home_icon_feather"
+        app:fabSize="mini"
+        app:layout_behavior="@string/fab_behavior"/>-->
+
+</android.support.design.widget.CoordinatorLayout>

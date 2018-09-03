@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_visitor_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px70dp"
+        android:background="@color/module_divide_line"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp">
+        <TextView
+            android:id="@+id/tv_all_visitor_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="总浏览量：6123"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+        <TextView
+            android:id="@+id/tv_today_visitor_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="今日浏览量：211"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            android:layout_marginLeft="@dimen/px40dp"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rc_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

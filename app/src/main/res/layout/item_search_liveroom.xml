@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+    <ImageView
+
+        android:id="@+id/iv_search_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:src="@drawable/live_head_icom_temp"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin_10"
+        android:id="@+id/tv_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_search_icon"
+        tools:text="最好的年纪，才刚刚开始"/>
+
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin_10"
+        android:id="@+id/tv_search_join_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_search_icon"
+        android:layout_toRightOf="@id/iv_search_icon"
+        tools:text="601人次"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_time_share"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/px130dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_circle_home_noimgv2">
+
+    <TextView
+        android:id="@+id/tv_circle_home_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="昨天" />
+
+    <TextView
+        android:id="@+id/tv_circle_home_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="来自qq空间" />
+
+    <TextView
+        android:id="@+id/tv_circle_home_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_middle"
+        android:text="删除"
+        android:textColor="@color/color_676980"
+        android:textSize="@dimen/textSize_s"
+        android:visibility="gone" />
+
+    <!--这里如果用ImageView，动态是发视频的话点击无反应，用TextView取代ImageView-->
+    <TextView
+        android:paddingRight="@dimen/margin_10"
+        android:id="@+id/tex_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:drawableLeft="@drawable/circle_home_icon_share"
+        />
+
+    <!--android:src="@drawable/circle_home_icon_share"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/px20dp"
+        android:paddingTop="@dimen/margin_tiny"
+        android:src="@drawable/circle_friend_comment_icon_blie" />
+
+</LinearLayout>

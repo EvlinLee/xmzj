@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ll_circle_main_head_fabiao"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_main_btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px5dp"
+                android:drawableLeft="@drawable/circle_details_icon_publish"
+                android:drawablePadding="@dimen/px5dp"
+                android:text="精华"
+                android:textColor="@color/circle_main_Btn_fabiao" />
+
+            <TextView
+                android:id="@+id/dragView_msg_best"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/px15dp"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:background="@drawable/shape_unread_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ll_circle_main_head_article"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_main_btn_bg2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px5dp"
+                android:drawableLeft="@drawable/circle_details_icon_article"
+                android:drawablePadding="@dimen/px5dp"
+                android:text="文章"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/dragView_msg_chatinfo"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/px15dp"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:background="@drawable/shape_unread_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ll_circle_main_head_classroom"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_main_btn_bg2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px5dp"
+                android:drawableLeft="@drawable/circle_details_icon_classroom"
+                android:drawablePadding="@dimen/px5dp"
+                android:text="课堂"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/dragView_msg_class"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/px15dp"
+                android:background="@drawable/shape_unread_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/ll_circle_main_head_file"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_main_btn_bg2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px5dp"
+                android:drawableLeft="@drawable/circle_details_icon_file"
+                android:drawablePadding="@dimen/px5dp"
+                android:text="文件"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/dragView_msg_file"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/px15dp"
+                android:background="@drawable/shape_unread_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/model_line"
+        app:layout_scrollFlags="scroll" />
+
+    <!--邀请栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin_middle"
+        app:layout_scrollFlags="scroll">
+
+        <ImageView
+            android:id="@+id/img_yaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_home_icon_invite" />
+
+        <TextView
+            android:id="@+id/btn_yaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_oval_white_border_blue"
+            android:paddingBottom="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_tiny"
+            android:text="邀请"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_m" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@id/btn_yaoqing"
+            android:layout_toRightOf="@id/img_yaoqing"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/tv_havecommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:text="马上邀请好友加入圈子"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_s" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/model_line"
+        app:layout_scrollFlags="scroll" />
+
+    <LinearLayout
+        android:id="@+id/ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        app:layout_scrollFlags="scroll">
+
+        <ImageView
+            android:layout_width="@dimen/px30dp"
+            android:layout_height="@dimen/px30dp"
+            android:src="@drawable/circle_details_icon_announcement" />
+
+        <com.gxtc.huchuan.widget.MarqueeView
+            android:id="@+id/marquee_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_notice"
+        style="@style/model_line"
+        app:layout_scrollFlags="scroll" />
+</LinearLayout>

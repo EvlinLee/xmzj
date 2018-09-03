@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hot_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gxtc.huchuan.ui.deal.deal.hotdeallist.HotDealListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_deal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.gxtc.commlibrary.recyclerview.RecyclerView
+                android:id="@+id/rv_deallist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/base_empty_error"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

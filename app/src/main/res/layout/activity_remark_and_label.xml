@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:gravity="center_vertical"
+        android:text="备注名"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"/>
+
+    <EditText
+        android:id="@+id/et_edit_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/color_ffffff"
+        android:hint="添加备注名"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ml" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:gravity="center_vertical"
+        android:text="标签"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"/>
+
+    <TextView
+        android:id="@+id/tv_add_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/color_ffffff"
+        android:drawableRight="@drawable/person_icon_more"
+        android:gravity="center_vertical"
+        android:hint="通过标签给联系人进行分类"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_ml" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:gravity="center_vertical"
+        android:text="描述"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"/>
+
+    <EditText
+        android:id="@+id/et_more_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:hint="添加更多备注信息"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_ml"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"/>
+</LinearLayout>

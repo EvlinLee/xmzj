@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="@dimen/margin_small"
+    android:background="@drawable/bg_while">
+
+
+    <TextView
+        android:id="@+id/tv_circle_copy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="复制"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="转发"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+    <TextView
+        android:id="@+id/line_reply"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@color/divide_line"/>
+    <TextView
+        android:id="@+id/tv_circle_collect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/line_delete"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:id="@+id/toTop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="置顶"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/line_top"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:id="@+id/forbident_sent_dynamic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="禁发动态"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+    <TextView
+        android:id="@+id/line_dynamic"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divide_line"/>
+
+    <TextView
+        android:id="@+id/set_best"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="设置精华"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/textSize_s"/>
+
+</LinearLayout>

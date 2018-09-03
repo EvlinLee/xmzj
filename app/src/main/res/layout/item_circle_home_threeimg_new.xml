@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_circle_home_item_head_new" />
+
+    <include layout="@layout/model_circle_home_item_content" />
+
+    <com.gxtc.huchuan.widget.CircleRecyclerView
+        android:id="@+id/rv_circle_home_item_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px15dp">
+
+
+    </com.gxtc.huchuan.widget.CircleRecyclerView>
+
+
+    <include layout="@layout/model_circle_home_item_foot" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20dp"
+        android:background="@color/module_divide_line" />
+</LinearLayout>

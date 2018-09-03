@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/item_line"/>
+    <View style="@style/model_line"/>
+    <View style="@style/item_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="@dimen/px240dp"
+            android:layout_height="@dimen/px180dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/live_host_defaual_bg"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_bg"
+            android:text="android 测试标题测试一下 测试标题测试一下android 测试标题测试一下"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:maxLines="3"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg"
+            android:text="空城旧梦"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_alignBottom="@id/img_bg"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:text="4分钟前"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

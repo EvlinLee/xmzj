@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gxtc.huchuan">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <!-- DownloadManager下载时不显示Notification -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- 友盟需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.C2D_MESSAGE" />
+    <!-- Bugly -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".SampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <!-- 仿美团城市选择 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c6aa3aba998f84a064db5223905194ef" />
+        <!--适配18：9的全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 分享需要的activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 添加Bugly -->
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="7bab334169" />
+        <!-- &lt;!&ndash; 配置APP版本号 &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="BUGLY_APP_VERSION" -->
+        <!-- android:value="<APP_Version>" /> -->
+        <!-- &lt;!&ndash; 配置APP渠道号 &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="BUGLY_APP_CHANNEL" -->
+        <!-- android:value="<APP_Channel>" /> -->
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- 二维码 -->
+        <activity android:name=".ui.circle.erweicode.ErWeiCodeActivity" />
+
+        <!-- 添加友盟appkey -->
+        <!--<meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59a1105c7666130fb3000589" />-->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gxtc.huchuan.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <!-- 仿微信图片选择器 -->
+        <provider
+            android:name=".utils.PictureFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="com.gxtc.huchuan.helper.GlideCache"
+            android:value="GlideModule" />
+        -->
+
+
+        <!-- 融云 -->
+        <activity
+            android:name=".im.ui.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.gxtc.huchuan"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".im.ui.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.gxtc.huchuan"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 融云语音通话 -->
+        <activity
+            android:name="io.rong.callkit.MultiVideoCallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="io.rong.intent.action.voip.MULTIVIDEO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.callkit.SingleCallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="io.rong.intent.action.voip.SINGLEVIDEO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="io.rong.intent.action.voip.SINGLEAUDIO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.callkit.MultiAudioCallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="io.rong.intent.action.voip.MULTIAUDIO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="io.rong.callkit.CallSelectMemberActivity" />
+
+        <!-- app广播 -->
+        <receiver
+            android:name=".receiver.KotlinWakeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.wake.gray" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 开机广播 -->
+        <!--
+        <receiver android:name="com.gxtc.huchuan.receiver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        &lt;!&ndash; 关机广播 &ndash;&gt;
+        <receiver android:name="com.gxtc.huchuan.receiver.BootOffReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <receiver
+            android:name=".im.receiver.RongImReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- JPush -->
+        <receiver
+            android:name=".receiver.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.gxtc.huchuan" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- 应用后台服务 -->
+        <service
+            android:name=".receiver.AliveJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.KotlinGrayService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":KotlinGrayService"
+            android:protectionLevel="signature" />
+        <service
+            android:name=".service.KotlinGrayService$Companion$GrayInnerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":KotlinGrayService" />
+        <service
+            android:name=".receiver.KotlinWakeReceiver$Companion$WakeNotifyService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".receiver.KotlinWakeReceiver$Companion$WakeGrayInnerService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.DownloadService"
+            android:exported="false" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".ui.live.conversation.LiveConversationActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 投拆 举报页面 -->
+        <activity android:name=".ui.common.reprot.ReportActivity" />
+        <!-- 资讯 -->
+        <!-- 新闻频道选择页 -->
+        <activity android:name=".ui.news.ChannelActivity" />
+        <!-- 新闻详情webview -->
+        <activity
+            android:name=".ui.news.NewsWebActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 新闻收藏列表 -->
+        <activity android:name=".ui.news.NewsCollectActivity" />
+        <!-- 我的收藏列表 -->
+        <activity android:name=".ui.mine.collect.CollectActivity" />
+        <!-- 我的收藏详情 -->
+        <activity android:name=".ui.mine.collect.ConversationCollectDeteilActivity" />
+        <!-- 个人写的文章 -->
+        <activity android:name=".ui.mine.news.MineArticleActivity" />
+        <!-- 视频页 -->
+        <activity
+            android:name=".ui.news.VideoNewsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- webview -->
+        <activity android:name=".ui.common.CommonWebViewActivity" />
+        <!-- 显示ppt -->
+        <activity android:name=".ui.common.ViewPagerActivity" />
+        <!-- 显示大图 -->
+        <activity android:name=".ui.common.CommonPhotoViewActivity" />
+
+        <!-- 个人中心 -->
+        <!-- 登录注册 -->
+        <activity
+            android:name=".ui.mine.loginandregister.LoginAndRegisteActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.mine.loginandregister.changepsw.ChangePwsActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 编辑个人信息 -->
+        <activity android:name=".ui.mine.editinfo.EditInfoActivity" />
+        <!-- 实名认证 -->
+        <activity android:name=".ui.mine.editinfo.vertifance.VertifanceActivity" />
+        <!-- 绑定银行卡号 -->
+        <activity android:name=".ui.mine.editinfo.EditCardNumberActivity" />
+        <!-- 绑定支付宝 -->
+        <activity android:name=".ui.mine.editinfo.BindEPayActivity" />
+        <activity android:name=".ui.mine.editinfo.EditNikeNameActivity" />
+        <activity
+            android:name=".ui.mine.editinfo.EditIntroductionActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.mine.setting.SettingActivity" />
+        <activity android:name=".ui.mine.setting.FeedBackActivity" />
+        <activity android:name=".ui.mine.focus.FocusActivity" />
+
+        <!-- 改版后个人中心页面 -->
+        <activity android:name=".ui.mine.setting.dustbin.DustbinListActivity" />
+        <activity android:name=".ui.mine.dealmanagement.DealManagementActivity" />
+        <activity android:name=".ui.mine.incomedetail.IncomeDetailActivity" />
+        <activity android:name=".ui.mine.incomedetail.distribute.CircleProfitDetailActivity" />
+        <activity android:name=".ui.mine.incomedetail.distribute.ClassProfitDetailActivity" />
+        <activity android:name=".ui.mine.browsehistory.BrowseHistoryActivity" />
+        <activity android:name=".ui.mine.dymic.DymicMineActivity" />
+        <activity android:name=".ui.mine.dealmanagement.postmangement.PostManagementActivity" />
+        <activity android:name=".ui.mine.visitor.VisitorActivity" />
+        <activity android:name=".ui.mine.incomedetail.InComeDetailNewActivity" />
+        <activity android:name=".ui.mine.incomedetail.InComeDetailListActivity" />
+        <!-- 个人主页 -->
+        <activity
+            android:name=".ui.mine.personalhomepage.PersonalHomePageActivity"
+            android:theme="@style/HiddeStatus"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.mine.personalhomepage.HisCircleActivity" />
+        <activity android:name=".ui.mine.personalhomepage.more.PersonalNewsMoreActivity" />
+        <activity android:name=".ui.mine.personalhomepage.more.PersonalTopicMoreActivity" />
+        <activity android:name=".ui.mine.personalhomepage.more.PersonalDealMoreActivity" />
+        <!-- 我的 >课堂 >  界面 -->
+        <activity android:name=".ui.mine.classroom.message.MyMessageActivity" />
+        <activity android:name=".ui.mine.classroom.history.MyHistoryActivity" />
+        <activity android:name=".ui.mine.classroom.purchaserecord.PurchaseRecordActivity" />
+        <activity android:name=".ui.mine.classroom.profitList.profit.ProfitActivity" />
+
+        <!-- 我的 > 资讯 > 界面 -->
+        <activity android:name=".ui.mine.news.applyauthor.ApplyAuthorActivity" />
+        <!-- 审核页面 -->
+        <activity android:name=".ui.mine.audit.AuditActivity" />
+        <!-- 圈子课堂审核页面 -->
+        <activity android:name=".ui.circle.classroom.classroomaudit.ClassRoomAuditActivity" />
+        <activity android:name=".ui.circle.classroom.newcalssroomaudit.NewClassRoomAuditActivity" />
+        <!-- 提現頁面 -->
+        <activity android:name=".ui.mine.withdraw.WithdrawActivity" />
+        <activity android:name=".ui.mine.withdraw.WithdrawListActivity" />
+        <!-- 提现帐号输入页面 -->
+        <activity android:name=".ui.mine.withdraw.WithdrawInputActivity" />
+        <!-- 充值页面 -->
+        <activity android:name=".ui.mine.recharge.RechargeActivity" />
+        <!-- 冻结金额列表页面 -->
+        <activity android:name=".ui.mine.account.FreezeAccountActivity" />
+        <!-- 冻结金额详情页 -->
+        <activity android:name=".ui.mine.account.FreezeAccountDetailsActivity" />
+        <!-- 可用余额 -->
+        <activity
+            android:name=".ui.mine.account.UsableAccountActivity"/>
+        <!-- 账户流水列表 -->
+        <activity android:name=".ui.mine.account.AccountWaterActivity" />
+        <!-- 流水详情 -->
+        <activity android:name=".ui.mine.account.AccountWaterDetailsActivity" />
+        <!-- 文章分解界面 -->
+        <activity
+            android:name=".ui.mine.editorarticle.ArticleResolveActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 文章编辑界面 -->
+        <!-- 自定义编辑界面 -->
+        <activity
+            android:name=".ui.mine.collectresolve.CollectResolveActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 课程介绍编辑界面 -->
+        <activity
+            android:name=".ui.live.intro.introresolve.IntroResolveActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.deal.deal.dealList.DealListActivity" />
+        <activity android:name=".ui.mine.classroom.purchaserecord.ClassOrderActivity" />
+        <activity android:name=".ui.deal.liuliang.publicAccount.AccountInfoActivity" />
+        <activity android:name=".ui.deal.liuliang.takeOrder.TakeSettingActivity" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.DispatchOrderActivity" />
+        <!-- 群聊  课堂 相关activity -->
+        <!-- 课堂主页 -->
+        <activity
+            android:name=".ui.live.hostpage.LiveHostPageActivity"
+            android:label="@string/title_activity_list_host_page" />
+
+        <!--课程订单-->
+        <activity android:name=".ui.live.hostpage.OrderActivity" />
+        <!-- 课程介绍页 -->
+        <activity
+            android:name=".ui.live.intro.LiveIntroActivity"
+            android:label="@string/title_activity_live_intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddeStatus"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.live.intro.LiveIntroSettingActivity" />
+        <!-- 创建课堂 -->
+        <activity android:name=".ui.live.create.CreateLiveActivity" />
+        <!-- 申请成为主播 -->
+        <activity android:name=".ui.live.apply.ApplyLecturerActivity" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.DirectSeedingBackgroundActivity" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.createseriescourse.ChooseSeriesClassifyActivity" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.createseriescourse.CreateSeriesCourseActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.LiveBgSettingActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.AddPublicQRCodeActivity" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.LiveManagerActivity" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.ChangeLiveBgActivity" />
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.LiveBgIntroduceActivity" />
+        <!-- 系列课管理 -->
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.seriesclassify.SeriesClassifyActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 用户课堂后台管理界面 -->
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.InvitedGuestsActivity" />
+
+        <!-- 用户直播间后台管理界面 -->
+        <activity android:name=".ui.mine.classroom.directseedingbackground.usermanager.UserManagerActivity" />
+        <!-- 禁言用户 -->
+        <activity android:name=".ui.mine.classroom.directseedingbackground.usermanager.BannedOrBlackUserActivity" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.createseriescourse.SeriesCourseIntroduceActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.createtopic.CreateTopicActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.createtopic.CreateTopicNextActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.mine.classroom.directseedingbackground.createtopic.CreateTopicNextByCircleActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 课堂二级列表 -->
+        <activity android:name=".ui.live.list.LiveListActivity" />
+        <!-- 课堂 热门榜单 -->
+        <activity android:name=".ui.live.hotlist.HotListActivity" />
+        <!-- 课堂 课堂预告 -->
+        <activity android:name=".ui.live.foreshowlist.ForeshowListActivity" />
+        <!-- 课堂  搜索 -->
+        <activity android:name=".ui.live.search.LiveSearchActivity" />
+        <!-- 搜索  单一多列表 -->
+        <activity android:name=".ui.live.search.LiveSearchMoreActivity" />
+        <activity
+            android:name=".ui.live.search.NewSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 课堂 课堂列表 -->
+        <activity android:name=".ui.live.liveroomlist.LiveRoomListActivity" />
+        <!-- 邀请嘉宾 -->
+        <activity android:name=".ui.live.invitation.ActivityInvitationHonored" />
+        <!-- PPT素材选择页 -->
+        <activity android:name=".ui.live.conversation.PPTSelectActivity" />
+        <activity android:name=".background.OnepxActivity" />
+        <!-- 我参与的 -->
+        <activity
+            android:name=".ui.live.participation.ParticipationActivity"
+            android:launchMode="singleTask" />
+        <!-- 观众进入的直播间的设置 -->
+        <activity android:name=".ui.live.setting.normal.NormalSettingActivity" />
+        <!-- 直播间设置里的邀请成员 -->
+        <activity android:name=".ui.mine.classroom.directseedingbackground.livebgsetting.LiveMemberManagerActivity" />
+        <!-- 课堂成员列表 -->
+        <!-- 课堂 课程报名里的  参与人管理 -->
+        <activity android:name=".ui.live.member.MemberManagerActivity" />
+        <!-- 邀请卡 -->
+        <activity android:name=".ui.live.intro.ShareImgActivity" />
+        <!-- 课堂 系列课主页 -->
+        <activity
+            android:name=".ui.live.series.SeriesActivity"
+            android:label="@string/title_activity_series"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.UpdataOrderActivity" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.AddBudgetActivity" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.PublishExtendActivity" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.UpdataArticleActivity" />
+        <activity android:name=".ui.deal.liuliang.dispatchOrder.ArticleListActivity" />
+        <activity android:name=".ui.deal.liuliang.profit.ProfitActivity" />
+        <activity android:name=".ui.deal.deal.hotdeallist.HotDealListActivity" />
+        <!-- 分享榜 -->
+
+
+        <!-- 分享榜 -->
+        <activity
+            android:name=".ui.live.intro.TopicShareListActivity"
+            android:label="@string/title_activity_topic_share_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.deal.leftMenu.WxLoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.deal.deal.goodsDetailed.GoodsDetailedActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.deal.deal.fastDeal.FastDealActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.deal.deal.orderDetailed.OrderDetailedActivity" />
+        <activity android:name=".ui.deal.deal.orderDetailed.OrderDetailedBuyerActivity" />
+        <activity android:name=".ui.mine.deal.orderList.PurchaseListActivity" />
+        <activity android:name=".ui.mine.deal.issueList.IssueListActivity" />
+        <activity android:name=".ui.mine.deal.fastList.FastListActivity" />
+        <activity
+            android:name=".ui.mine.deal.issueDeal.IssueDealActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.mine.address.SelectAddressActivity" />
+        <activity android:name=".ui.mine.address.AddAddressActivity" />
+        <activity android:name=".ui.mine.address.UpdataAddressActivity" />
+        <activity android:name=".ui.mine.deal.MyIssueDetailedActivity" />
+        <activity android:name=".ui.pay.PayActivity" />
+
+        <!-- 圈子 -->
+        <activity
+            android:name=".ui.circle.homePage.CircleMainActivity"
+            android:theme="@style/HiddeStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 创建圈子属性页 -->
+        <activity android:name=".ui.circle.home.CreateCirclePropertyActivity" />
+        <!-- 免费圈子 -->
+        <activity
+            android:name=".ui.circle.home.CreateFreeCircleActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 付费圈子 -->
+        <activity
+            android:name=".ui.circle.home.CreateNoFreeCircleActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 圈子动态管理 -->
+        <activity android:name=".ui.circle.topic.CircleDynamicManagerActivity" />
+        <activity android:name=".ui.circle.circleInfo.CircleInfoActivity" />
+        <activity android:name=".ui.mine.circleinfodetail.MyDynamicActivity" />
+        <activity
+            android:name=".ui.circle.circleInfo.ApplyRefundsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.circle.circleInfo.CircleMemberActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.circle.circleInfo.CircleEditActivity"
+            android:theme="@style/HiddeStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 我的圈子 -->
+        <activity android:name=".ui.circle.home.MineCircleActivity" />
+        <!-- 圈子详情 -->
+        <activity android:name=".ui.mine.circleinfodetail.DynamicDetialActivity" />
+        <!-- 圈子详情 -->
+
+        <activity android:name=".ui.circle.home.CircleWebActivity" />
+        <activity android:name=".ui.circle.home.CircleWebActivityv2" />
+        <!-- 圈子管理 -->
+        <activity android:name=".ui.mine.circle.CircleManagerActivity" />
+        <!-- 发布动态界面 -->
+        <activity
+            android:name=".ui.circle.dynamic.IssueDynamicActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.circle.classroom.ClassroomActivity" />
+        <activity android:name=".ui.circle.homePage.NewCalssSynchronousActivity" />
+        <activity android:name=".ui.circle.article.ArticleActivity" />
+        <activity
+            android:name=".ui.circle.file.CircleFileActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.circle.file.folder.FolderListActivity" />
+        <activity android:name=".ui.circle.file.folder.FileMoveSlectorActivity" />
+        <activity android:name=".ui.circle.file.filelist.FileAuditActivity" />
+        <activity
+            android:name=".ui.circle.circleInfo.InputIntroActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.circle.findCircle.CircleListActivity" />
+        <activity android:name=".ui.circle.homePage.CircleInviteActivity" />
+        <activity
+            android:name=".ui.mine.circle.EditCircleInfoActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.mine.circle.IssueNoticeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.circle.homePage.CircleNoticeActivity" />
+        <activity android:name=".ui.circle.findCircle.CircleJoinActivity" />
+        <activity android:name=".ui.mine.deal.refund.RefundListActivity" />
+        <activity
+            android:name=".ui.mine.deal.refund.RefundActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 分享赚钱 -->
+        <activity android:name=".ui.news.ShareMakeMoneyActivity" />
+        <!-- 预收益  分销列表 -->
+        <activity android:name=".ui.news.PreProfitActivity" />
+        <!-- 同步圈子 -->
+        <activity android:name=".ui.circle.dynamic.SyncIssueInCircleActivity" />
+        <!-- 圈子设置 -->
+        <activity android:name=".ui.mine.circle.CircleSettingActivity" />
+        <!-- 发动态的大图 -->
+        <activity android:name=".ui.circle.dynamic.CirclePhothViewActivity" />
+        <!-- 成员加入方式 -->
+        <activity android:name=".ui.mine.circle.MembershipApproachActivity" />
+        <activity android:name=".ui.mine.circle.CircleStatisticActivity" />
+        <activity android:name=".ui.mine.circle.NoticeListActivity" />
+        <!-- 详细资料 -->
+        <activity android:name=".ui.mine.personalhomepage.personalinfo.PersonalInfoActivity" />
+        <activity android:name=".ui.mine.personalhomepage.personalinfo.HeadImageShoweActivity" />
+        <activity
+            android:name=".ui.mine.personalhomepage.personalinfo.RemarkAndLabelActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 我的动态 -->
+        <activity android:name=".ui.circle.home.MineDynamicActivity" />
+        <activity
+            android:name=".ui.im.redPacket.IssueRedPacketActivity"/>
+        <!-- 群聊成员 -->
+        <activity android:name=".ui.circle.groupmember.GroupChatMembersActivity" />
+        <activity
+            android:name=".ui.circle.groupmember.AllGroupMemberActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.circle.groupmember.GroupRuleActivity" />
+        <activity
+            android:name=".ui.im.redPacket.RedPacketDetailedActivity"/>
+        <activity android:name=".ui.im.redPacket.PayPwdSettingActivity" />
+        <activity android:name=".ui.im.redPacket.PayPwdResetActivity" />
+        <!-- 屏蔽列表 -->
+        <activity android:name=".ui.mine.shield.ShieldListActivity" />
+        <!-- 精华列表 -->
+        <activity android:name=".ui.circle.home.EssenceDymicListActivity" />
+        <!-- 申请列表 -->
+        <activity android:name=".ui.mine.circle.applyfor.ApplyForMemberListActivity" />
+        <!-- 文章审核 -->
+        <activity android:name=".ui.mine.circle.article.ArticleManagerActivity" />
+        <activity android:name=".ui.mine.newtask.NewTaskActivity" />
+        <activity android:name=".ui.mine.scanCode.ScanCodeActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.BindPhoneActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.ValitificationCodeActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.AccountSafeActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.EdPwdActivity" />
+        <activity android:name=".ui.mine.setting.PrivacyActivity" />
+        <activity android:name=".im.ui.PicturePagerActivity" />
+        <activity android:name=".ui.mine.setting.SetCirclePermisionActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.BindWXActivity" />
+        <activity android:name=".ui.mine.setting.accountSafe.EditPayPwdActivity" />
+        <activity android:name=".ui.circle.SearchConversationActivity" />
+        <activity android:name=".ui.circle.homePage.InviteActivity" />
+        <activity android:name=".ui.circle.homePage.ChatGroupActivity" />
+        <activity android:name=".ui.mine.account.WithdrawRecordActivity" />
+        <activity
+            android:name=".ui.live.LiveActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.mine.account.WithdrawDetailedActivity" />
+        <activity android:name=".ui.message.InviteChatActivity" />
+        <activity android:name=".ui.mine.classroom.classorderdetail.ClassOrderDetail" />
+        <activity android:name=".ui.message.NewFriendsActivity" />
+        <activity android:name=".ui.message.GroupListActivity" />
+        <activity android:name=".ui.mine.setting.MessageSettingActivity" />
+        <activity
+            android:name=".ui.message.AllGroupInfoMemberActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.message.GroupInfoActivity" />
+        <activity android:name=".ui.live.hostpage.ReFundsDetailActivity" />
+        <activity android:name=".ui.live.hostpage.RefundsAndCheckMemberActivity" />
+        <activity android:name=".ui.mine.circle.ReportActivity" />
+        <activity android:name=".ui.mine.scanCode.ScanCodeNotLinkerActivity" />
+        <activity android:name=".ui.message.ConfirmJoinGroupActivity" />
+        <activity
+            android:name=".ui.SchemeNavActivity"
+            android:theme="@style/SchemeNavTheme">
+            <intent-filter>
+                <data android:scheme="mammonflowcircle" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.mall.MallActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.mall.MyMallCenterActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.mall.MallDetailedActivity" />
+        <activity android:name=".ui.mall.MallShopCartActivity" />
+        <activity
+            android:name=".ui.mall.MallOrderDetailedActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.mall.MallSearchActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.mall.MallTagActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.mall.order.MallOrderStatusListActivity" />
+        <activity android:name=".ui.mall.order.MallCustomersActivity" />
+        <activity android:name=".ui.mall.order.MallOrderDetailActivity" />
+        <activity android:name=".ui.deal.deal.DealRecomendActivity" />
+        <activity android:name=".ui.deal.DealActivity" />
+        <activity
+            android:name=".ui.message.AddressListActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.live.series.count.SeriesSignCountActivity" />
+        <activity android:name=".ui.live.hostpage.EditLiveHostIntroduceActivity" />
+        <activity android:name=".ui.mine.circle.JoinCountActivity" />
+        <activity
+            android:name=".ui.common.GraffitiActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ui.mine.incomedetail.distribute.DistributeDetailActivity" />
+        <activity android:name=".ui.mine.incomedetail.distribute.DistributeActivity" />
+
+        <service
+            android:name=".ui.circle.dynamic.UpImageService"
+            android:exported="false" />
+
+        <activity android:name=".qrcode.QrCodeActivity" />
+        <activity android:name=".ui.circle.groupmember.CustomTimeForShutUpActivity" />
+        <activity android:name=".ui.circle.groupmember.CustomeTimeToForbidentSentDynamicActivity" />
+        <activity android:name=".ui.mine.circle.statistic.StatisticPentActivity" />
+        <activity android:name=".ui.mine.circle.statistic.StatisticPentDetailActivity" />
+        <activity
+            android:name=".ui.live.conversation.LiveInsertChooseActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.mine.circle.CircleAuditActivity" />
+        <activity android:name=".ui.mine.circle.statistic.DaysIncomeActivity" />
+        <activity android:name=".ui.mine.circle.statistic.statisticvisitor.StatisticVisitorActivity" />
+        <activity android:name=".ui.mine.circle.statistic.statisticvisitor.StatisticVisitorDetailActivity" />
+        <activity android:name=".ui.mine.circle.statistic.StatisticIncomeDetailActivity" />
+        <activity android:name=".ui.mine.circle.statistic.StatisticActiveUserActivity" />
+        <activity android:name=".ui.mine.circle.statistic.recent.RecentStatisticsActivity" />
+        <activity android:name=".ui.live.series.share.SeriesShareListActivity" />
+        <!--分销内容搜索-->
+        <activity android:name=".ui.news.ShareMakeMoneySearchActivity" />
+        <activity
+            android:name=".ui.deal.guarantee.ApplyGuaranteeActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.deal.guarantee.GuaranteeDetailedActivity"></activity>
+        <!--专题详情-->
+        <activity android:name=".ui.special.SpecialDetailActivity" />
+        <activity android:name=".ui.special.MySpecialListActivity" />
+        <activity android:name=".ui.im.merge.MergeHistoryActivity"/>
+        <activity android:name=".ui.live.conversation.SpecialSelectActivity"/>
+
+    </application>
+
+</manifest>

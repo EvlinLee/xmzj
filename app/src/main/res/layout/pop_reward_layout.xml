@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginRight="@dimen/margin_large"
+    android:background="@drawable/bg_pop_reward"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px206dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px40dp"
+            android:background="@drawable/open_rp_top"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sv_user_head"
+            android:layout_width="@dimen/px81dp"
+            android:layout_height="@dimen/px81dp"
+            android:layout_gravity="bottom|center"
+            tools:src="@drawable/live_head_icom_temp"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/margin_tiny"
+            android:src="@drawable/icon_reward_cancel"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="大苏打撒旦撒打算"
+        android:textColor="#ff333333"
+        android:textSize="15.0sp"/>
+
+    <TextView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="爱打赏的人，运气不会差哦"
+        android:textColor="#ff999999"
+        android:textSize="12.0sp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_weight="1.0"
+            android:background="@color/divide_line"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_marginRight="@dimen/margin_tiny"
+            android:src="@drawable/icon_reward_money"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_weight="1.0"
+            android:background="@color/divide_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_price_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_reward_0"
+                style="@style/style_reward_btn"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price0"
+                    style="@style/style_reward_price_tv"
+                    android:text="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_1"
+                style="@style/style_reward_btn"
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price1"
+                    style="@style/style_reward_price_tv"
+                    android:text="5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_2"
+                style="@style/style_reward_btn"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price2"
+                    style="@style/style_reward_price_tv"
+                    android:text="10"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_reward_3"
+                style="@style/style_reward_btn"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price3"
+                    style="@style/style_reward_price_tv"
+                    android:text="50"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_4"
+                style="@style/style_reward_btn"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price4"
+                    style="@style/style_reward_price_tv"
+                    android:text="100"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_5"
+                style="@style/style_reward_btn"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_reward_price5"
+                    style="@style/style_reward_price_tv"
+                    android:text="200"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_other_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="其他金额"
+        android:textColor="#ff00acff"
+        android:textSize="12.0sp"/>
+</LinearLayout>

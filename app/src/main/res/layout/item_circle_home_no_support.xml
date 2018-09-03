@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <include layout="@layout/model_circle_home_item_head" />
+
+    <FrameLayout
+        android:id="@+id/layout_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px120dp"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:background="@color/grey_F4F4F4"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"
+                android:text="当前版本暂不支持查看此消息"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <include layout="@layout/mode_cirecle__home_item_time_and_btns"/>
+
+    <include layout="@layout/model_circle_home_item_footv2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20dp"
+        android:background="@color/module_divide_line" />
+
+</LinearLayout>

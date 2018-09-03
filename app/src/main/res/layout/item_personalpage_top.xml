@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_circle_img"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:src="@mipmap/person_icon_head_share"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tv_circle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新媒体"
+        android:textColor="@color/text_color_333"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_below="@id/iv_circle_img"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+    <ImageView
+        android:id="@+id/iv_isMy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person_homepage_icon_yuanchuang"
+        android:layout_alignRight="@id/iv_circle_img"
+        android:visibility="gone"/>
+</RelativeLayout>

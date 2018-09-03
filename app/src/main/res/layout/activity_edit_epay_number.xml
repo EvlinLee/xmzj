@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_999"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:textSize="@dimen/textSize_s"
+        android:text="请绑定本人支付宝账号"/>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/color_ffffff"
+        android:paddingLeft="@dimen/px30dp"
+        android:paddingRight="@dimen/px30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            app:layout_widthPercent="15%"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80dp"
+            android:background="@color/color_ffffff"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            app:layout_widthPercent="85%"
+            android:paddingRight="@dimen/px8dp"
+            android:hint="请填写姓名"
+            android:layout_alignParentRight="true" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp"
+        />
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:background="@color/color_ffffff"
+        android:paddingLeft="@dimen/px30dp"
+        android:paddingRight="@dimen/px30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="支付宝账号"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_nike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px16dp"
+            android:layout_toLeftOf="@+id/iv_delete"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:background="@null"
+            android:hint="请填写支付宝账号"
+            app:layout_widthPercent="75%"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person_edit_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

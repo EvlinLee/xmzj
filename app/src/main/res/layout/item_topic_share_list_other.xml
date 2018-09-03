@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px160dp">
+
+
+    <ImageView
+        android:id="@+id/iv_item_topic_share_list_head"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/person_icon_head_120" />
+
+    <TextView
+        android:id="@+id/tv_item_topic_share_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_toRightOf="@id/iv_item_topic_share_list_head"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        tools:text="bernard(我)" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_item_topic_share_list_call"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_10"-->
+    <!--android:layout_toRightOf="@id/tv_item_topic_share_list_name"-->
+    <!--android:visibility="gone"-->
+    <!--tools:text="人气大咖" />-->
+
+    <TextView
+        android:id="@+id/tv_item_topic_share_list_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_toRightOf="@id/iv_item_topic_share_list_head"
+        tools:text="推荐了%d个朋友过来听课" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_item_topic_share_list_goshare"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_margin="@dimen/margin_tiny"-->
+    <!--android:background="@color/btn_nornal"-->
+    <!--android:clickable="true"-->
+    <!--android:padding="2dp"-->
+    <!--android:text="去邀请"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toEndOf="@id/iv_item_topic_share_list_head"
+        android:background="@color/divide_line" />
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/headArea"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/headTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="PPT管理"
+            android:textColor="@color/actionbar_text_color"
+            android:textSize="@dimen/textSize_xl" />
+
+        <ImageButton
+            android:id="@+id/headBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:src="@drawable/navigation_icon_back" />
+
+
+        <CheckBox
+            android:id="@+id/cb_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:text="编辑" />
+
+        <View
+            android:id="@+id/head_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/headBackButton"
+            android:background="@color/grey_e5e5" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ppt_select"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_background">
+
+        <Button
+            android:id="@+id/btn_ppt_select"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btn_blue_selector"
+            android:text="添加课件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ppt_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headArea"
+        android:background="#F2F2F2"
+        android:padding="@dimen/px15dp"
+        android:text="点击编辑可以对素材进行处理"
+        android:textSize="@dimen/textSize_l" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_ppt_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_ppt_select"
+        android:layout_below="@id/tv_ppt_intro"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/white" />
+</RelativeLayout>

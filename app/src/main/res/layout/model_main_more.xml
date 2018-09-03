@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_anim"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/btn_more_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:background="?android:selectableItemBackground"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_collect"/>
+
+        <TextView
+            android:id="@+id/tv_more_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="收藏"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_more_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_more_1"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:background="?android:selectableItemBackground"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_friend"/>
+
+        <TextView
+            android:id="@+id/tv_more_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="好友"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_more_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_more_2"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="?android:selectableItemBackground"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_wallet"/>
+
+        <TextView
+            android:id="@+id/tv_more_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="钱包"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_more_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_more_1"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="?android:selectableItemBackground"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_news"/>
+
+        <TextView
+            android:id="@+id/tv_more_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="消息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_more_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_more_4"
+        android:layout_alignBottom="@id/btn_more_4"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="?android:selectableItemBackground"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_order"/>
+
+        <TextView
+            android:id="@+id/tv_more_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="订单"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_more_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_more_5"
+        android:layout_alignBottom="@id/btn_more_4"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="?android:selectableItemBackground"
+        app:layout_widthPercent="33%">
+
+        <ImageView
+            android:id="@+id/img_more_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/use_icon_more"/>
+
+        <TextView
+            android:id="@+id/tv_more_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="更多"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

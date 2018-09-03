@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    >
+    <TextView
+        android:id="@+id/tv_des_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px24dp"
+        android:background="@color/module_divide_line"
+        android:text="新建或编辑系列课时，课选择已添加的分类。\n若该分类下没有系列课，则该分类在课堂不显示。"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_add_classify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_blue_selector_no_corner"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加分类"
+            android:textSize="@dimen/textSize_l"
+            android:textColor="@color/color_ffffff"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/person_live_icon_add"
+            android:drawablePadding="@dimen/px10dp"
+            />
+    </RelativeLayout>
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/rc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_above="@+id/rl_add_classify"
+        android:layout_below="@id/tv_des_classify"
+        android:paddingLeft="@dimen/px24dp"
+        android:paddingRight="@dimen/px24dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_share"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_no_support"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120dp"
+        android:layout_margin="@dimen/margin_middle"
+        android:background="@color/grey_F4F4F4"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="当前版本暂不支持查看此内容，点击更新app版本"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+    </LinearLayout>
+
+</FrameLayout>

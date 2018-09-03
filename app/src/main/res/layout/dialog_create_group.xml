@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_whit_bg_radius"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginRight="@dimen/margin_large"
+    android:paddingLeft="@dimen/px30dp"
+    android:paddingRight="@dimen/px30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:text="发起群聊"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <ImageView
+        android:id="@+id/head_pic"
+        android:layout_width="@dimen/px130dp"
+        android:layout_height="@dimen/px130dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/px10dp"
+        android:layout_marginTop="@dimen/px106dp"
+        android:alpha="0.5"
+        android:drawablePadding="@dimen/px50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_pic"
+        />
+
+    <View
+        style="@style/horizontal_line"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/edit_nicheng"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/px80dp"
+        android:layout_marginRight="@dimen/px80dp"
+        android:layout_marginTop="@dimen/px50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:hint="请输入名称"
+        android:maxLength="8"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:singleLine="true"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"/>
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginBottom="@dimen/px40dp"
+        android:layout_marginLeft="@dimen/px80dp"
+        android:layout_marginRight="@dimen/px80dp"
+        android:layout_marginTop="@dimen/px68dp"
+        android:background="@drawable/btn_blue_selector_no_stroke_"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

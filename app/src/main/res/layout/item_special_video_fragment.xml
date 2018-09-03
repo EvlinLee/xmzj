@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.gxtc.huchuan.widget.ExpandVideoPlayer
+        android:id="@+id/play_news_video_cover"
+        android:layout_width="@dimen/px250dp"
+        android:layout_height="@dimen/px160dp"
+        android:layout_margin="@dimen/margin_middle"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_news_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:layout_toRightOf="@+id/play_news_video_cover"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:textColor="@color/text_color_333"
+        android:textSize="15sp"
+        tools:text="我用我的心，让我执迷不悔,我用我的心，让我执迷不悔" />
+
+    <TextView
+        android:id="@+id/to_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play_news_video_cover"
+        android:text="可查看"
+        android:layout_toRightOf="@id/play_news_video_cover"
+        android:textColor="@color/color_2b8cff"
+        android:textSize="@dimen/textSize_s"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

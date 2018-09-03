@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_middle">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/margin_middle"
+        android:layout_marginEnd="@dimen/margin_middle"
+        android:src="@drawable/live_list_place_holder_120"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_head"
+        android:layout_marginEnd="@dimen/margin_middle"
+        android:maxLines="2"
+        android:text="这是商品的标题"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_head"
+        android:layout_alignBottom="@id/img_head"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/mall_orange_text"
+        android:text="148"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_middle"
+        android:layout_alignBaseline="@id/tv_money"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="x2"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_head"
+        android:layout_below="@id/tv_title"
+        android:layout_above="@id/tv_money">
+
+        <TextView
+            android:id="@+id/tv_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_999"
+            android:text="一年永久"/>
+
+    </RelativeLayout>
+
+    <View style="@style/item_line"
+        android:layout_below="@id/img_head"
+        android:layout_marginTop="@dimen/margin_middle"/>
+
+</RelativeLayout>

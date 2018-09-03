@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@drawable/shape_whit_bg_radius"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_nitice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px28dp"
+        android:layout_marginRight="@dimen/px40dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:textColor="@color/text_color_999"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize_m"
+        android:text="审核"/>
+    <EditText
+        android:id="@+id/edit_reson"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px300dp"
+        android:layout_marginLeft="@dimen/px28dp"
+        android:layout_marginRight="@dimen/px40dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:paddingTop="@dimen/px20dp"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:background="@drawable/input_bg"
+        android:inputType="text"
+        android:textColor="@color/text_color_999"
+        android:gravity="left"
+        android:textSize="@dimen/textSize_m"
+        android:hint="请输入退款原因（不同意退款时必填）"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_height="@dimen/px96dp"
+        android:background="@drawable/btn_gray_dialog_selector_stroke"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#2b8cff"
+            android:textSize="@dimen/textSize_m"
+            android:text="不同意" />
+        <TextView
+            style="@style/item_line_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#2b8cff"
+            android:textSize="@dimen/textSize_m"
+            android:text="同意" />
+
+    </LinearLayout>
+</LinearLayout>

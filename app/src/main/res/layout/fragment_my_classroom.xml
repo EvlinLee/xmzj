@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_apply_anchor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:src="@drawable/person_icon_apply_anchor"
+            />
+        <ImageView
+            android:id="@+id/iv_create_liveroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:src="@drawable/person_icon_create_anchor"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_home_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_direct_seeding_home"
+                style="@style/TextViewMatchStyle"
+                android:background="@color/color_ffffff"
+                android:drawableLeft="@drawable/person_live_icon_homepage"
+                android:drawableRight="@drawable/person_icon_more"
+                android:drawablePadding="@dimen/px20dp"
+                android:gravity="center_vertical"
+                android:text="个人课堂主页"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+            <View style="@style/item_line" />
+
+            <TextView
+                android:id="@+id/tv_direct_seeding_background"
+                style="@style/TextViewMatchStyle"
+                android:background="@color/color_ffffff"
+                android:drawableLeft="@drawable/person_live_icon_backstage"
+                android:drawableRight="@drawable/person_icon_more"
+                android:drawablePadding="@dimen/px20dp"
+                android:gravity="center_vertical"
+                android:text="课堂后台"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_purchase_record"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_live_icon_manage_1"
+            android:drawableRight="@drawable/person_icon_more"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="购买记录"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_class_profit"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_live_icon_earnings_2"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="课程收益"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_data_statistics"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_live_icon_data_3"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="数据统计"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+        <TextView
+            android:id="@+id/tv_reported_course"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_live_icon_baoming_4"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:text="已报课程"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+        <TextView
+            android:id="@+id/tv_course_distribution"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_live_icon_distribution_5"
+            android:drawableRight="@drawable/person_icon_more"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="课程分销"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+
+        <!--<TextView
+            android:id="@+id/tv_purchase_record"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_shopping_cart"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="购买记录"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_history_record"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_history"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="历史记录"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_message"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="我的消息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_appreciation_income"
+            style="@style/TextViewMatchStyle"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_red_packet"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="赞赏收益"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_distribution_income"
+            style="@style/TextViewMatchStyle"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_fenxiao"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="分销收益"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <View style="@style/item_line" />
+
+        <TextView
+            android:id="@+id/tv_distribution_extension"
+            style="@style/TextViewMatchStyle"
+            android:layout_marginBottom="@dimen/px60dp"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/person_icon_expand"
+            android:drawablePadding="@dimen/px20dp"
+            android:gravity="center_vertical"
+            android:text="分销推广"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />-->
+    </LinearLayout>
+</ScrollView>

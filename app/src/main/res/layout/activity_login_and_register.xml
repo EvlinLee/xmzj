@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_and_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.gxtc.huchuan.ui.mine.loginandregister.LoginAndRegisteActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_login_registe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:background="@drawable/shap_login_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px30dp"
+        android:paddingRight="@dimen/px30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px240dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/color_47abef"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/color_47abef"
+            app:tabTextColor="@color/text_color_666" />
+
+        <!--<com.gxtc.huchuan.widget.CusWrapHeightViewPager
+            android:id="@+id/vp_login_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/> -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_login_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+      <!--  <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_or"
+            android:layout_gravity="top"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/px80dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/login_qq" />
+
+            <ImageView
+                android:id="@+id/iv_webchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/login_weixin" />
+            <!--微博暂时不用-->
+            <ImageView
+                android:id="@+id/iv_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:src="@drawable/login_weibo" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/px10dp">
+
+    <ImageView
+        android:id="@+id/iv_circle_home_img"
+        android:layout_width="@dimen/px46dp"
+        android:layout_height="@dimen/px46dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_icon_head" />
+
+    <TextView
+
+        android:id="@+id/tv_circle_home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px22dp"
+        android:layout_toRightOf="@id/iv_circle_home_img"
+        android:textColor="@color/text_color_666"
+        android:textSize="15sp"
+        tools:text="没事盼盼" />
+    <TextView
+        android:id="@+id/tv_news_collect_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignBaseline="@+id/tv_circle_home_name"
+        android:layout_marginRight="@dimen/px20dp"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="21分钟前" />
+    <View
+        android:id="@+id/v_circle_home_line"
+        android:layout_marginTop="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_below="@id/iv_circle_home_img"
+        android:background="@color/divide_line"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/tv_circle_home_three_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px20dp"
+        android:text="愿你行走万里，归来仍是少年。"
+        android:layout_below="@+id/v_circle_home_line"
+        android:layout_marginTop="13dp"
+        android:layout_alignStart="@+id/iv_circle_home_img"
+        android:textColor="@color/text_color_333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@+id/v_circle_home_line"
+        android:layout_alignStart="@+id/iv_circle_home_img">
+
+        <TextView
+            android:id="@+id/tv_circle_home_three_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px20dp"
+            android:text="愿你行走万里，归来仍是少年。"
+            android:textColor="@color/text_color_333"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_content_zk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_zk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/px10dp"
+                android:textColor="#50597B"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

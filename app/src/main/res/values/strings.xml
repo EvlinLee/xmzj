@@ -1,0 +1,466 @@
+<resources>
+    <string name="app_name">新媒之家</string>
+
+    <!--公共-->
+    <string name="empty_net_error">暂时没有网络,请稍后重试</string>
+    <string name="empty_no_data">暂无数据</string>
+    <string name="title_activity_found_password">FoundPasswordActivity</string>
+    <string name="token_overdue">你已超过10天没登录，请重新登陆</string>
+    <string name="type_position">选择分类</string>
+    <string name="login">登录你的账号才能进行操作</string>
+    <string name="dialog_out">编辑内容没有保存，确认退出？</string>
+    <string name="dialog_title">编辑的内容没有发布，是否保存草稿？</string>
+    <string name="dialog_issue_out">退出此次编辑？</string>
+    <string name="create_liveroom_out">您还没有课堂  请先创建课堂？</string>
+    <string name="comment_max_lenght">抱歉，评论最多只能400字哦！</string>
+    <string name="comment_note">这里显示的是你加入的圈子和关注的人的动态，如需屏蔽某某个圈子的动态，可以在圈子设置里面关闭</string>
+    <string name="comment_disagree">不同意</string>
+    <string name="comment_agree">同意</string>
+    <string name="comment_upload_image_failed">上传图片失败</string>
+    <item name="tag_first" type="id"/>
+    <item name="tag_second" type="id"/>
+
+    <string name="rc_plugin_camera">拍照</string>
+
+    <!--资讯-->
+    <string name="copy_url">复制链接</string>
+    <string name="collect">收藏</string>
+    <string name="collect_cancel">取消收藏</string>
+    <string name="refresh">刷新</string>
+    <string name="share_in_dynamic">圈子动态</string>
+    <string name="share_in_friends">分享好友</string>
+    <string name="share_icon_erweima">二维码</string>
+    <string name="complaint">投诉</string>
+    <string name="delete">删除</string>
+
+    <!--标题-->
+    <string name="title_channels_select">频道选择</string>
+    <string name="title_share_make_money">分销赚钱</string>
+    <string name="title_phone_register">手机号注册</string>
+    <string name="title_login">登录</string>
+    <string name="title_account">公众号信息</string>
+    <string name="title_edit_info">编辑资料</string>
+    <string name="title_vertifive_info">实名认证</string>
+    <string name="title_forget_psw">忘记密码</string>
+    <string name="title_edit_nikename">编辑名称</string>
+    <string name="title_bind_card">银行卡绑定</string>
+    <string name="title_epay_card">支付宝绑定</string>
+    <string name="title_edit_introduction">编辑简介</string>
+    <string name="title_take_setting">接单设置</string>
+    <string name="title_dispatch_order">文案派单</string>
+    <string name="title_personal_setting">应用设置</string>
+    <string name="title_message_setting">消息设置</string>
+    <string name="title_privacy_setting">隐私设置</string>
+    <string name="title_account_safe">账号与安全</string>
+    <string name="title_black_list">黑名单</string>
+    <string name="title_personal_deal">交易</string>
+    <string name="title_personal_classroom">课堂</string>
+    <string name="title_personal_mymessage">我的消息</string>
+    <string name="title_personal_history">观看历史</string>
+    <string name="title_reported_course">已报课程</string>
+    <string name="title_class_distribution">课程分销</string>
+    <string name="title_circle_distribution">圈子分销</string>
+    <string name="title_class_profit">课程收益</string>
+    <string name="title_circle_profit">圈子收益</string>
+    <string name="title_personal_focus">我的好友</string>
+    <string name="title_personal_fans">我的粉丝</string>
+    <string name="title_personal_recommed">我的关注</string>
+    <string name="title_personal_direct_seeding_title">课堂后台</string>
+    <string name="title_create_series">新建系列课</string>
+    <string name="title_modify_series">修改系列课</string>
+    <string name="title_create_topic">新建课程</string>
+    <string name="title_create_series_intro">系列课介绍</string>
+    <string name="title_create_series_classify">选择系列课分类</string>
+    <string name="title_updata_wenan">修改设置</string>
+    <string name="title_add_budget">增加预算</string>
+    <string name="title_publish_extend">发布推广</string>
+    <string name="title_updata_article">修改文案</string>
+    <string name="title_select_article">选择历史方案</string>
+    <string name="title_profit">接单盈利</string>
+    <string name="title_live_bg_setting">课堂管理</string>
+    <string name="title_user_manager">用户管理</string>
+    <string name="title_banned_user">课堂禁言用户管理</string>
+    <string name="title_black_user">课堂黑名单用户管理</string>
+    <string name="title_apply_for">申请列表</string>
+    <string name="title_freeze_account">未结算订单</string>
+    <string name="title_live_bg_intro">课堂简介</string>
+    <string name="title_add_public_qrcode">添加公众号二维码</string>
+    <string name="title_live_manager">课堂管理员</string>
+    <string name="title_invited_guests">邀请嘉宾</string>
+    <string name="title_change_live_bg">修改课堂背景</string>
+    <string name="title_rmb_details">人民币账单详情</string>
+    <string name="title_wjs_details">未结算订单详情</string>
+    <string name="title_circle_manager">圈子管理</string>
+    <string name="title_usable">可用余额</string>
+    <string name="title_login_wx">登录公众号</string>
+    <string name="title_goods_detailed">帖子详情</string>
+    <string name="title_classify_management">分类管理</string>
+    <string name="title_participation">我参与的</string>
+    <string name="title_mine_article">我的文章</string>
+    <string name="title_fast_deal">快速交易</string>
+    <string name="title_video">视频</string>
+    <string name="title_order_detailed">订单详情</string>
+    <string name="title_order_list">交易订单</string>
+    <string name="title_issue_deal">发布交易</string>
+    <string name="title_issue_list">我的帖子</string>
+    <string name="title_fast_list">快速交易</string>
+    <string name="title_huishou_list">回收站</string>
+    <string name="title_feed_back">意见反馈</string>
+    <string name="title_report">举报</string>
+    <string name="title_classroom">课堂</string>
+    <string name="title_select_address">选择地址</string>
+    <string name="title_add_address">新建地址</string>
+    <string name="title_updata_address">修改地址</string>
+    <string name="title_updata_deal">修改交易</string>
+    <string name="title_more_news">更多文章</string>
+    <string name="title_more_topic">更多课堂</string>
+    <string name="title_more_deal">更多交易</string>
+    <string name="title_normal_setting">课堂设置</string>
+    <string name="title_share_notice">分享榜</string>
+    <string name="title_share_card">分享课堂</string>
+    <string name="title_pay">支付订单</string>
+    <string name="title_member_manage">参课成员</string>
+    <string name="title_account_water">账单流水</string>
+    <string name="title_account_water_details">账单明细</string>
+    <string name="title_circle_home">圈子</string>
+    <string name="titile_class_menber_list">课堂成员列表</string>
+    <string name="title_order_record">订单列表</string>
+    <string name="title_create_circle_property">选择圈子属性</string>
+    <string name="title_circle_info">圈子资料</string>
+    <string name="title_create_free_circle">创建免费圈子</string>
+    <string name="title_create_nofree_circle">创建付费圈子</string>
+    <string name="title_circle_edit">编辑圈子资料</string>
+    <string name="title_circle_intro">圈子简介</string>
+    <string name="title_circle_find">加入圈子</string>
+    <string name="title_circle_detailed">编辑详情页</string>
+    <string name="title_mine_circle">我的圈子</string>
+    <string name="title_his_circle">Ta的圈子</string>
+    <string name="title_circle_invite">邀请</string>
+    <string name="title_circle_manage">圈子管理</string>
+    <string name="title_circle_notice_issue">发布公告</string>
+    <string name="title_issue_dynamic">发表动态</string>
+    <string name="title_topic_manager">动态管理</string>
+    <string name="title_about_us">关于我们</string>
+    <string name="title_join_us">加入我们</string>
+    <string name="title_details">详情</string>
+    <string name="title_browser_record">浏览记录</string>
+    <string name="title_dymnic">动态</string>
+    <string name="title_deal_management">交易管理</string>
+    <string name="title_sync">同步圈子</string>
+    <string name="title_visitor">访客</string>
+    <string name="title_check_circle_info">查看圈子资料</string>
+    <string name="title_circle_setting">圈子设置</string>
+    <string name="titlle_income_detail">收益明细</string>
+    <string name="title_reward">打赏</string>
+    <string name="title_deal">交易</string>
+    <string name="title_member">成员加入方式</string>
+    <string name="title_detail_info">详细资料</string>
+    <string name="title_remark_info">备注信息</string>
+    <string name="title_mine_dynamic">我的动态</string>
+    <string name="title_circle_erweicode">二维码名片</string>
+    <string name="title_essence_list">精华列表</string>
+    <string name="title_group_rule">群规</string>
+    <string name="title_article_manager">文章管理</string>
+    <string name="title_notice_message">系统将在一个工作日内审核</string>
+    <string name="title_apply_guarantee">发起担保</string>
+    <string name="title_guarantee_detailed">交易页面</string>
+    <string name="title_class_order">课程订单</string>
+    <string name="title_my_speciai_list">我订阅的专题</string>
+
+    <!--专题-->
+    <string name="title_special_detail">专题详情</string>
+    <!--我的-->
+    <string name="mine_direct_seeding">课堂</string>
+    <string name="mine_circle">圈子</string>
+    <string name="mine_news">资讯</string>
+    <string name="mine_transaction">交易</string>
+    <string name="mine_purchase_record">购买记录</string>
+    <string name="mine_sell_record">出售记录</string>
+    <string name="mine_secured_transaction">担保交易</string>
+    <string name="mine_personal_homepage">个人主页</string>
+    <string name="mine_article_editor">文章编辑</string>
+    <string name="mine_application_author">申请作者</string>
+    <string name="mine_application_lecturer">申请讲师</string>
+    <string name="mine_manage_class">课程管理</string>
+    <string name="mine_course_list">课程列表</string>
+    <string name="mine_attention_list">关注列表</string>
+    <string name="mine_history_record">历史记录</string>
+    <string name="issue_deal_faild">您提交的帖子未通过审核，请修改好在重新发布。\n未通过原因：</string>
+    <string name="modify_success">修改成功</string>
+    <string name="label_save">保存</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_exit">退出</string>
+    <string name="label_confirm">确定</string>
+    <string name="label_edit">编辑</string>
+    <string name="label_del">删除</string>
+    <string name="label_complete">完成</string>
+    <string name="tusi_nikename_canot_empty">昵称不能为空</string>
+    <string name="card_number_canot_empty">银行卡号不能为空</string>
+    <string name="card_username_canot_empty">用户名不能为空</string>
+    <string name="epay_number_canot_empty">支付宝账号不能为空</string>
+    <string name="input_hint_nikename">请输入名称</string>
+    <string name="label_change_avatar">更换头像</string>
+    <string name="label_not_install_QQ">未安装QQ</string>
+    <string name="label_not_install_WeiXin">未安装微信</string>
+    <string name="label_not_install_Sina">未安装新浪微博</string>
+    <string name="mine_article_sny_failed">只能同步审核通过的文章</string>
+    <string name="mine_article_reedit">重新编辑</string>
+
+    <string name="txt_feed_back">欢迎你反馈使用产品的感受和建议</string>
+    <string name="txt_submit">提交</string>
+    <string name="label_introduct">主人很懒，什么也没留下~</string>
+    <string name="txt_permission">此应用需要读取相机和文件夹权限</string>
+    <string name="txt_card_permission">此应用需要读写文件夹权限</string>
+    <string name="txt_call_phone_permission">此应用需要拨打电话权限</string>
+    <string name="label_clear_all">清空</string>
+    <string name="label_distriibution_list">收益明细</string>
+
+
+    <!--文章编辑-->
+    <string name="editor_article">正文编辑</string>
+    <string name="editor_resolve">新增本地素材编辑文章</string>
+    <string name="editor_type">选择分类</string>
+    <string name="editor_connect_error">导入文章失败</string>
+    <string name="editor_save_success">发布成功</string>
+    <string name="news_collect_list_title">我的收藏</string>
+    <string name="news_issue_hint">新媒之家电脑端发文章网址 www.xinmei6.com</string>
+
+    <!--登录注册-->
+    <string name="count_canot_empty" translatable="false">请输入手机号</string>
+    <string name="pwd_canot_empty">密码不能为空</string>
+    <string name="yzm_canot_empty">验证码不能为空</string>
+    <string name="incorrect_phone_format">手机号格式不正确</string>
+    <string name="incorrect_account_format">账号格式不正确</string>
+    <string name="incorrect_password_format">密码格式不正确</string>
+    <string name="login_success">登录成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="verification_code_send">验证码已发送</string>
+    <string name="topic_detail_record_hint">录满60s秒后将自动发送，并启动下一条录音</string>
+    <string name="topic_detail_record_next">发送后即可录制下一条</string>
+    <string name="topic_detail_record_long_out">松开手指，取消发送</string>
+    <string name="topic_detail_record_long_in">手指滑出此区域，取消发送</string>
+    <string name="label_input_phone">请输入手机号</string>
+    <string name="label_input_psw">请输入6–16位新密码</string>
+    <string name="label_input_yzm">请输入验证码</string>
+    <string name="label_get_yzm">获取验证码</string>
+    <string name="label_find_back_login">找回密码并登录</string>
+    <string name="label_bind">绑定</string>
+    <string name="login_err_accout">帐号或密码错误</string>
+    <string name="login_emp_accout">帐号不能为空</string>
+    <string name="login_emp_password">密码不能为空</string>
+
+
+    <!--交易-->
+    <string name="tab_deal">交易</string>
+    <string name="tab_flow">流量</string>
+    <string name="tab_paidan">派单推广</string>
+    <string name="tab_jiedanyingli">接单盈利</string>
+    <string name="tab_wenzhangguanli">文章管理</string>
+    <string name="tab_gongzhonghao">公众号信息</string>
+    <string name="deal_search">搜索</string>
+    <string name="sort_1">类型</string>
+    <string name="sort_2">流量</string>
+    <string name="sort_3">RP值</string>
+    <string name="sort_4">价格</string>
+    <string name="head_text">头像</string>
+    <string name="title_activity_list_host_page">ListHostPage</string>
+    <string name="title_activity_list_hostmanage_page">ListHostManagePage</string>
+    <string name="ts_position">选择推送广告位</string>
+    <string name="ts_time">选择预计推送日期</string>
+    <string name="ts_shengcheng">生成订单</string>
+    <string name="label_search">搜你想搜的</string>
+    <string name="label_file_search">搜索文件名/上传者</string>
+    <string name="label_search_history">搜索历史</string>
+    <string name="label_search_hot">大家都在搜</string>
+    <string name="label_management_class">课程管理</string>
+    <string name="guarantee_maimai">选择买卖关系</string>
+    <string name="guarantee_user_buyer">我是买家</string>
+    <string name="guarantee_user_sell">我是卖家</string>
+    <string name="guarantee_number">对方新媒号</string>
+    <string name="guarantee_title">交易标题</string>
+    <string name="guarantee_info">交易信息</string>
+    <string name="guarantee_price">交易金额</string>
+    <string name="guarantee_phone">我的手机号</string>
+    <string name="guarantee_danbao_price">担保费</string>
+    <string name="guarantee_danbao_sell">卖方承担</string>
+    <string name="guarantee_danbao_buyer">买方承担</string>
+    <string name="guarantee_danbao_mid">双方平摊</string>
+    <string name="guarantee_confirm_send">确认发送交易邀请</string>
+    <string name="guarantee_detailed_sender">交易方:</string>
+    <string name="guarantee_choose_friends">选择好友</string>
+    <string name="guarantee_no_price">请输入交易金额</string>
+    <string name="guarantee_no_dbFee">请选择担保费</string>
+    <string name="guarantee_look_order">查看订单详情</string>
+    <string name="guarantee_wait_agree">等待对方同意</string>
+    <string name="guarantee_apply_success">交易已发布</string>
+    <string name="guarantee_dialog_left">返回聊天</string>
+    <string name="guarantee_dialog_right">查看订单</string>
+    <string name="guarantee_btn">和Ta担保交易</string>
+
+    <!--圈子-->
+    <string name="label_exit_circle">退出圈子</string>
+    <string name="label_del_circle">删除圈子</string>
+    <string name="circle_join_ver_now">马上去实名认证</string>
+    <string name="btn_send">发送</string>
+    <string name="circle_file_no_support">此类文件不支持手机下载，请用电脑登录www.xinmei6.com进行下载。</string>
+    <string name="circle_file_download_hint">如需下载文件，请用电脑登录www.xinmei6.com进行下载。</string>
+    <string name="circle_join_no_ver">未认证用户最多只能加入6个免费圈子，认证用户可以加入12个免费圈子，收费圈子不限制。</string>
+    <string name="circle_join_ver_ing">未实名认证认证用户最多只能加入6个圈子，收费圈子不限制，你提交的实名认证正在审核中，请耐心等待。</string>
+    <string name="circle_join_ver">每个认证用户最多只能加入12个圈子，你已达到上限，请退出一些圈子后再加入，收费圈子不限制。</string>
+    <string name="circle_join_no_pass">未实名认证用户最多只能加入6个免费圈子，收费圈子不限制，你提交的实名认证审核不通过，请重新提交认证。</string>
+
+
+    <!--圈子-->
+    <string name="vertifanceintroduce">实名验证过审后，即可发起提现，发布文章、课程、交易帖。</string>
+
+    <!--群聊-->
+    <string name="myappbar_scrolling_view_behavior" translatable="false">com.gxtc.huchuan.utils.FlingBehavior</string>
+    <string name="studio_home">课堂主页</string>
+    <string name="invitation_lecturer">邀请讲师后需下载新媒之家App才能讲课。</string>
+    <string name="invitation_listener">邀请好友报名后需下载新媒之家App才能听课。</string>
+    <string name="invitation_title_1">邀请讲师加入讲课</string>
+    <string name="invitation_title_2">邀请好友来听课</string>
+    <string name="share_invitation">邀请卡</string>
+
+
+    <!--这是是用来测试协调者布局  滑动  暂时别删除-->
+    <string name="large_text">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.
+实体的隐喻符合在合理的空间和手势运动体系上统一的一致的原则。
+实体是接地气的在触觉上符合现实的感觉，受到前沿理论、现有高等科技和脑洞大开的想象力的影响。
+
+Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supercede those in the physical world, without breaking the rules of physics.
+
+实体通过曲面和边界提供了有真实世界感受的视觉。使用与生活现实相似的特性帮助用户快速的理解和感知。实体设计的多样化创造了用户新的触觉感受，但这些又不会脱离现实物理的规则。
+
+The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts.
+光线、皮肤和运动感是表达一个东西如何移动、相互作用以及存在于空间当中和联系其他东西的钥匙。真实的光线可以展示出物体之间的相互关系、分离关系和单个物体的运动。
+        Bold, graphic, intentional
+鲜明、形象、有内涵
+
+The foundational elements of print-based design—typography, grids, space, scale, color, and use of imagery—guide visual treatments. These elements do far more than please the eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge-to-edge imagery, large-scale typography, and intentional white space create a bold and graphic interface that immerse the user in the experience.
+
+这个语言在基础元素的处理上借鉴了传统的印刷设计——排版、网格、空间、尺寸、颜色和图像使用——是视觉处理的规范。这些元素为用户视觉做了很多功夫。他们创造了视觉分层、含义、以及吸引力。精心选择的色彩、合适的图像、合适的字体、以及特意的留白创造了一种鲜明形象的视觉。这一切带给用户愉悦的体验。
+
+An emphasis on user actions makes core functionality immediately apparent and provides waypoints for the user.
+
+Material Design 的原则强调符合用户的操作习惯和操作轨迹来进行设计。
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="text_dakai">打开率(%)</string>
+    <string name="text_hengzuobiao">横坐标：对应当天发布的文章</string>
+    <string name="text_zongzuobiao">纵坐标：对应位置文章的打开率</string>
+    <string name="text_jinqiri">近7日全部文章</string>
+    <!--<string name="text_single_temp">送达人数：%d   阅读人数：%d   打开率：%d％   分享次数：%d</string>-->
+    <string name="text_single_temp">送达人数：17   阅读人数：18   打开率：40％   分享次数：20</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_live_intro">LiveIntroActivity</string>
+
+    <!--toast-->
+    <string name="toast_empty_url">请输入文章链接</string>
+    <string name="toast_empty_series_intro">请填写系列课介绍</string>
+    <string name="toast_topic_subject">请输入课堂主题</string>
+    <string name="toast_create_topic_time">请选择开始时间</string>
+    <string name="toast_choose_live_type">请选择课堂形式</string>
+    <string name="toast_cannot_empty">系列课分类不能为空</string>
+    <string name="title_activity_series">SeriesActivity</string>
+    <string name="title_activity_topic_share_list">TopicShareListActivity</string>
+    <string name="add_public_qrcode_connot_empty">添加的链接不能为空</string>
+    <string name="type_connot_empty">类型选择不能为空</string>
+    <string name="toast_had_copy">已复制</string>
+    <string name="seriesname_cnnot_empty">系列课名称不能为空</string>
+    <string name="string_tui_guang">申请通过后将加入平台推广计划，平台会给予推荐与流量扶持。同时，平台将收取本次课程收益的一定比例作为推广费用，具体详情在申请通过后会有客服专员联系对接。</string>
+    <string name="toast_add_series_classify">添加成功</string>
+    <string name="toast_choose_classify">请选择系列课分类</string>
+    <string name="toast_password_length">请输入至少6位数密码</string>
+    <string name="toast_del_success">删除成功</string>
+    <string name="toast_recover_success">恢复成功</string>
+    <string name="toast_money_cannot_empty">金额不能为空</string>
+    <string name="toast_create_success">创建成功</string>
+    <string name="toast_email_cannot_empty">邮箱不能为空</string>
+    <string name="toast_idcard_cannot_empty">身份证号不能为空</string>
+    <string name="toast_email_not_right">邮箱格式不正确</string>
+    <string name="tost_phone_connot_empty">手机号不能为空</string>
+    <string name="tost_phone_not_right">手机号格式不对</string>
+    <string name="toast_idcard_not_right">身份证格式不正确</string>
+    <string name="toast_idcard_pos_cannot_empty">请上传身份证正面</string>
+    <string name="toast_idcard_outside_cannot_empty">请上传身份证反面</string>
+    <string name="toast_idcard_hold_cannot_empty">请上传手持身份证正面照</string>
+    <string name="toast_wx_cannot_empty">微信号不能为空</string>
+    <string name="member_manage_count">所有参与人共s%人</string>
+    <string name="toast_empty_feed_back">意见不能为空</string>
+    <string name="toast_empty_report">举报不能为空</string>
+    <string name="toast_feed_back">感谢您的宝贵意见</string>
+    <string name="toast_del_series_success">删除系列课成功</string>
+    <string name="toast_report">已接收你的举报</string>
+    <string name="toast_intro_cannot_empty">请填写个人简介</string>
+    <string name="toast_canot_load_next">对不起，编辑未完成无法加载下一页</string>
+    <string name="toast_group_rule">请输入群规内容</string>
+    <string name="toast_user_code">请输入对方新媒号</string>
+    <string name="toast_no_title">请输入标题</string>
+    <string name="toast_no_infomation">请输入详细信息</string>
+    <string name="nocircle">暂无推荐圈子</string>
+
+
+    <!--支付-->
+    <string name="pay_result_success">支付成功</string>
+    <string name="pay_result_cancel">取消支付</string>
+    <string name="pay_result_failure">支付失败</string>
+    <string name="pay_recharge">立即充值</string>
+
+    <string name="header_behavior">com.gxtc.huchuan.ui.circle.homePage.HeaderScrollingBehavior</string>
+    <string name="fab_behavior">com.gxtc.huchuan.ui.circle.homePage.ScrollAwareFABBehavior</string>
+
+    <!--权限-->
+    <string name="pre_scan_msg">开启扫码功能需要您的相机权限</string>
+    <string name="pre_scan_notice_msg">应用没有读取相机和存储权限,请先到手机“设置->权限管理”界面为应用授予相应的权限</string>
+    <string name="pre_scan_camera_msg">应用没有读取相机权限,请先到手机“设置->权限管理或者安全中心”界面为应用授予相应的权限</string>
+    <string name="pre_storage_notice_msg">应用没有读取外部存储权限,请先到手机“设置->权限管理”界面为应用授予相应的权限</string>
+
+    <!--群聊规则-->
+    <string name="group_rule">1、群聊禁止散播淫秽色情、暴力恐怖、谣言诈骗、传销赌博等违法违规信息。
+        \n2、群聊发起人有义务和责任对群聊内容进行监督和管理。
+        \n3、如有违反以上规章制度，群聊用户可向新媒之家平台举报投诉，需提供违规内容截图</string>
+
+
+    <!--动态规则-->
+    <string name="dynamic_rule">本平台不能发布违规违法信息。不要留微信号，QQ号，电话和外部二维码等。对于发布违规违法信息和恶意引流恶意营销者一律封号处理。</string>
+    <!--<string name="dynamic_only_my_friends">勾选仅好友可见后，该动态只有你的好友才能看见，如不勾选，则关注你的人和你的好友都能看见</string>-->
+    <!--<string name="dynamic_only_circle_friemd">勾选仅圈友可见后，该动态只有你的圈友才能看见，如不勾选，则关注你的人，好友和圈友都能看见。</string>-->
+
+
+    <!--扫一扫-->
+    <string name="title_activity_scan_qr_code">扫一扫</string>
+    <string name="qc_code_close">关闭</string>
+    <string name="qr_code_select_picture">照片</string>
+    <string name="qr_code_open_flash_light">打开闪光灯</string>
+    <string name="qr_code_close_flash_light">关闭闪光灯</string>
+    <string name="qr_code_auto_scan_notification">将二维码放入框内，即可自动扫描</string>
+    <string name="qr_code_notification">提示</string>
+    <string name="qr_code_camera_not_open">您的相机功能好像没有打开哦~去\"设置>隐私>相机\"设置一下吧</string>
+    <string name="qr_code_positive_button_know">知道了</string>
+    <string name="qr_code_positive_button_confirm">确认</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">没有读出图片中的链接，换张图片试试吧~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">对不起，无法打开扫出的内容</string>
+    <string name="qr_code_camera_not_found">未检测到相机</string>
+
+
+    <!--消息-->
+    <string name="message_join_desc">加入喜欢的圈子跟他们交流、学习、合作</string>
+    <string name="message_relay_isuccess">已发送</string>
+    <string name="message_relay_faild">发送失败，请稍后重试</string>
+    <string name="message_relay_empty">请选择要转发的消息</string>
+
+    <!--版本更新-->
+    <string name="models_updata_hint">提示</string>
+    <string name="models_updata_cancel">朕知道了</string>
+    <string name="models_updata_down_now">立即下载</string>
+
+
+    <!--课堂-->
+    <string name="models_create_class_free">开启后，用户将可以免费试听该系列课的第一节课</string>
+    <string name="models_create_class_invite">开启邀请制免费听课后，默认第一节免费试听，后面课程需要学员邀请到设定数量的好友参与后才能继续听</string>
+    <string name="live_conver_label_invite">邀请</string>
+    <string name="live_host_edit">课堂介绍</string>
+
+</resources>

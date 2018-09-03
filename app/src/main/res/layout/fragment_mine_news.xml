@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_apply_author"
+        style="@style/TextViewMatchStyle"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_news_icon_apply"
+        android:drawableRight="@drawable/person_icon_more"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="申请作者"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_apply_progress"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_news_icon_apply"
+        android:drawableRight="@drawable/person_icon_more"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="申请进度"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_publish_articles"
+        style="@style/TextViewMatchStyle"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_news_icon_apply"
+        android:drawableRight="@drawable/person_icon_more"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="发布文章"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/line"
+        style="@style/item_line"
+        />
+
+    <TextView
+        android:id="@+id/tv_mine_article"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_news_icon_manage"
+        android:drawableRight="@drawable/person_icon_more"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="管理文章"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View
+        style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_manager_comment"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_news_icon_comment"
+        android:drawableRight="@drawable/person_icon_more"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="评论管理"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+  <!--  <View android:id="@+id/line"
+        style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_news_notification"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_inforrm"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="通知消息"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_news_baoliao"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_baoliao"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="我要报料"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_news_collection"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_collect"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="我的收藏"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_news_history"
+        style="@style/TextViewMatchStyle"
+        android:layout_marginBottom="@dimen/px60dp"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_history"
+        android:drawablePadding="@dimen/px20dp"
+        android:gravity="center_vertical"
+        android:text="历史记录"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />-->
+</LinearLayout>

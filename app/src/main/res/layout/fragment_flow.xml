@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rl_flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/btn_flow_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="下一步"
+        android:textSize="@dimen/textSize_l"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>
+
+

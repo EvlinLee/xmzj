@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_small"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_user_prop_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_s"
+        android:text="终端" />
+
+    <TextView
+        android:id="@+id/tv_user_prop_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_s"
+        android:text="比例" />
+
+    <TextView
+        android:id="@+id/tv_user_prop_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_s"
+        android:text="用户数" />
+
+</LinearLayout>

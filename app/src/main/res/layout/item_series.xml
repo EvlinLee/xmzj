@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:padding="@dimen/margin_middle">
+
+
+    <ImageView
+        android:id="@+id/iv_item_series_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/live_list_head_banner"
+        tools:src="@drawable/bg"/>
+
+    <TextView
+        android:textSize="@dimen/textSize_m"
+        android:id="@+id/tv_item_series_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_item_series_image"
+        android:layout_below="@id/iv_item_series_image"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/text_color_333"
+        tools:text="如何扭转命运？"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_item_series_image"
+        android:layout_alignRight="@id/iv_item_series_image"
+        android:layout_below="@id/tv_item_series_title"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="1673人已购买"/>
+
+        <TextView
+            android:textSize="@dimen/textSize_s"
+
+            android:id="@+id/tv_item_series_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="免费"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

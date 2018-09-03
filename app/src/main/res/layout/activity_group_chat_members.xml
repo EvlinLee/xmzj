@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gxtc.huchuan.widget.MyGridView
+            android:id="@+id/chat_menber_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:focusable="true"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/px30dp"
+            android:numColumns="5"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/px30dp"
+            android:paddingRight="@dimen/px30dp"
+            android:paddingTop="@dimen/margin_middle"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/px46dp"/>
+
+        <TextView
+            android:id="@+id/tv_all_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle"
+            android:text="查看全部成员"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:background="@color/color_ffffff"
+            android:padding="@dimen/margin_middle"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="关闭消息提醒"
+                android:textColor="@color/text_color_333"/>
+
+            <Switch
+                android:id="@+id/sw_message_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/item_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_group_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_group_rule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:drawableRight="@drawable/person_icon_more"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:text="群规"
+                android:textColor="@color/text_color_333"/>
+
+        </LinearLayout>
+
+        <View style="@style/item_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:drawableRight="@drawable/person_icon_more"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:text="公告"
+                android:textColor="@color/text_color_333"/>
+
+        </LinearLayout>
+
+        <View style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/tv_reported"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/color_ffffff"
+            android:drawableRight="@drawable/person_icon_more"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_middle"
+            android:text="举报圈子"
+            android:textColor="@color/text_color_333"/>
+
+        <View style="@style/item_line"/>
+
+        <RelativeLayout
+            android:id="@+id/forbident_say_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@color/color_ffffff">
+            <TextView
+                android:id="@+id/forbident_say"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:text="禁言"
+                android:textColor="@color/text_color_333" />
+
+            <TextView
+                android:id="@+id/forbident_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/person_icon_more"
+                android:drawablePadding="@dimen/px5dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:layout_alignParentRight="true"
+                tools:text="永久禁言"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/text_color_999" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            style="@style/item_line"/>
+
+        <RelativeLayout
+            android:id="@+id/forbident_sent_dynamic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@color/color_ffffff">
+            <TextView
+                android:id="@+id/forbident_sent_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:text="禁发动态"
+                android:textColor="@color/text_color_333" />
+
+            <TextView
+                android:id="@+id/forbident_sent_dynamic_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/person_icon_more"
+                android:drawablePadding="@dimen/px5dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_middle"
+                android:layout_alignParentRight="true"
+                tools:text="永久禁发"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/text_color_999" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line3"
+            style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/rv_circle_manager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/color_ffffff"
+            android:drawableRight="@drawable/person_icon_more"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_middle"
+            android:text="圈子管理"
+            android:textColor="@color/text_color_333"/>
+
+        <View
+            android:id="@+id/line2"
+            style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/tv_invated_friends"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/color_ffffff"
+            android:drawableRight="@drawable/person_icon_more"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_middle"
+            android:text="邀请好友进圈"
+            android:textColor="@color/text_color_333"/>
+        <View style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/tv_exits_circle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/color_ffffff"
+            android:drawableRight="@drawable/person_icon_more"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_middle"
+            android:text="退出圈子"
+            android:textColor="@color/text_color_333"/>
+
+        <View style="@style/model_line"/>
+
+        <TextView
+            android:id="@+id/tv_clear_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/color_ffffff"
+            android:drawableRight="@drawable/person_icon_more"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_middle"
+            android:text="清除聊天记录"
+            android:textColor="@color/text_color_333"/>
+
+    </LinearLayout>
+</ScrollView>

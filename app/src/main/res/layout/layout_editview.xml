@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextBodyLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ll_simple_input_model_acrea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="@dimen/px0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_tiny"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/et_simple_edit"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/margin_10"
+                android:hint="输入你的问题或者讨论"
+                android:paddingLeft="@dimen/margin_tiny"
+                android:textSize="@dimen/textSize_s"
+                tools:text="立快速打击弗兰克三季度看来飞机"/>
+            <!--android:drawableLeft="@drawable/topic_detail_edit_icon"-->
+            <CheckBox
+                android:id="@+id/cb_simple_model_isask"
+                style="@style/TopicCommentCheckBoxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/margin_tiny"
+                android:text="  提问"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_xs"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_simple_send"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin_tiny"
+            android:background="@drawable/btn_blue_selector_no_stroke"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l"/>
+    </LinearLayout>
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout
+        android:id="@+id/panel_root"
+        style="@style/Panel"
+        android:layout_alignParentBottom="true"
+
+        android:visibility="gone">
+    </cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout>
+</LinearLayout>

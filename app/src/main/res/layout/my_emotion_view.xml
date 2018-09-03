@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_emotion"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar_emotion_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:src="@drawable/ic_emotion"/>
+
+    </LinearLayout>
+
+    <View style="@style/item_line"  />
+
+    <LinearLayout
+        android:id="@+id/emotion_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_complate_emotion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.gxtc.huchuan.customemoji.emotionkeyboardview.EmojiIndicatorView
+            android:id="@+id/ll_point_group"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

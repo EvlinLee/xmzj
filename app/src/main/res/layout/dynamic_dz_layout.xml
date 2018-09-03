@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_middle"
+    android:layout_marginRight="@dimen/margin_middle"
+    android:layout_marginTop="@dimen/px10dp"
+    android:background="@color/grey_F4F4F4">
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/px5dp"
+        android:src="@drawable/circle_friend_comment_icon_zan_select" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_circle_home_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/start" />
+
+</RelativeLayout>

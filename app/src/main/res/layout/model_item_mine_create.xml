@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/px220dp"
+    android:layout_height="@dimen/px260dp"
+    android:layout_gravity="center"
+    card:cardBackgroundColor="@color/white"
+    card:cardCornerRadius="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableTop="@drawable/circle_topic_icon_add"
+        android:text="创建圈子"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_l" />
+</android.support.v7.widget.CardView>

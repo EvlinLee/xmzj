@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gxtc.huchuan.widget.MPagerSlidingTabStrip
+        android:id="@+id/pss_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        android:layout_toLeftOf="@+id/iv_news_search"
+        android:layout_toRightOf="@+id/iv_back"
+        android:background="@color/grey_F4F4F4"
+        app:pstsDividerColor="#00ffffff"
+        app:pstsIndicatorColor="@color/btn_nornal"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabBackground="@drawable/select_background_new_article_tab"
+        app:pstsTabMarginLeftRight="5dp"
+        app:pstsTabMarginTopBottom="@dimen/px18dp"
+        app:pstsTabPaddingLeftRight="15dp"
+        app:pstsTabSelectedTextColor="#333"
+        app:pstsTabSelectedTextSize="@dimen/textSize_m"
+        app:pstsTabTextColor="#333"
+        app:pstsTabTextSize="@dimen/textSize_m"
+        app:pstsUnderlineHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_videopage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

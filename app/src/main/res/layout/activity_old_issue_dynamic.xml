@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="标题，4-25字"
+            android:padding="@dimen/margin_middle"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_ml"/>
+
+        <View
+            android:id="@+id/view"
+            style="@style/item_line"
+            android:layout_below="@id/edit_title"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"/>
+
+        <LinearLayout
+            android:id="@+id/hl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imagebtn_undo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_left" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_redo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_right" />
+
+            <!--<ImageButton
+                android:id="@+id/imagebtn_underline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/underline" />-->
+
+            <ImageButton
+                android:id="@+id/imagebtn_heading1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_font" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_txt_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_colors" />
+
+            <!--<ImageButton
+                android:id="@+id/imagebtn_bg_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/bg_color" />-->
+
+            <!--<ImageButton
+                android:id="@+id/imagebtn_align_left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/justify_left" />-->
+
+            <ImageButton
+                android:id="@+id/imagebtn_insert_image"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_picture" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_insert_video"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/circle_compile_icon_video" />
+
+        </LinearLayout>
+
+        <com.gxtc.huchuan.widget.richEditor.RichEditor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_middle"
+            android:layout_above="@id/hl"
+            android:layout_below="@id/view"/>
+
+    </RelativeLayout>
+
+</ScrollView>

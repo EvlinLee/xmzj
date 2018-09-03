@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#99000000">
+
+    <!--app:layout_widthPercent="20%"
+    app:layout_heightPercent="20%"-->
+    <ImageView
+        android:id="@+id/img_msg"
+        android:layout_width="@dimen/px140dp"
+        android:layout_height="@dimen/px140dp"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginTopPercent="35%"
+        android:src="@drawable/guide_yx_icon"/>
+
+    <ImageView
+        android:id="@+id/img_text"
+        android:layout_width="@dimen/px350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_msg"
+        app:layout_marginLeftPercent="35%"
+        android:src="@drawable/guide_yxrj_text"/>
+
+    <ImageView
+        android:id="@+id/img_jump"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="@dimen/px40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/img_text"
+        app:layout_marginTopPercent="15%"
+        android:src="@drawable/guide_tg_icon"/>
+
+</android.support.percent.PercentRelativeLayout>

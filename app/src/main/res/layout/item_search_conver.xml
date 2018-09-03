@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_middle"
+    android:paddingBottom="@dimen/margin_middle"
+    android:gravity="center_vertical">
+
+    <io.rong.imkit.widget.AsyncImageView
+        android:id="@+id/img_head"
+        android:layout_width="@dimen/px80dp"
+        android:layout_height="@dimen/px80dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/circle_head_icon_120"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:layout_marginLeft="@dimen/margin_middle"
+            tools:text="伍玉南"/>
+
+        <TextView
+            android:id="@+id/tv_remake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/text_color_999"
+            tools:text="备注: 南瓜"/>
+
+    </LinearLayout>
+
+</LinearLayout>

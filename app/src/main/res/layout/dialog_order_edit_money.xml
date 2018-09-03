@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_dialog_box_bg">
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_middle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="商品金额"/>
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/shap_introduct_bg"
+        android:textColor="@color/color_price_ec6b46" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_middle"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/text_color_999"
+        android:text="以上价格可以修改!"/>
+
+    <View style="@style/item_line" android:layout_marginTop="@dimen/margin_large"/>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_m"/>
+
+
+</LinearLayout>

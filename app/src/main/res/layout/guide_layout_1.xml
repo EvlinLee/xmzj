@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#99000000">
+
+    <ImageView
+        android:id="@+id/img_msg"
+        app:layout_widthPercent="74%"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="14%"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_tab_icon"/>
+
+    <ImageView
+        android:layout_width="@dimen/px350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_msg"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="30%"
+        android:src="@drawable/guide_news_text"/>
+
+    <ImageButton
+        android:id="@+id/img_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/guide_next_icon"/>
+
+</android.support.percent.PercentRelativeLayout>

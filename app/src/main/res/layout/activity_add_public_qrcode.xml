@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_link"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:layout_margin="@dimen/margin_middle"
+        android:background="@drawable/shap_series_intro_bg"
+        android:gravity="top"
+        android:hint="在此处粘贴自己公众号的任意一篇文章的链接"
+        android:padding="@dimen/margin_small"
+        android:textSize="@dimen/textSize_m" />
+
+    <Button
+        android:id="@+id/btn_get_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/textSize_l"
+        android:background="@drawable/btn_blue_selector_no_stroke"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:text="操作指南"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_marginTop="@dimen/px15dp"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:lineSpacingExtra="@dimen/px10dp"
+        android:text="1.打开自己公众号的任何一篇文章\n2.等文章加载完后，点击右上角菜单栏\n3.在菜单中点击[复制链接]\n4.将复制的链接粘贴到上方的框中，点击确定即可完成"/>
+</LinearLayout>

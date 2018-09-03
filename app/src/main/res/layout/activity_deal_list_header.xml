@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_layout"
+        android:layout_alignTop="@+id/content_layout"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="板块说明"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_m" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/note">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m"
+            android:ellipsize="end"
+            tools:text="板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说明板块说" />
+        <ImageView
+            android:id="@+id/expand_satus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:layout_gravity="center"
+            android:src="@drawable/deal_list_icon_xiangxia"
+            />
+    </LinearLayout>
+
+   <View style="@style/model_line"
+          android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

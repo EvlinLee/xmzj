@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:paddingLeft="@dimen/margin_medium"
+        android:textSize="@dimen/textSize_ml"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:textColor="@color/text_color_333"
+        android:text="引流工具"/>
+    <View
+       style="@style/item_line"/>
+    <TextView style="@style/model_line" />
+</LinearLayout>

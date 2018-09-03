@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_live_class_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_l"
+            tools:text="人文"/>
+
+        <TextView
+            android:id="@+id/item_live_class_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="更多"
+            android:textSize="@dimen/textSize_l"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item_live_class_acrea0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="4dp"-->
+            <!--&gt;-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_rw_bg"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px2dp">
+
+                <ImageView
+                    android:id="@+id/item_live_class_photo0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px4dp"
+                    tools:src="@drawable/live_class_icon_temp"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_title0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px12dp"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="文化大讲堂"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_count0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingBottom="@dimen/px14dp"
+                    android:paddingTop="@dimen/px10dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="49568人关注"/>
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+            <CheckBox
+                android:id="@+id/item_live_class_check0"
+
+                style="@style/ListClassCheckBoxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/item_live_class_btn0"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="@dimen/px20dp"-->
+            <!--android:background="@drawable/shape_live_class_btn"-->
+            <!--android:clickable="true"-->
+            <!--android:text="+关注"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_live_class_acrea1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="4dp"-->
+            <!--&gt;-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_rw_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px2dp">
+
+                <ImageView
+                    android:id="@+id/item_live_class_photo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px4dp"
+                    tools:src="@drawable/live_class_icon_temp"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px12dp"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="文化大讲堂"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_count1"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px14dp"
+                    android:paddingTop="@dimen/px10dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="49568人关注"/>
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+            <CheckBox
+                android:id="@+id/item_live_class_check1"
+
+                style="@style/ListClassCheckBoxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/item_live_class_btn1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="@dimen/px20dp"-->
+            <!--android:background="@drawable/shape_live_class_btn"-->
+            <!--android:clickable="true"-->
+            <!--android:text="+关注"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_live_class_acrea2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="4dp"-->
+            <!--&gt;-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_rw_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px2dp">
+
+                <ImageView
+                    android:id="@+id/item_live_class_photo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px4dp"
+                    tools:src="@drawable/live_class_icon_temp"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_title2"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px12dp"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="文化大讲堂"/>
+
+                <TextView
+                    android:id="@+id/item_live_class_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px14dp"
+                    android:paddingTop="@dimen/px10dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_l"
+                    tools:text="49568人关注"/>
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+            <CheckBox
+                android:id="@+id/item_live_class_check2"
+                style="@style/ListClassCheckBoxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/item_live_class_btn2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="@dimen/px20dp"-->
+            <!--android:background="@drawable/shape_live_class_btn"-->
+            <!--android:clickable="true"-->
+            <!--android:text="+关注"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

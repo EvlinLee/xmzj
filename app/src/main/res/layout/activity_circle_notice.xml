@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:padding="@dimen/margin_middle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属于我们的app终于上线了"
+            android:textColor="@color/text_color_333"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textSize_ml"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="新美之家－财神 1月1日 00:54"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+        <View
+            style="@style/item_line"
+            android:layout_marginBottom="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_middle"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m"
+            android:textIsSelectable="true"
+            android:text="经过大家共同努力，在这段时间的修修改改最终上线了，如果在一些使用过程中有任何问题可以联系我们的客服。"/>
+
+    </LinearLayout>
+
+</ScrollView>

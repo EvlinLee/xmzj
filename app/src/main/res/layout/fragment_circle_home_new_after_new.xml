@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapsedTitleGravity="center_horizontal"
+            app:collapsedTitleTextAppearance="@style/ToolbarTextAppearanceCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="10dp"
+            app:expandedTitleTextAppearance="@style/ToolbarTextAppearanceExpanded"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="51dp"-->
+            <!--android:gravity="top"-->
+            <!--android:isScrollContainer="false"-->
+            <!--app:contentInsetEnd="0dp"-->
+            <!--app:contentInsetStart="0dp"-->
+            <!--app:layout_collapseMode="pin"-->
+            <!--app:popupTheme="@style/AppTheme">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:alpha="0"-->
+            <!--android:gravity="center"-->
+            <!--android:text="圈子"-->
+            <!--android:textColor="@color/text_color_333"-->
+            <!--android:textSize="@dimen/textSize_l" />-->
+
+
+            <!--</RelativeLayout>-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <View
+            style="@style/item_line"
+            app:layout_scrollFlags="scroll"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw_circle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rv_circle_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_circle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/margin_large"
+        android:src="@drawable/circle_home_icon_feather"
+        app:fabSize="mini"
+        app:layout_behavior="@string/fab_behavior"/>-->
+
+    <include
+        layout="@layout/layout_editview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</android.support.design.widget.CoordinatorLayout>

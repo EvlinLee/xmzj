@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liveHeadArea"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize">
+
+
+
+    <com.gxtc.huchuan.widget.RotateImageButton
+        android:id="@+id/liveHeadIconCd"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:minWidth="48dp"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:src="@drawable/icon_cd"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/liveHeadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/actionbar_text_color"
+        android:textSize="@dimen/textSize_xl"
+        tools:text="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/liveHeadRightLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/liveHeadRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_m"
+            android:visibility="gone" />
+
+
+        <ImageButton
+            android:id="@+id/liveHeadRightImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:src="@drawable/news_icon_search"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/liveHead_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/liveHeadIconCd"
+        android:background="@color/grey_e5e5" />
+
+
+</RelativeLayout>

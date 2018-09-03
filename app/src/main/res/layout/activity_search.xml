@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+        <LinearLayout
+            android:id="@+id/ll_flow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_search_keyword_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/px50dp"
+                    android:text="搜索指定内容"
+                    android:textSize="@dimen/textSize_m"
+                    android:textColor="@color/text_color_666"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/search_key_1"
+                        style="@style/search_keyword_style"
+                        android:text="动态"/>
+
+                    <TextView
+                        android:id="@+id/search_key_2"
+                        style="@style/search_keyword_style"
+                        android:text="文章"/>
+
+                    <TextView
+                        android:id="@+id/search_key_3"
+                        style="@style/search_keyword_style"
+                        android:text="课堂"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/px60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/search_key_4"
+                        style="@style/search_keyword_style"
+                        android:text="找人"/>
+
+                    <TextView
+                        android:id="@+id/search_key_5"
+                        style="@style/search_keyword_style"
+                        android:text="圈子"/>
+
+                    <TextView
+                        android:id="@+id/search_key_6"
+                        style="@style/search_keyword_style"
+                        android:text="交易"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_search_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_middle"
+                    android:text="@string/label_search_history"
+                    android:textSize="@dimen/textSize_s"/>
+
+                <ImageView
+                    android:id="@+id/iv_clear_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_middle"
+                    android:src="@drawable/person_live_backstage_classify_compile_delete"/>
+            </RelativeLayout>
+
+            <com.gxtc.huchuan.widget.FlowLayout
+                android:id="@+id/flow_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:visibility="gone">
+
+            </com.gxtc.huchuan.widget.FlowLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_search_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_middle"
+                    android:text="@string/label_search_hot"
+                    android:textSize="@dimen/textSize_s"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_middle"
+                    android:text="换一批"
+                    android:textColor="@color/btn_nornal"/>
+            </RelativeLayout>
+
+            <com.gxtc.huchuan.widget.FlowLayout
+                android:id="@+id/flow_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:visibility="gone">
+
+            </com.gxtc.huchuan.widget.FlowLayout>
+        </LinearLayout>
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rc_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="暂无内容"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

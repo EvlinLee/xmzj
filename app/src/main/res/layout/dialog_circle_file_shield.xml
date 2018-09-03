@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/layer_list_shadow_rectangle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_create_folder"
+        android:layout_width="@dimen/px300dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="创建文件夹"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_audit_file"
+        android:layout_width="@dimen/px300dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="审核文件"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gxtc.huchuan.widget.BlurringView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/blurringView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:blurRadius="20"
+        app:downsampleFactor="6"
+        app:overlayColor="#99FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/model_main_weather"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.gxtc.huchuan.widget.RotateImageButton
+                android:id="@+id/img_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/margin_middle"
+                android:src="@drawable/use_icon_cd"/>
+
+            <ImageView
+                android:id="@+id/img_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:padding="@dimen/margin_small"
+                android:paddingEnd="@dimen/margin_medium"
+                android:src="@drawable/use_icon_liebiao"/>
+
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/img_list"
+                android:clickable="true"
+                android:padding="@dimen/margin_small"
+                android:src="@drawable/live_playbar_next"/>
+
+            <ImageView
+                android:id="@+id/iv_play_bar_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/img_next"
+                android:padding="@dimen/margin_small"
+                android:clickable="true"
+                android:src="@drawable/use_icon_zanting"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_middle"
+                android:layout_toEndOf="@id/img_head"
+                android:layout_toStartOf="@id/iv_play_bar_btn"
+                android:maxLines="2"
+                android:text="暂无听课记录"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_s"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.gxtc.huchuan.widget.WrapContentHeightViewPager
+                android:id="@+id/vp_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_main_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tab_close"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

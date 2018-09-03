@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        style="@style/model_line"/>
+
+    <include
+        layout="@layout/layout_mine_middle_tab"
+        android:id="@+id/layout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/model_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_chat_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/person_homepage_icon_wallet_1"
+            android:drawablePadding="@dimen/px20dp"
+            android:drawableRight="@drawable/person_icon_more"
+            android:background="?android:selectableItemBackground"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:text="已报课程"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_ms"/>
+
+        <TextView
+            android:id="@+id/dragView_msg"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/shape_unread_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_s"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_xsrw"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="新手任务"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_income_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_circle_icon_earnings_3"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="收益明细"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle" />
+
+    <TextView
+        android:id="@+id/tv_my_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_2"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="我的钱包"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_order_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_3"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="我的订单"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        />
+
+    <TextView
+        android:id="@+id/tv_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/icon_personal_n"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="我订阅的专题"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/model_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:drawableLeft="@drawable/person_homepage_icon_wallet_4_1"
+            android:drawablePadding="@dimen/px20dp"
+            android:drawableRight="@drawable/person_icon_more"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:text="功能设置"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_ms"/>
+
+        <TextView
+            android:id="@+id/dragView_setting"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/shape_unread_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_s"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_messge_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_5"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="消息设置"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_kefu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_kefu"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="联系客服"
+        android:visibility="gone"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_my_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_6"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="我的收藏"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_browse_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_my_browse_8"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="浏览历史"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_7"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:text="推荐应用给好友"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View style="@style/model_line"/>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="退出"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ms"/>
+
+    <View   style="@style/model_line"   />
+
+</LinearLayout>

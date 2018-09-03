@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical">
+
+    <View
+        style="@style/item_line"
+        android:layout_marginTop="@dimen/px20dp" />
+
+    <TextView
+        android:id="@+id/tv_user_manager_banned"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_compile"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:gravity="center_vertical"
+        android:text="课堂禁言用户管理"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <!--<View-->
+        <!--style="@style/item_line"-->
+        <!--android:layout_marginTop="@dimen/px20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_user_manager_behalf"-->
+        <!--style="@style/TextViewMatchStyle"-->
+        <!--android:background="@color/color_ffffff"-->
+        <!--android:drawableLeft="@drawable/person_icon_wallet"-->
+        <!--android:drawablePadding="@dimen/px20dp"-->
+        <!--android:drawableRight="@drawable/person_icon_more"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="课堂课代表管理"-->
+        <!--android:textColor="@color/text_color_333"-->
+        <!--android:textSize="@dimen/textSize_m" />-->
+
+    <!--<View style="@style/item_line" />-->
+
+    <View
+        style="@style/item_line"
+        android:layout_marginTop="@dimen/px20dp" />
+
+    <TextView
+        android:id="@+id/tv_user_manager_black"
+        style="@style/TextViewMatchStyle"
+        android:background="@color/color_ffffff"
+        android:drawableLeft="@drawable/person_icon_wallet"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:gravity="center_vertical"
+        android:text="课堂黑名单用户管理"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+</LinearLayout>

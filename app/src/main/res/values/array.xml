@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="change_avatar">
+        <item>相机</item>
+        <item>相册</item>
+    </string-array>
+
+    <string-array name="change_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="title_login_register">
+        <item>@string/title_login</item>
+        <item>@string/title_phone_register</item>
+    </string-array>
+
+
+    <string-array name="occupation">
+        <item>待业</item>
+        <item>学生</item>
+        <item>个体经营</item>
+        <item>公务员</item>
+        <item>白领</item>
+        <item>公司高管</item>
+        <item>退休</item>
+    </string-array>
+
+    <string-array name="education">
+        <item>小学</item>
+        <item>初中</item>
+        <item>中职</item>
+        <item>高中</item>
+        <item>专科</item>
+        <item>本科</item>
+        <item>硕士研究生</item>
+        <item>博士研究生</item>
+    </string-array>
+
+    <string-array name="chanal">
+        <item>推荐</item>
+        <item>资讯</item>
+        <item>创业</item>
+        <item>营销</item>
+        <item>微信</item>
+        <item>电商</item>
+        <item>运营</item>
+    </string-array>
+
+    <integer-array name="chanal_id">
+        <item>-1</item>
+        <item>41</item>
+        <item>33</item>
+        <item>42</item>
+        <item>32</item>
+        <item>39</item>
+        <item>36</item>
+    </integer-array>
+
+    <string-array name="mine_tab">
+        <item>主页</item>
+        <item>资讯</item>
+        <item>课堂</item>
+        <item>圈子</item>
+        <item>交易</item>
+    </string-array>
+    <!--关注列表-->
+    <string-array name="mine_recommend">
+        <item>我的订阅</item>
+        <item>推荐</item>
+    </string-array>
+    <string-array name="mine_focus">
+        <item>推荐</item>
+        <item>互相关注</item>
+        <item>关注我的</item>
+        <item>我的关注</item>
+    </string-array>
+
+
+    <!--推广称号-->
+    <string-array name="share_call">
+        <item>称号A</item>
+        <item>称号B</item>
+        <item>称号C</item>
+        <item>称号D</item>
+        <item>称号E</item>
+        <item>称号F</item>
+        <item>称号G</item>
+    </string-array>
+
+
+    <string-array name="share_call_color">
+        <item>#ff00acff</item>
+        <item>#ec6b46</item>
+        <item>#06b223</item>
+        <item>#fb4717</item>
+        <item>#6c8098</item>
+        <item>#4974B6</item>
+        <item>#4974B6</item>
+    </string-array>
+
+    <!--广告拦截库-->
+    <string-array name="adBlockUrl">
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+    </string-array>
+
+    <!--个人主页tab-->
+    <string-array name="personal_homepage_tab">
+        <item>动态</item>
+        <item>文章</item>
+        <item>课堂</item>
+        <item>交易</item>
+    </string-array>
+
+    <string-array name="array_purchase_record">
+        <item>全部</item>
+        <item>课程</item>
+        <item>圈子</item>
+        <item>交易</item>
+        <item>商城</item>
+    </string-array>
+    <string-array name="array_circle_invite">
+        <item>邀请好友</item>
+        <item>佣金排名</item>
+    </string-array>
+
+    <string-array name="array_visitor_record">
+        <item>日访主页</item>
+        <item>月访主页</item>
+        <item>日访介绍页</item>
+        <item>月访介绍页</item>
+    </string-array>
+
+    <string-array name="array_recent_statistics">
+        <item>新增用户</item>
+        <item>新增动态</item>
+        <item>活跃量</item>
+    </string-array>
+
+    <string-array name="mine_profit_tab_class">
+        <item>@string/title_class_profit</item>
+        <item>@string/title_class_distribution</item>
+
+    </string-array>
+
+    <string-array name="mine_profit_tab_circle">
+        <item>@string/title_circle_profit</item>
+        <item>@string/title_circle_distribution</item>
+
+    </string-array>
+
+    <string-array name="mine_income_detail1">
+        <item>全部</item>
+        <item>本年</item>
+        <item>本月</item>
+        <item>本周</item>
+        <item>本日</item>
+    </string-array>
+
+    <string-array name="mine_income_detail">
+        <item>本日</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>本年</item>
+        <item>全部</item>
+    </string-array>
+
+<string-array name="type_array_name">
+    <item>.3gp</item>
+    <item>.apk</item>
+    <item>.asf</item>
+    <item>.avi</item>
+    <item>.bin</item>
+    <item>.bmp</item>
+    <item>.c</item>
+    <item>.class</item>
+    <item>.conf</item>
+    <item>.cpp</item>
+    <item>.doc</item>
+    <item>.docx</item>
+    <item>.xls</item>
+    <item>.xlsx</item>
+    <item>.exe</item>
+    <item>.gif</item>
+    <item>.gtar</item>
+    <item>.gz</item>
+    <item>.h</item>
+    <item>.htm</item>
+    <item>.html</item>
+    <item>.jar</item>
+    <item>.java</item>
+    <item>.jpeg</item>
+    <item>.jpg</item>
+    <item>.js</item>
+    <item>.log</item>
+    <item>.m3u</item>
+    <item>.m4a</item>
+    <item>.m4b</item>
+    <item>.m4p</item>
+    <item>.m4u</item>
+    <item>.m4v</item>
+    <item>.mov</item>
+    <item>.mp2</item>
+    <item>.mp3</item>
+    <item>.mp4</item>
+    <item>.mpc</item>
+    <item>.mpe</item>
+    <item>.mpeg</item>
+    <item>.mpg</item>
+    <item>.mpg4</item>
+    <item>.mpga</item>
+    <item>.msg</item>
+    <item>.ogg</item>
+    <item>.pdf</item>
+    <item>.png</item>
+    <item>.pps</item>
+    <item>.ppt</item>
+    <item>.pptx</item>
+    <item>.prop</item>
+    <item>.rc</item>
+    <item>.rmvb</item>
+    <item>.rtf</item>
+    <item>.sh</item>
+    <item>.tar</item>
+    <item>.tgz</item>
+    <item>.txt</item>
+    <item>.wav</item>
+    <item>.wma</item>
+    <item>.wmv</item>
+    <item>.wps</item>
+    <item>.xml</item>
+    <item>.z</item>
+    <item>.zip</item>
+    <item></item>
+</string-array>
+    <string-array name="type_array_type">
+      <item>video/3gpp</item>
+      <item>application/vnd.android.package-archive</item>
+      <item>video/x-ms-asf</item>
+      <item>video/x-msvideo</item>
+      <item>application/octet-stream</item>
+      <item>image/bmp</item>
+      <item>text/plain</item>
+      <item>application/octet-stream</item>
+      <item>text/plain</item>
+      <item>text/plain</item>
+      <item>application/msword</item>
+      <item>application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
+      <item>application/vnd.ms-excel</item>
+      <item>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</item>
+      <item>application/octet-stream</item>
+      <item>image/gif</item>
+      <item>application/x-gtar</item>
+      <item>application/x-gzip</item>
+      <item>text/plain</item>
+      <item>text/html</item>
+      <item>text/html</item>
+      <item>application/java-archive</item>
+      <item>text/plain</item>
+      <item>image/jpeg</item>
+      <item>image/jpeg</item>
+      <item>application/x-JavaScript</item>
+      <item>text/plain</item>
+      <item>audio/x-mpegurl</item>
+      <item>audio/mp4a-latm</item>
+      <item>audio/mp4a-latm</item>
+      <item>audio/mp4a-latm</item>
+      <item>video/vnd.mpegurl</item>
+      <item>video/x-m4v</item>
+      <item>video/quicktime</item>
+      <item>audio/x-mpeg</item>
+      <item>audio/x-mpeg</item>
+      <item>video/mp4</item>
+      <item>application/vnd.mpohun.certificate</item>
+      <item>video/mpeg</item>
+      <item>video/mpeg</item>
+      <item>video/mpeg</item>
+      <item>video/mp4</item>
+      <item>audio/mpeg</item>
+      <item>application/vnd.ms-outlook</item>
+      <item>audio/ogg</item>
+      <item>application/pdf</item>
+      <item>image/png</item>
+      <item>application/vnd.ms-powerpoint</item>
+      <item>application/vnd.ms-powerpoint</item>
+      <item>application/vnd.openxmlformats-officedocument.presentationml.presentation</item>
+      <item>text/plain</item>
+      <item>text/plain</item>
+      <item>audio/x-pn-realaudio</item>
+      <item>application/rtf</item>
+      <item>text/plain</item>
+      <item>application/x-tar</item>
+      <item>application/x-compressed</item>
+      <item>text/plain</item>
+      <item>audio/x-wav</item>
+      <item>audio/x-ms-wma</item>
+      <item>audio/x-ms-wmv</item>
+      <item>application/vnd.ms-works</item>
+      <item>text/plain</item>
+      <item>application/x-compress</item>
+      <item>application/x-zip-compressed</item>
+      <item>*/*</item>
+    </string-array>
+</resources>

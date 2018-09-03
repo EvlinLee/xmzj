@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_proress_area"
+      android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_shape_one"
+                android:layout_width="@dimen/px40dp"
+                android:layout_height="@dimen/px10dp"
+                android:background="@color/btn_nornal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audit_icon_submit_1"/>
+
+            <View
+                android:id="@+id/v_shape_second"
+                android:layout_width="@dimen/px100dp"
+                android:layout_height="@dimen/px10dp"
+                android:background="@color/btn_nornal"/>
+
+            <ImageView
+                android:id="@+id/iv_audit_submitting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audit_icon_underway_1"/>
+
+            <View
+                android:id="@+id/v_shape_third"
+                android:layout_width="@dimen/px100dp"
+                android:layout_height="@dimen/px10dp"
+                android:background="@color/greyd1d1d1"/>
+
+            <ImageView
+                android:id="@+id/iv_audit_submitted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audit_icon_triangle"/>
+            <View
+                android:visibility="invisible"
+                android:id="@+id/v_shape_fourth"
+                android:layout_width="@dimen/px40dp"
+                android:layout_height="@dimen/px10dp"
+                android:background="@color/greyd1d1d1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/tv_audit_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提交完成"/>
+
+            <TextView
+                android:id="@+id/tv_audit_submitting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="审核中"
+                />
+
+            <TextView
+                android:id="@+id/tv_audit_submitted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="审核通过"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:visibility="invisible"
+        android:layout_margin="@dimen/margin_huge"
+        android:layout_below="@id/ll_proress_area"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_middle"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@drawable/btn_blue_selector"
+        android:text="重新申请"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

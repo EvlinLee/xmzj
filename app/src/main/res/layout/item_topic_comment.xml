@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <com.gxtc.huchuan.widget.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_middle"
+        tools:src="@drawable/person_icon_head"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s"
+        tools:text="爱一直很安静"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="03-15 14:19:18"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tv_time"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toRightOf="@id/iv_head">
+
+        <ImageView
+            android:id="@+id/iv_icon_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:src="@drawable/icon_question"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s"
+            tools:text="爱一直很安静"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_time"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_toEndOf="@+id/tv_time"
+        android:clickable="true"
+        android:text="管理"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_s"/>
+  <TextView
+        android:id="@+id/tv_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_time"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_toEndOf="@+id/tv_manage"
+        android:clickable="true"
+        android:text="举报"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_s"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/divide_line"/>
+</RelativeLayout>

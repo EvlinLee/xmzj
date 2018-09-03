@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:textColor="@color/text_color_999"
+            android:text="方式一："/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_article_link"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="@dimen/px60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:singleLine="true"
+                android:layout_weight="4"
+                android:background="@drawable/shap_news_search"
+                android:hint="文章抓取URL链接"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/textSize_m" />
+
+            <Button
+                android:id="@+id/btn_article_import_link"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="@dimen/px60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_selector"
+                android:text="导入内容"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:textColor="@color/text_color_999"
+            android:text="方式二："/>
+
+        <RelativeLayout
+            android:id="@+id/btn_select_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/px80dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/px80dp"
+                android:gravity="center_vertical"
+                android:foreground="?android:selectableItemBackground"
+                android:text="选择历史文案"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:drawableRight="@drawable/person_icon_more"
+                android:text=""
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_s"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_weight="1"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <EditText
+                android:id="@+id/et_article_title"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_weight="5"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="(必填)"
+                android:singleLine="true"
+                android:textColor="@color/text_color_999"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_weight="1"
+                android:text="作者"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <EditText
+                android:id="@+id/et_article_author"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_weight="5"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="(选填)"
+                android:singleLine="true"
+                android:textColor="@color/text_color_999"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="@dimen/px80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_weight="1"
+                android:text="摘要"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <EditText
+                android:id="@+id/et_article_abstract"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_tiny"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:layout_weight="5"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="(选填)"
+                android:maxLength="120"
+                android:textColor="@color/text_color_999"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_weight="5"
+                android:text="封面"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <ImageView
+                android:id="@+id/iv_article_cover"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="@dimen/px100dp"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_marginTop="@dimen/px10dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/news_compile_add" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/divide_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/px80dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle">
+
+            <TextView
+                android:id="@+id/tv_article_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/px80dp"
+                android:gravity="center_vertical"
+                android:foreground="?android:selectableItemBackground"
+                android:text="文章分类"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_article_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:drawableRight="@drawable/person_icon_more"
+                android:text=""
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_s"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="@dimen/px80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_weight="1"
+                android:text="原文链接"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_m" />
+
+            <EditText
+                android:id="@+id/et_article_original_link"
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_weight="4"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="(选填)"
+                android:maxLength="120"
+                android:singleLine="true"
+                android:textColor="@color/text_color_999"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/divide_line" />
+
+        <Button
+            android:id="@+id/btn_article_article"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px88dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_selector"
+            android:text="正文编辑"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_middle"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarantee_maimai"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:id="@+id/tv_buyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@drawable/selector_guarantee_mm"
+                    android:gravity="center"
+                    android:text="@string/guarantee_user_buyer"
+                    android:textSize="@dimen/textSize_s"
+                    android:textColor="@drawable/selector_guarantee_mm_text"/>
+
+                <TextView
+                    android:id="@+id/tv_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@drawable/selector_guarantee_mm"
+                    android:gravity="center"
+                    android:text="@string/guarantee_user_sell"
+                    android:textSize="@dimen/textSize_s"
+                    android:textColor="@drawable/selector_guarantee_mm_text"/>
+
+            </LinearLayout>
+
+            <View style="@style/item_line"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarantee_number"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_userCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_middle"
+                    android:layout_marginEnd="@dimen/margin_middle"
+                    android:paddingTop="@dimen/px10dp"
+                    android:paddingBottom="@dimen/px10dp"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/text_color_666"
+                    android:hint="请输入对方新媒号"
+                    android:background="@color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/px10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/guarantee_choose_friends"/>
+
+            </LinearLayout>
+
+            <View style="@style/item_line"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarantee_title"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_middle"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/px10dp"
+                    android:paddingBottom="@dimen/px10dp"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/text_color_666"
+                    android:maxLength="24"
+                    android:hint="请输入标题"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+
+            <View style="@style/item_line"  />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/guarantee_info"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <ImageView
+                    android:id="@+id/img_add_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="@dimen/margin_tiny"
+                    android:layout_marginBottom="@dimen/margin_tiny"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/news_compile_add"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_toStartOf="@id/img_add_pic"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_middle"
+                    android:layout_marginStart="@dimen/margin_middle"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:minLines="5"
+                android:padding="@dimen/px10dp"
+                android:background="@drawable/shape_guarantee_grey_line"
+                android:hint="输入交易内容"
+                android:maxLength="500"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_ms"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarantee_price"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_middle"
+                    android:inputType="numberDecimal"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/px10dp"
+                    android:paddingBottom="@dimen/px10dp"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/guarantee_orange"
+                    android:hint="请输入金额"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+
+            <View style="@style/item_line"  />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/deal_guarantee_page_icon_explain"
+                    android:drawablePadding="@dimen/margin_tiny"
+                    android:text="@string/guarantee_danbao_price"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:id="@+id/tv_dbfee_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="3000"
+                    android:textColor="@color/guarantee_orange"
+                    android:textSize="@dimen/textSize_m"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_dbfee_price"
+                    android:layout_toEndOf="@id/label"
+                    android:layout_alignEnd="@id/tv_dbfee_price"
+                    android:paddingTop="@dimen/margin_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_dbfee_seller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:drawableStart="@drawable/selector_danbao_price"
+                        android:text="@string/guarantee_danbao_sell"
+                        android:textColor="@color/text_color_999"
+                        android:textSize="@dimen/textSize_s"/>
+
+                    <TextView
+                        android:id="@+id/tv_dbfee_buyer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:drawableStart="@drawable/selector_danbao_price"
+                        android:text="@string/guarantee_danbao_buyer"
+                        android:textColor="@color/text_color_999"
+                        android:textSize="@dimen/textSize_s"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_dbfee_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:drawableStart="@drawable/selector_danbao_price"
+                        android:text="@string/guarantee_danbao_mid"
+                        android:textColor="@color/text_color_999"
+                        android:textSize="@dimen/textSize_s"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <View style="@style/item_line"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarantee_phone"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_middle"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/px10dp"
+                    android:paddingBottom="@dimen/px10dp"
+                    android:textSize="@dimen/textSize_ms"
+                    android:textColor="@color/text_color_666"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:hint="请输入联系电话"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px88dp"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_middle"
+            android:background="@drawable/btn_blue_selector_no_stroke"
+            android:text="@string/label_complete"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/textSize_l"/>
+
+    </LinearLayout>
+
+</ScrollView>

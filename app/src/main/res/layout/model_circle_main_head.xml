@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/margin_middle"
+    android:gravity="center_horizontal"
+    tools:background="#000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/px150dp"
+        android:layout_height="@dimen/px150dp"
+        android:background="@color/white"
+        android:padding="1px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_host_defaual_bg" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_l"
+        tools:text="美食联盟" />
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_l"
+        tools:text="id:190" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:layout_marginTop="@dimen/margin_tiny">
+
+        <TextView
+            android:id="@+id/tv_quanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/line"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m"
+            tools:text="圈主 二狗蛋" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/line"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m"
+            tools:text="成员 5万" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_tiny">
+
+        <RelativeLayout
+            android:id="@+id/rl_circle_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_m"
+                tools:text="课堂6"/>
+
+
+            <View
+                android:id="@+id/line_lin3"
+                android:layout_width="1px"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/tv_classroom"
+                android:background="@color/white"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_file"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_toRightOf="@id/tv_classroom"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_m"
+                tools:text="文件2"/>
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/line_lin4"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/rl_circle_head"
+            android:background="@color/white"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/line_lin4"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m"
+            tools:text="文章1"/>
+
+        <View
+            android:id="@+id/line_lin5"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/rl_circle_head"
+            android:background="@color/white"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/tv_count"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/line_lin5"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m"
+            tools:text="话题 10086"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px60dp"
+        android:background="@drawable/select_join_btn"
+        android:drawableLeft="@drawable/person_icon_group_blue"
+        android:drawablePadding="@dimen/margin_small"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:text="群聊"
+        android:layout_marginBottom="@dimen/px30dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_m" />
+
+</LinearLayout>

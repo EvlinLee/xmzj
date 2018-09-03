@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/model_line" />
+    <View style="@style/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle">
+
+        <ImageView
+            android:id="@+id/img_profit"
+            android:layout_width="@dimen/px80dp"
+            android:layout_height="@dimen/px80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_icon_head_120"/>
+
+        <TextView
+            android:id="@+id/tv_profit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_profit"
+            android:layout_toRightOf="@id/img_profit"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:textSize="@dimen/textSize_m"
+            android:text="一点领袖"
+            android:textColor="@color/text_color_333"/>
+
+        <TextView
+            android:id="@+id/tv_profit_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_profit_name"
+            android:layout_below="@id/tv_profit_name"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_999"
+            android:text="接单中"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="粉丝数：123456"
+            android:textColor="@color/text_color_999"/>
+
+    </RelativeLayout>
+
+    <View style="@style/item_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:background="#FCFBFE">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_666"
+            android:text="首条预估阅读"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_below="@id/tv1"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_666"
+            android:text="第二～八条预估阅读"/>
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_666"
+            android:text="第二～八条可匹配广告数"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv1"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:text="33~115"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv2"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:text="33~115"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv3"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:text="33~115"/>
+
+    </RelativeLayout>
+
+    <View style="@style/item_line"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_middle"
+        android:gravity="center_vertical|right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:minWidth="@dimen/px150dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:background="@drawable/shape_btn_white"
+            android:textSize="@dimen/textSize_s"
+            android:text="阅读量更新"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/px150dp"
+            android:padding="@dimen/margin_small"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:background="@drawable/shape_btn_accent"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/white"
+            android:text="接单"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="@dimen/px150dp"
+            android:padding="@dimen/margin_small"
+            android:background="@drawable/shape_btn_white"
+            android:textSize="@dimen/textSize_s"
+            android:text="查看订单"/>
+
+    </LinearLayout>
+
+    <View style="@style/item_line"  />
+
+</LinearLayout>

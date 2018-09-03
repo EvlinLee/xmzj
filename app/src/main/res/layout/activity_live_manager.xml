@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line">
+    <RelativeLayout
+        android:id="@+id/rl_invite_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:layout_marginTop="@dimen/px24dp">
+        <TextView
+            android:id="@+id/tv_label_share"
+            style="@style/TextViewMatchStyle"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:text="邀请管理员"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person_icon_more"
+            android:layout_marginRight="@dimen/margin_middle"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_label_des"
+        style="@style/TextViewMatchStyle"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:text="课堂管理员"
+        />
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/rc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        />
+</LinearLayout>

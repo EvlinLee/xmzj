@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_fragment_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4"
+    android:focusable="true"
+    android:orientation="vertical"
+  >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/live_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.gxtc.huchuan.widget.PlayBarView
+        android:id="@+id/playbarview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility = "visible"
+        android:visibility="gone"/>
+
+</LinearLayout>

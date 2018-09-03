@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBar_height"
+    android:gravity="center"
+    android:background="?android:selectableItemBackground"
+    android:orientation="horizontal">
+
+    <com.gxtc.huchuan.widget.CircleImageView
+        android:id="@+id/left_image"
+        android:layout_width="@dimen/px35dp"
+        android:layout_height="@dimen/px35dp"
+        android:layout_marginRight="@dimen/px10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shape_live_red_dat" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/px10dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:text="标题"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_l" />
+
+</LinearLayout>

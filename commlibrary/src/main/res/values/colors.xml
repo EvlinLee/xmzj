@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28a0dc</color>
+    <color name="colorPrimaryDark">#1D6182</color>
+    <color name="colorAccent">#148cc8</color>
+
+    <color name="status_bg">@color/colorPrimary</color>
+
+    <color name="actionbar_text_color">#333333</color>
+    <color name="pts_color">#44B1E8</color>
+
+    <!--公共-->
+    <color name="white">#fff</color>
+    <color name="common_background">#F7F8F9</color>
+    <color name="divide_line">#dddddd</color>
+    <color name="grey1">#999999</color>
+    <color name="black1">#4D4D4D</color>
+    <color name="black">#000</color>
+
+    <!--1px分割线颜色-->
+    <color name="grey_e5e5">#e5e5e5</color>
+
+    <!--模块分割线-->
+    <!--<color name="module_divide_line">#ECEDEE</color>-->
+    <color name="module_divide_line">#F3F4F5</color>
+
+    <!--灰色小标题颜色-->
+    <color name="sub_title_color">#5F6667</color>
+    <!--按下的颜色-->
+    <color name="touch_press_color">#D9D9D9</color>
+
+
+    <!--下拉刷新颜色-->
+    <color name="refresh_color1">#ff33b5e5</color>
+    <color name="refresh_color2">#ff0099cc</color>
+    <color name="refresh_color3">#ff99cc00</color>
+    <color name="refresh_color4">#ff669900</color>
+
+    <!--按钮的颜色-->
+    <color name="btn_press">#1D6182</color>
+    <color name="btn_normal">#148cc8</color>
+
+</resources>

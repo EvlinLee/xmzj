@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_circle_home_item_head" />
+
+
+    <TextView
+        android:id="@+id/tv_circle_home_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px130dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"
+        tools:text="昨天" />
+
+    <include layout="@layout/model_circle_home_item_foot" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20dp"
+        android:background="@color/module_divide_line" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/px160dp"
+    android:layout_marginLeft="@dimen/px24dp"
+    android:layout_marginRight="@dimen/px24dp">
+    <ImageView
+        android:id="@+id/iv_circle_cover"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_circle_cover"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tv_circle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新媒体行业"
+            android:textColor="@color/text_color_666"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_ml"
+            />
+        <TextView
+            android:id="@+id/tv_joinCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员381.2万"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_999"
+            android:layout_below="@id/tv_circle_name"
+            android:layout_marginTop="@dimen/px30dp"
+            />
+        <TextView
+            android:id="@+id/tv_topicCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程6.6万"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_999"
+            android:layout_below="@id/tv_circle_name"
+            android:layout_toRightOf="@id/tv_joinCount"
+            android:layout_marginTop="@dimen/px30dp"
+            android:layout_marginLeft="@dimen/px30dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

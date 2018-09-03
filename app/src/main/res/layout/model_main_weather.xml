@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_larger"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_weather_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="03"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/main_weather_big" />
+
+    <TextView
+        android:id="@+id/tv_weather_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_weather_day"
+        android:layout_marginLeft="@dimen/margin_tiny"
+        android:layout_toRightOf="@id/tv_weather_day"
+        android:text="03/2017"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/tv_weather_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_weather_day"
+        android:layout_marginLeft="@dimen/margin_tiny"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:layout_above="@+id/tv_weather_month"
+        android:text="星期五"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <!--<TextView
+        android:id="@+id/tv_weather_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weather_day"
+        android:layout_alignLeft="@id/tv_weather_day"
+        android:text="南宁市: 晴21C"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_s"/>-->
+
+</RelativeLayout>

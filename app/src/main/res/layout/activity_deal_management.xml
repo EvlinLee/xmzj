@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_deal_issue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="发布帖子"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_deal_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="我的帖子"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_deal_fast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="快速交易"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_deal_management"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="交易管理"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_refund_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="退款列表"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"/>
+
+    <View
+        style="@style/model_line"
+        android:layout_weight="1"/>
+
+</LinearLayout>

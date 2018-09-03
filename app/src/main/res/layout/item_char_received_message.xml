@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_text_time_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:text="12346"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:paddingBottom="@dimen/margin_small">
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/px100dp"-->
+        <!--android:layout_height="@dimen/px100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="@dimen/margin_tiny"-->
+        <!--android:background="@drawable/icon_user_occupied"-->
+        <!--android:contentDescription="@string/head_text"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:visibility="visible"/>-->
+
+        <ImageView
+            android:id="@+id/iv_item_char_received_message_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:src="@drawable/icon_user_occupied"/>
+
+        <ImageView
+            android:id="@+id/iv_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_item_char_received_message_head"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:clickable="true"
+            android:src="@drawable/icon_reward"/>
+
+        <TextView
+            android:id="@+id/tv_item_char_received_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/iv_item_char_received_message_head"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/px26dp"
+            tools:text="贝贝"/>
+
+        <TextView
+            android:id="@+id/tv_item_char_received_message_sendertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_toEndOf="@+id/tv_item_char_received_message_sender"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/px26dp"
+            tools:text="贝贝"/>
+
+        <FrameLayout
+            android:id="@+id/frame_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_item_char_received_message_sender"
+            android:layout_below="@+id/tv_item_char_received_message_sender"
+            android:layout_toEndOf="@+id/iv_item_char_received_message_head"
+            android:paddingTop="@dimen/px20dp">
+
+            <TextView
+                android:id="@+id/tv_item_char_received_message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_char_message_bg"
+                android:autoLink="web"
+                android:clickable="true"
+                android:longClickable="true"
+                android:maxWidth="200dp"
+                android:padding="10dp"
+                tools:text="testlkjdflkjlbnlskdjflkgkjgsldjlsjglskdflksdjglskdjfl"/>
+
+            <include
+                layout="@layout/item_share_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_item_char_received_message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_char_received_message_sendertype"
+            android:layout_marginLeft="-12.0dip"
+            android:layout_toEndOf="@id/frame_content"
+            android:paddingBottom="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_tiny"
+            android:paddingRight="@dimen/margin_tiny"
+            android:src="@drawable/icon_message_back"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

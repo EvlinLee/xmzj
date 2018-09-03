@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/live_share_bg" />
+
+    <RelativeLayout
+        style="@style/item_click_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px160dp">
+
+        <ImageView
+            android:id="@+id/iv_item_topic_share_list_head"
+            android:layout_width="@dimen/px120dp"
+            android:layout_height="@dimen/px120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/circle_head_icon_120" />
+
+        <TextView
+            android:id="@+id/tv_item_topic_share_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_toRightOf="@id/iv_item_topic_share_list_head"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            tools:text="bernard(我)" />
+
+
+        <TextView
+            android:id="@+id/tv_item_topic_share_list_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_toRightOf="@id/iv_item_topic_share_list_head"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m"
+            tools:text="推荐了%d个朋友过来听课" />
+
+        <TextView
+            android:id="@+id/tv_item_topic_share_list_goshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20dp"
+            android:background="@color/btn_nornal"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="去邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_live_intro_module_space" />
+
+    <LinearLayout
+        android:id="@+id/layout_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/px20dp"
+            android:paddingEnd="@dimen/px20dp">
+
+            <TextView
+                android:id="@+id/tv_invite_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_ml"
+                android:layout_centerVertical="true"
+                tools:text="你已成功邀请了5位好友"
+                android:textColor="@color/text_color_333"/>
+
+            <TextView
+                android:id="@+id/tv_invite_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:textSize="@dimen/textSize_s"
+                android:drawableEnd="@drawable/person_icon_more"
+                android:text="去听课"
+                android:textColor="@color/text_color_999"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:background="@color/grey_F4F4F4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px20dp"
+            tools:showIn="@layout/content_live_intro"/>
+
+    </LinearLayout>
+
+</LinearLayout>

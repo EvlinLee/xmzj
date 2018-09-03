@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        style="@style/model_line"/>
+    <TextView
+        android:id="@+id/tv_all_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_homepage_icon_wallet_4"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="全部订单"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+    <TextView
+        android:id="@+id/tv_my_shopcar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/person_live_icon_buy_5"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableRight="@drawable/person_icon_more"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="我的购物车"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"/>
+
+
+    <View
+        style="@style/item_line"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"/>
+
+
+
+
+
+</LinearLayout>

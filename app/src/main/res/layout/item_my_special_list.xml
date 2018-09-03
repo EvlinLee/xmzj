@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingLeft="@dimen/margin_middle"
+    android:paddingEnd="@dimen/margin_middle">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_ml"
+        tools:text="老金：10分钟教会你炒币赚钱"/>
+
+    <ImageView
+        android:id="@+id/img_face"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px350dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_foreshow_img_temp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/px5dp"
+        android:background="@drawable/shape_btn_white"
+        android:gravity="center_vertical"
+        tools:text="4人订阅"
+        android:textSize="@dimen/textSize_xs"
+        android:textColor="@color/text_color_666"
+        app:layout_constraintEnd_toEndOf="@id/img_face"
+        app:layout_constraintBottom_toBottomOf="@id/img_face"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/text_color_999"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:drawableStart="@drawable/home_type_special_subject"
+        android:drawablePadding="@dimen/margin_small"
+        tools:text="6小时前"
+        app:layout_constraintTop_toBottomOf="@id/img_face"/>
+
+    <TextView
+        android:id="@+id/tv_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/text_color_999"
+        android:layout_marginTop="@dimen/margin_middle"
+        tools:text="价格"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_face"/>
+
+    <View style="@style/item_line"
+        android:layout_marginTop="@dimen/margin_middle"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_collect_circle_item_head" />
+
+
+    <com.gxtc.huchuan.widget.ExpandVideoPlayer
+        android:id="@+id/play_circle_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px360dp"
+        android:layout_marginBottom="@dimen/px30dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px15dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/px130dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_circle_home_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"
+            tools:text="昨天" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:id="@+id/tv_circle_home_remove"
+            android:clickable="true"
+            android:text="删除"
+            android:textColor="@color/color_676980"
+            android:textSize="@dimen/textSize_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <ImageView
+            android:padding="@dimen/margin_tiny"
+            android:src="@drawable/circle_friend_comment_icon_blie"
+            android:id="@+id/iv_comment"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <include android:visibility="gone" layout="@layout/model_circle_home_item_footv2" />
+
+
+
+</LinearLayout>

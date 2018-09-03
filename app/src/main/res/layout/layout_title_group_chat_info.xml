@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    tools:showIn="@layout/activity_group_chat_members">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation_icon_back"
+        android:padding="@dimen/margin_medium"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_chat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="80dp"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:text="聊天信息(0)"
+        android:textColor="@color/actionbar_text_color"
+        android:textSize="@dimen/textSize_xl"
+        android:layout_toRightOf="@id/iv_back"/>
+
+    <!--<View-->
+        <!--style="@style/item_line"-->
+        <!--android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

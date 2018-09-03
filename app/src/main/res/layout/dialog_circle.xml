@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:gravity="center"
+            android:text="注意事项"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_xl" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:text="1.创建后需去圈子资料填写圈子详细介绍。"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:text="2.填写并提交详细介绍后平台人员会对圈子进行审核。"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px30dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:text="3.圈子审核时无法进行更改，请确保信息正确。"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+
+        <Button
+            android:id="@+id/tv_dialog_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_btn_blue"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px100dp"
+            android:paddingRight="@dimen/px100dp"
+            android:text="我知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

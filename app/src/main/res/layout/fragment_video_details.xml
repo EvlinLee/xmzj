@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.gxtc.huchuan.widget.ExpandVideoPlayer
+        android:id="@+id/play_news_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px360dp"
+        android:scaleType="centerCrop"/>
+
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/rv_videolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

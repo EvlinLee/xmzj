@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_small">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_friend_icon_xpy"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_weight="1"
+            android:text="新的朋友"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.flyco.tablayout.widget.MsgView
+                android:id="@+id/msgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="11.5sp"
+                android:textColor="#ffffff"
+                mv:mv_backgroundColor="#FD481F"
+                mv:mv_isRadiusHalfHeight="true"
+                mv:mv_strokeColor="#ffffff"
+                mv:mv_strokeWidth="1dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_small">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_friend_icon_ql"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_weight="1"
+            android:text="群聊"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+    </LinearLayout>
+
+    <View style="@style/model_line"/>
+
+</LinearLayout>

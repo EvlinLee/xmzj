@@ -1,0 +1,5 @@
+<resources>
+    <style name="rippleBg">
+        <item name="android:foreground">?android:selectableItemBackgroundBorderless</item>
+    </style>
+</resources>

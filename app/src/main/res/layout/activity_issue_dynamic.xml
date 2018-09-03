@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey_F4F4F4"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_issue_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px200dp"
+            android:autoLink="web"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="这一刻的想法..."
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp"
+            android:paddingTop="@dimen/px10dp"
+            android:paddingBottom="@dimen/px10dp"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"/>
+
+        <com.gxtc.huchuan.widget.CircleRecyclerView
+            android:id="@+id/rv_issue_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px120dp"
+            android:paddingBottom="@dimen/margin_middle"/>
+
+        <include layout="@layout/model_relay_view"/>
+
+        <TextView
+            android:id="@+id/tv_issue_tongbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@drawable/person_icon_more"
+            android:paddingBottom="@dimen/px30dp"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp"
+            android:paddingTop="@dimen/px30dp"
+            android:text="同步到圈子(全部圈友可见)"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+        <View style="@style/item_line"/>
+
+        <TextView
+            android:id="@+id/tv_issue_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:paddingBottom="@dimen/px30dp"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp"
+            android:textColor="@color/circle_name_color"
+            android:textSize="@dimen/textSize_m"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_note_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="8.6"
+                android:paddingBottom="@dimen/px30dp"
+                android:paddingLeft="@dimen/px20dp"
+                android:paddingRight="@dimen/px20dp"
+                android:paddingTop="@dimen/px30dp"
+                android:text="仅好友可见"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+
+            <CheckBox
+                android:id="@+id/cb_issue_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px20dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/px30dp"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp"
+            android:paddingTop="@dimen/px10dp"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_999"
+            tools:text="选择仅好友可见，该动态只有你的好友能看到，你的粉丝将看不到。"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_emotionview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

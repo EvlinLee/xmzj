@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/px15dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/px112dp"
+            android:layout_height="@dimen/px112dp"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/live_list_place_holder_120"/>
+
+        <ImageView
+            android:id="@+id/img_recomend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="-5dp"
+            android:layout_alignEnd="@id/img_head"
+            android:alpha="0.8"
+            android:visibility="gone"
+            android:src="@drawable/circle_home_icon_renqi"/>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_head"
+            android:layout_alignRight="@id/img_head"
+            android:layout_alignBottom="@id/img_head"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_circle_recommend">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/circle_home_icon_yonghu"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:text="财神大咖"
+                android:textSize="@dimen/textSize_xs"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_tiny"
+        android:layout_marginRight="@dimen/margin_tiny"
+        android:singleLine="true"
+        android:text="新媒之家自家"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s"/>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context="com.gxtc.huchuan.ui.live.series.SeriesActivity">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:id="@+id/rl_series_owner_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--headpic  系列课头像-->
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="@dimen/px268dp"
+                        android:layout_height="@dimen/px180dp"
+                        android:layout_margin="@dimen/margin_10"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/live_list_place_holder_120"/>
+
+                    <!--seriesname 系列课名称-->
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_head"
+                        android:layout_toEndOf="@id/iv_head"
+                        android:layout_toRightOf="@id/iv_head"
+                        android:layout_toStartOf="@+id/tv_more"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:textColor="@color/text_color_333"
+                        android:textSize="@dimen/textSize_m"
+                        tools:text="lsdjkg"/>
+
+
+                    <!--fee  价格-->
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_head"
+                        android:layout_toRightOf="@id/iv_head"
+                        android:gravity="center"
+                        android:textColor="@color/color_price_ec6b46"
+                        android:textSize="@dimen/textSize_m"
+                        tools:text="价格：￥9900"/>
+
+
+                    <!--返回到课堂主页-->
+                    <ImageView
+                        android:id="@+id/tv_return_livepage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:paddingRight="@dimen/margin_medium"
+                        android:src="@drawable/person_icon_more"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <include layout="@layout/layout_live_intro_module_space"/>
+
+                <include
+                    android:id="@+id/layout_follow"
+                    layout="@layout/layout_live_intro_follow"/>
+
+                <View style="@style/item_line"/>
+
+                <include
+                    android:id="@+id/layout_share"
+                    style="@style/item_click_bg"
+                    layout="@layout/layout_live_intro_share"/>
+
+                <View style="@style/item_line"/>
+
+                <include
+                    android:id="@+id/layout_count"
+                    layout="@layout/layout_live_intro_join_people_countv2"/>
+
+                <include layout="@layout/layout_live_intro_module_space"/>
+
+                <Button
+                    android:id="@+id/btn_create_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/px10dp"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/px10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="新建子课程"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_m"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_series_page_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/color_price_ec6b46"
+                app:tabSelectedTextColor="@color/color_price_ec6b46"
+                app:tabTextAppearance="@android:style/TextAppearance.Holo.Small"
+                app:tabTextColor="@color/text_color_666"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_series_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_audience_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_buy_series"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/btn_nornal"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="购买系列课： ￥99.00"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View style="@style/item_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_owner_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_owner_share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person_homepage_icon_push"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:minEms="6"
+                    android:padding="@dimen/margin_10"
+                    android:text="分享系列课"
+                    android:textColor="@color/text_color_666"
+                    />
+            </LinearLayout>
+
+
+            <View
+                style="@style/item_line_vertical"
+                android:layout_marginTop="@dimen/margin_tiny"/>
+
+            <LinearLayout
+                android:id="@+id/ll_owner_setting_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person_homepage_icon_set"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:minEms="6"
+                    android:padding="@dimen/margin_10"
+                    android:text="设置"
+                    android:textColor="@color/text_color_666"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

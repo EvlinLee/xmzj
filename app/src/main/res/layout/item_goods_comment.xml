@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_middle"
+   >
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/px48dp"
+        android:layout_height="@dimen/px48dp"
+        android:src="@drawable/person_icon_head"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_toRightOf="@id/img_icon"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        tools:text="空城旧梦"/>
+
+    <ImageView
+        android:id="@+id/img_delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:paddingLeft="@dimen/margin_tiny"
+        android:paddingTop="@dimen/margin_tiny"
+        android:src="@drawable/circle_search_icon_delete"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/margin_small"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/text_color_333"
+        android:textSize="16sp"
+        tools:text="单双卡？有没有分享密码功能使用刚发发发发afafddasfdasf?"/>
+
+    <LinearLayout
+        android:id="@+id/layout_sub_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="#F7F7F7"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@+id/layout_sub_comment"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="20小时前"/>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_time"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/deal_forum_icon_comment"
+        android:drawablePadding="@dimen/margin_tiny"
+        android:gravity="top"
+        android:text="回复"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/tv_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_time"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:layout_toLeftOf="@id/tv_comment"
+        android:drawableLeft="@drawable/circle_home_icon_zan"
+        android:drawablePadding="@dimen/margin_tiny"
+        android:gravity="bottom"
+        android:text="22"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/module_divide_line"
+ >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.gxtc.commlibrary.recyclerview.RecyclerView
+                android:id="@+id/live_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/fab_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="40dp"
+            android:src="@drawable/shop_home_icon_kefu" />
+    </FrameLayout>
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/mall_bottom_layout" />
+</LinearLayout>

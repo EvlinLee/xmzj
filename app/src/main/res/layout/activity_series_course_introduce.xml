@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_series_intro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px400dp"
+        android:hint="填写系列课介绍"
+        android:gravity="top"
+        android:textSize="@dimen/textSize_m"
+        android:padding="@dimen/margin_small"
+        android:layout_margin="@dimen/px20dp"
+        android:background="@drawable/shap_series_intro_bg"/>
+</LinearLayout>

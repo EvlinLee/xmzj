@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_menber_free"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px100dp"
+            android:layout_marginLeft="@dimen/px20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:text="免费加入圈子"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+    </LinearLayout>
+
+    <TextView style="@style/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_menber_nofree"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px100dp"
+            android:layout_marginLeft="@dimen/px20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/cb_menber_nofree"
+            android:text="付费加入圈子"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <TextView
+            android:id="@+id/tv_member_app_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/circle_main_Btn_fabiao"
+            android:textSize="@dimen/textSize_m"
+            tools:text="¥ 50/年 分成：10%" />
+    </RelativeLayout>
+</LinearLayout>

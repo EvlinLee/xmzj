@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px24dp"
+    android:layout_marginLeft="@dimen/margin_middle"
+    android:layout_marginRight="@dimen/margin_middle"
+    android:layout_marginTop="@dimen/px24dp"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_histroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:background="@drawable/selector_news_collect"
+        android:button="@null"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_class"
+        android:layout_width="@dimen/px150dp"
+        android:layout_height="@dimen/px150dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_histroy"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/ll_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_toRightOf="@id/iv_class"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="辣妈优课"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+
+        <TextView
+            android:id="@+id/tv_class_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="每周都有多堂“辣妈最关心的课程...”"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_m"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/person_icon_more"
+        />
+</RelativeLayout>

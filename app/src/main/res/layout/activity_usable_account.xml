@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_usable_account_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px400dp"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/tv_usable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px400dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_xxxxxxxxxl"
+                tools:text="¥ 255.15"/>
+
+            <include
+                android:id="@+id/layout_tab"
+                layout="@layout/layout_mine_top_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:layout_alignBottom="@id/tv_usable"/>
+        </RelativeLayout>
+
+        <TextView style="@style/item_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_usable_recharge"
+            style="@style/item_click_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/person_balance_icon_top_up"
+                android:drawablePadding="@dimen/px20dp"
+                android:gravity="center_vertical"
+                android:text="充值"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+
+            <TextView
+                android:id="@+id/tv_freeze_account_details_create_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_weight="4"
+                android:drawableRight="@drawable/person_icon_more"
+
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+        </LinearLayout>
+
+        <TextView style="@style/item_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_usable_withdraw"
+            style="@style/item_click_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/person_balance_icon_withdraw_deposit"
+                android:drawablePadding="@dimen/px20dp"
+                android:drawableRight="@drawable/person_icon_more"
+                android:gravity="center_vertical"
+                android:text="提现"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+
+        </LinearLayout>
+
+        <TextView style="@style/item_line"/>
+
+        <TextView
+            style="@style/item_line"
+            android:layout_marginTop="@dimen/px20dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_usable_rmb"
+            style="@style/item_click_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/person_balance_icon_bill"
+                android:drawablePadding="@dimen/px20dp"
+                android:drawableRight="@drawable/person_icon_more"
+                android:gravity="center_vertical"
+                android:text="人民币账单"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+
+        </LinearLayout>
+        <View style="@style/item_line"  android:layout_marginTop="@dimen/px20dp" />
+        <TextView
+            android:id="@+id/tv_income_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/person_balance_icon_jymx"
+            android:drawablePadding="@dimen/px20dp"
+            android:drawableRight="@drawable/person_icon_more"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_medium"
+            android:gravity="center_vertical"
+            android:text="收益明细"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+        <View style="@style/item_line"  android:layout_marginTop="@dimen/px20dp" />
+
+        <TextView
+            android:id="@+id/take_money_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp"
+            android:drawableLeft="@drawable/person_balance_icon_txlb"
+            android:drawablePadding="@dimen/px20dp"
+            android:drawableRight="@drawable/person_icon_more"
+            android:gravity="center_vertical"
+            android:text="提现记录"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            style="@style/item_click_bg"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

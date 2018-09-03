@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F3F7">
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/open_rp_top"/>
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:layout_below="@id/tv_label"
+        android:layout_marginTop="@dimen/margin_large"
+        android:scaleType="fitXY"
+        android:src="@drawable/pck_circle_bg"/>
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:layout_marginTop="68dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_head_icon_80"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_head"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/ic_pin"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_ml"
+        tools:text="南瓜"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_ml"
+        tools:text="测试红包不要点。。。。"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_message"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:textColor="@color/text_color_333"
+        android:textSize="50sp"
+        android:text="0.01"/>
+
+    <TextView
+        android:id="@+id/tv_money_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_money"
+        android:layout_toRightOf="@id/tv_money"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_l"
+        android:text="元"/>
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_money"
+        android:text="已存入钱包，可直接提现"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/tv_remain_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/middle_text_size"
+        android:layout_alignBottom="@id/img_bottom"
+        android:layout_marginBottom="@dimen/margin_middle"
+        android:text="1个红包1秒被抢完"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/text_color_999"/>
+
+</RelativeLayout>

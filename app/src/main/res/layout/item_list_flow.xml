@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_middle"
+        android:background="@drawable/shape_flow_list"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_flow"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_error_img" />
+
+
+        <TextView
+            android:id="@+id/tv_flow_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_flow"
+            android:layout_alignLeft="@id/img_flow"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin_tiny"
+            android:paddingRight="@dimen/margin_tiny"
+            android:paddingTop="@dimen/margin_small"
+            android:background="#66000000"
+            android:maxLines="1"
+            android:text="淘宝优惠卷淘宝优惠卷"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/tv_flow_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_flow"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:text="推广日期: 2017-02-06~2018-02-02"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/tv_flow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_flow_date"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:text="推广时段: 不限"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/tv_flow_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_flow_time"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:text="阅读单价: 0.11元"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_flow_money"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/grey_e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_flow_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_centerVertical="true"
+                android:text="预估收入: 0.11元"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:layout_width="@dimen/px156dp"
+                android:layout_height="@dimen/px56dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:gravity="center"
+                android:background="@drawable/selected_blue_btn_no_line"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s"
+                android:text="查看文案"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_flow_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_flow"
+            android:layout_alignRight="@id/img_flow"
+            android:layout_alignLeft="@id/img_flow"
+            android:layout_alignBottom="@id/view_line"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/deal_gou_gb"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/module_divide_line" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mall_all_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.gxtc.huchuan.ui.mall.order.MallCustomersActivity">
+
+    <TextView
+        android:id="@+id/txt_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_ml"
+        android:padding="@dimen/px25dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@color/text_color_666"
+        android:text="购物车"/>
+    <View
+        style="@style/item_line"/>
+</LinearLayout>

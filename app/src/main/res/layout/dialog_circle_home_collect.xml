@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layer_list_shadow_rectangle"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_circle_copy"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="复制"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/tv_circle_collect"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="收藏"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View style="@style/item_line" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="删除"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View style="@style/item_line" />
+    <TextView
+        android:id="@+id/toTop"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="置顶"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View style="@style/item_line" />
+    <TextView
+        android:id="@+id/forbident_sent_dynamic"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="禁发动态"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View style="@style/item_line" />
+    <TextView
+        android:id="@+id/set_best"
+        android:layout_width="@dimen/px200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_middle"
+        android:text="设置精华"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+    <View style="@style/item_line" />
+</LinearLayout>

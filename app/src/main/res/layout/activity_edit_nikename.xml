@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!--<include layout="@layout/layout_editinfo_title" />-->
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/color_ffffff"
+        android:paddingLeft="@dimen/px30dp"
+        android:paddingRight="@dimen/px30dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_nike_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px80dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/input_hint_nikename"
+            android:maxLines="1"
+            android:padding="@dimen/px10dp"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            app:layout_widthPercent="95%" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/et_nike_name"
+            android:gravity="center_vertical"
+            android:src="@drawable/person_edit_delete"
+            android:visibility="gone"
+            app:layout_widthPercent="10%" />
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

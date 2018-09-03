@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gxtc.huchuan.widget.ProgressWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/module_divide_line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_middle"
+            tools:text="¥199"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/color_price_ec6b46"/>
+
+        <TextView
+            android:id="@+id/btn_previews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_middle"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="预览"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_m"/>
+
+        <TextView
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_btn_accent_no_radius"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_middle"
+            android:text="马上加入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m" />
+
+    </LinearLayout>
+
+</LinearLayout>

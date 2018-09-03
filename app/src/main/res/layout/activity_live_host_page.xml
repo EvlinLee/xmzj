@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gxtc.huchuan.ui.live.hostpage.LiveHostPageActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/px10dp"-->
+        <!--android:background="@color/divide_line" />-->
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"
+            app:layout_behavior="com.gxtc.huchuan.utils.FlingBehavior">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <RelativeLayout
+                    android:id="@+id/relativelayoutmanage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium">
+
+                        <ImageView
+                            android:id="@+id/iv_live_host_managepage_portrait"
+                            android:layout_width="@dimen/px105dp"
+                            android:layout_height="@dimen/px105dp"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_user_occupied"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/iv_live_host_managepage_portrait"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/iv_live_host_managepage_portrait"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_live_host_managepage_owner_title"
+                                android:layout_width="@dimen/px400dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_medium"
+                                android:textColor="@color/text_color_333"
+                                android:textSize="@dimen/px32dp"
+                                android:textStyle="bold"
+                                tools:text="希腊万人迷课堂希腊万人迷" />
+
+                            <TextView
+                                android:id="@+id/tv_live_host_page_managepeopel_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_live_host_managepage_owner_title"
+                                android:layout_marginLeft="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:textColor="@color/text_color_666"
+                                android:textSize="@dimen/px24dp"
+                                tools:text="923人关注"/>
+
+                            <View
+                                android:id="@+id/tv_live_host_page_owner_titleright"
+                                android:layout_width="1dp"
+                                android:layout_height="0dp"
+                                android:layout_alignBottom="@+id/tv_live_host_page_managepeopel_count"
+                                android:layout_alignTop="@+id/tv_live_host_page_managepeopel_count"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/tv_live_host_page_managepeopel_count"
+                                android:background="@color/transparencyback30"/>
+
+                            <TextView
+                                android:id="@+id/tv_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/tv_live_host_page_owner_titleright"
+                                android:layout_toRightOf="@+id/tv_live_host_page_owner_titleright"
+                                android:drawableLeft="@drawable/live_icon_bianji"
+                                android:drawablePadding="3dp"
+                                android:text="编辑"
+                                android:textColor="@color/color_2b8cff"
+                                android:textSize="@dimen/px24dp"/>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/rl_bottom"
+                        style="@style/item_line"
+                        android:layout_below="@+id/rl_top"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px85dp"
+                        android:layout_below="@+id/rl_bottom"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/ll_create_topic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/px38dp"
+                                android:layout_height="@dimen/px38dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/live_kcgl_1"/>
+
+                            <TextView
+                                android:id="@+id/tv_create_topic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/px10dp"
+                                android:drawablePadding="@dimen/margin_small"
+                                android:gravity="center"
+                                android:text="新建课程"
+                                android:textColor="@color/black1"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@color/divide_line"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_create_series"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/px38dp"
+                                android:layout_height="@dimen/px38dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/live_kcgl_2"/>
+
+                            <TextView
+                                android:id="@+id/tv_create_series"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/px10dp"
+                                android:text="新建系列课"
+                                android:textColor="@color/black1"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@color/divide_line"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_see_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/px38dp"
+                                android:layout_height="@dimen/px38dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/live_kcgl_3"/>
+
+                            <TextView
+                                android:id="@+id/tv_see_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/px10dp"
+                                android:text="课程订单"
+                                android:textColor="@color/black1"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/model_line"
+                        android:layout_below="@id/ll_create"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativelayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/px350dp">
+
+                    <ImageView
+                        android:id="@+id/live_host_page_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px350dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg"/>
+
+                    <ImageView
+                        android:id="@+id/live_host_page_image_hit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px350dp"
+                        android:background="@color/tint"
+                        android:scaleType="centerCrop"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/px50dp"
+                        android:layout_alignLeft="@id/live_host_page_image">
+
+                        <ImageView
+                            android:id="@+id/iv_live_host_page_portrait"
+                            android:layout_width="@dimen/px126dp"
+                            android:layout_height="@dimen/px126dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/px40dp"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:background="@drawable/live_list_head_banner"
+                            android:clickable="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_user_occupied"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            android:layout_alignTop="@id/iv_live_host_page_portrait"
+                            android:layout_toRightOf="@id/iv_live_host_page_portrait">
+
+                            <TextView
+                                android:id="@+id/tv_live_host_page_owner_title"
+                                android:layout_width="@dimen/px400dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_medium"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_l"
+                                tools:text="希腊万人迷课堂希腊万人迷课堂"/>
+
+                            <TextView
+                                android:id="@+id/tv_live_host_page_peopel_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_live_host_page_owner_title"
+                                android:layout_marginLeft="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:layout_toRightOf="@id/iv_live_host_page_portrait"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_m"
+                                tools:text="923人关注"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/cb_live_host_page_attention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_live_host_page_portrait"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:clickable="true"
+                            android:src="@drawable/live_topic_attention_normal"/>
+
+                    </RelativeLayout>
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/divide_line"/>-->
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_live_host_page_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/color_47abef"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/color_47abef"
+                app:tabTextColor="@color/text_color_666"/>
+            <View
+                style="@style/item_line"/>
+
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/toolbar_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--app:contentScrim="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--app:layout_collapseMode="pin"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+        </android.support.design.widget.AppBarLayout>
+        <!--<include layout="@layout/content_live_host_page" />-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_live_host_page_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <!--<com.gxtc.huchuan.widget.WrapContentHeightViewPager-->
+        <!--android:id="@+id/vp_live_host_page_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            android:id="@+id/tv_label_avatar"
+            style="@style/TextViewMatchStyle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="课堂背景"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            app:layout_widthPercent="85%"/>
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:src="@drawable/person_icon_more"/>
+
+        <ImageView
+            android:id="@+id/iv_series_head"
+            android:layout_width="@dimen/px60dp"
+            android:layout_height="@dimen/px60dp"
+            android:layout_toStartOf="@id/img_more"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:src="@drawable/live_foreshow_img_temp"
+            app:layout_widthPercent="15%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+       style="@style/item_line"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/rl_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextViewMatchStyle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:text="@string/live_host_edit"
+        app:layout_widthPercent="23%"/>
+
+        <ImageView
+            android:id="@+id/img_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:src="@drawable/person_icon_more"/>
+
+        <TextView
+            android:id="@+id/tv_introduce_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/img_more1"
+            android:layout_toRightOf="@+id/tv_title"
+            android:padding="@dimen/margin_middle"
+            android:textColor="@color/text_color_333"
+            android:ellipsize="end"
+            android:textSize="@dimen/textSize_s"
+            android:text="课堂介绍啊啊 "/>
+
+    </android.support.percent.PercentRelativeLayout>
+    <EditText
+        android:id="@+id/et_live_host_intro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px400dp"
+        android:hint="编辑课堂介绍"
+        android:gravity="top"
+        android:textSize="@dimen/textSize_m"
+        android:padding="@dimen/margin_small"
+        android:layout_margin="@dimen/px20dp"
+        android:visibility="gone"
+        android:background="@drawable/shap_series_intro_bg"/>
+</LinearLayout>

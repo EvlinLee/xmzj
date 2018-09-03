@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:padding="@dimen/margin_small"
+        android:src="@drawable/icon_circle_close"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:text="《圈主规则》"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_xxl"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:ems="10"
+        android:lineSpacingExtra="5dp"
+        android:text="涉及低俗、色情、暴力、引诱的圈子，将会被封停圈子和账号"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_ml"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="查看圈子创建协议 >"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_s"
+            app:layout_marginEndPercent="15%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/person_circle_manage_gou_normal"
+        android:drawablePadding="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:text="我已阅读《圈主规则》并同意"/>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/btn_normal"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+

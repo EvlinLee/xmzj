@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px20dp"
+    android:paddingRight="@dimen/px20dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="邀请嘉宾说明:"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="管理员可以协助创建者管理课堂"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="管理员权限跟创建者一致，但不能添加和删除管理员，不能操作课堂提现功能"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="课堂创建者可以删除管理员"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30dp"
+        android:text="邀请管理员的链接已复制，点击下方发送给微信好友，好友点击后即成为管理员"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_s"/>
+
+    <Button
+        android:id="@+id/btn_send_to_webchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/px40dp"
+        android:background="@drawable/btn_blue_selector"
+        android:text="发送给微信好友"
+        android:textColor="@color/color_ffffff"/>
+
+    <Button
+        android:id="@+id/btn_send_to_xinmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/px40dp"
+        android:background="@drawable/btn_blue_selector"
+        android:text="发送新媒好友"
+        android:textColor="@color/color_ffffff"/>
+</LinearLayout>

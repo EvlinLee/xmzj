@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_circle_home_item_head" />
+
+    <include layout="@layout/mode_cirecle__home_item_time_and_btns"/>
+
+
+    <include layout="@layout/model_circle_home_item_footv2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20dp"
+        android:background="@color/module_divide_line" />
+</LinearLayout>

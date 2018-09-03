@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mv="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        android:background="@color/colorPrimary">
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tl:tl_bar_color="#ffffff"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_corner_radius="4dp"
+            tl:tl_tab_width="70dp"
+            tl:tl_textsize="@dimen/textSize_s">
+
+        </com.flyco.tablayout.SegmentTabLayout>
+
+        <com.flyco.tablayout.widget.MsgView
+            android:id="@+id/msgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="11.5sp"
+            app:layout_constraintStart_toEndOf="@id/tabLayout"
+            app:layout_constraintEnd_toEndOf="@id/tabLayout"
+            app:layout_constraintTop_toTopOf="@id/tabLayout"
+            app:layout_constraintBottom_toTopOf="@id/tabLayout"
+            android:layout_marginTop="3dp"
+            mv:mv_backgroundColor="#FD481F"
+            mv:mv_isRadiusHalfHeight="true"
+            mv:mv_strokeColor="#ffffff"
+            mv:mv_strokeWidth="1dp"/>
+
+        <ImageView
+            android:id="@+id/HeadRightImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/margin_middle"
+            android:src="@drawable/nav_icon_add"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/item_line"
+        android:layout_above="@id/viewPager"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_tab"/>
+    
+    
+    <ViewStub
+        android:id="@+id/vs_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_tab"
+        android:layout="@layout/layout_message_login"/>
+
+</RelativeLayout>

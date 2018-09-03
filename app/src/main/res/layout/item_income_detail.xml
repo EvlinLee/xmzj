@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/px24dp">
+    <com.gxtc.huchuan.widget.CircleImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/px60dp"
+        android:layout_height="@dimen/px60dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_cover"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tv_income_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="佣金"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"/>
+        <TextView
+            android:id="@+id/tv_income_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05-17"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_m"
+            android:layout_below="@id/tv_income_type"
+            android:layout_marginTop="@dimen/px10dp"/>
+        <TextView
+            android:id="@+id/tv_income_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥23"
+            android:textSize="@dimen/textSize_ml"
+            android:textColor="@color/text_color_333"
+            android:layout_alignBottom="@id/tv_income_type"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

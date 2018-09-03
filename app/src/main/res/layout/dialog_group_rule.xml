@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginRight="@dimen/margin_large">
+
+    <ImageView
+        android:id="@+id/iv_titile_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_flock_rule_bg_up"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/px10dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_below="@id/iv_titile_top"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_titile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_flock_rule_bg_down"
+                android:textColor="@color/color_ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                />
+           <!-- <TextView
+                android:id="@+id/tv_titile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:background="@color/color_4d2167bf"
+                android:text="群规"
+                android:textColor="@color/color_ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                />-->
+
+            <ScrollView
+                android:id="@+id/sl_rule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px444dp"
+                android:layout_below="@id/iv_titile"
+                android:scrollbars="none"
+                android:fillViewport="true">
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/px30dp"
+                    android:paddingRight="@dimen/px30dp"
+                    android:paddingTop="@dimen/px50dp"
+                    android:paddingBottom="@dimen/px50dp"
+                    android:lineSpacingExtra="@dimen/px10dp"/>
+            </ScrollView>
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:background="@color/color_ff7531"
+                android:text="确定"
+                android:textColor="@color/color_ffffff"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_below="@id/sl_rule"
+                />
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_icon_flock_rule_cha"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

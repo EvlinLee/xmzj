@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_whit_bg_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:gravity="center"
+        android:text="选择退款原因"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView style="@style/item_line" />
+
+    <ListView
+        android:id="@+id/choose_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divide_line"
+        android:dividerHeight="1px" />
+
+    <TextView style="@style/item_line" />
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px72dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px126dp"
+        android:text="确定"
+        android:background="@drawable/btn_blue_selector_no_corner"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_m" />
+
+</LinearLayout>

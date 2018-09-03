@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_middle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal"
+    android:padding="@dimen/px10dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/px18dp"
+            android:drawableTop="@drawable/shop_icon_daifukuang"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <com.flyco.tablayout.widget.MsgView
+            android:id="@+id/doc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/mall_unread_message_doc"
+            android:textColor="#ffffff"
+            mv:mv_backgroundColor="#FD481F"
+            mv:mv_isRadiusHalfHeight="true"
+            mv:mv_strokeColor="#ffffff"
+            mv:mv_strokeWidth="1dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_to_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/px18dp"
+            android:drawableTop="@drawable/shop_icon_daifahuo"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <com.flyco.tablayout.widget.MsgView
+            android:id="@+id/doc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/mall_unread_message_doc"
+            android:textColor="#ffffff"
+            mv:mv_backgroundColor="#FD481F"
+            mv:mv_isRadiusHalfHeight="true"
+            mv:mv_strokeColor="#ffffff"
+            mv:mv_strokeWidth="1dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_sended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/px18dp"
+            android:drawableTop="@drawable/shop_icon_yifahuo"
+            android:gravity="center"
+            android:text="已发货"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+
+        <com.flyco.tablayout.widget.MsgView
+            android:id="@+id/doc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/mall_unread_message_doc"
+            android:textColor="#ffffff"
+            mv:mv_backgroundColor="#FD481F"
+            mv:mv_isRadiusHalfHeight="true"
+            mv:mv_strokeColor="#ffffff"
+            mv:mv_strokeWidth="1dp"/>
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tv_finished"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/px18dp"
+            android:drawableTop="@drawable/shop_icon_yiwangcheng"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_s" />
+</LinearLayout>

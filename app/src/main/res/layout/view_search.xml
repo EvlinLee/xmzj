@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="4dp">
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingLeft="@dimen/margin_middle"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_666"
+        android:background="@drawable/shape_cancel_btn"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/news_icon_search"
+        android:drawablePadding="@dimen/margin_small"
+        android:text="搜索"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"/>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:src="@drawable/_btn_exit"/>
+
+</merge>

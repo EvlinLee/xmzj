@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/px20dp"
+            android:paddingBottom="@dimen/px20dp">
+            <com.gxtc.huchuan.widget.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/px70dp"
+                android:layout_height="@dimen/px70dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerVertical="true"
+
+                />
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="新媒之家"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"
+                android:layout_toRightOf="@id/iv_head"
+                android:layout_alignTop="@id/iv_head"
+                android:layout_marginLeft="@dimen/px24dp"
+                />
+            <TextView
+                android:id="@+id/tv_browseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="09:45"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_s"
+                android:layout_toRightOf="@id/iv_head"
+                android:layout_below="@id/tv_user_name"
+                android:layout_marginLeft="@dimen/px24dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

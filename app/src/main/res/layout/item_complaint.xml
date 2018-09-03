@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item_complaint_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px100dp">
+
+
+    <TextView
+        android:id="@+id/tv_complaint_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_toRightOf="@id/riv_banned_user"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_l"
+        tools:text="低俗" />
+
+    <TextView
+        android:id="@+id/tv_complaint_cancel"
+        android:layout_width="@dimen/px160dp"
+        android:layout_height="@dimen/px60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px20dp"
+        android:gravity="center"
+        android:text="撤销"
+        android:textColor="@color/btn_nornal"
+        android:textSize="@dimen/textSize_l"
+        android:visibility="invisible" />
+
+    <View
+        style="@style/item_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp" />
+</RelativeLayout>

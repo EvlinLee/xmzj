@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_edit_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/module_divide_line"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_choose_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全选"
+            android:textSize="@dimen/px28dp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"/>
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/px28dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/class_home_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/px20dp"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:text="进入课堂首页"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_l"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <View
+        android:id="@+id/line"
+        style="@style/item_line"
+        android:layout_below="@+id/class_home_page_button"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_edit_bottom"
+        android:layout_below="@+id/line">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rc_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/ll_edit_bottom"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            style="@style/item_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/px10dp"
+            android:drawableTop="@drawable/person_live_backstage_classify_compile_delete"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px10dp"
+            android:paddingTop="@dimen/px10dp"
+            android:text="@string/delete"
+            android:textColor="@color/text_color_999"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

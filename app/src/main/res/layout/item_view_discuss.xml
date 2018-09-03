@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:padding="@dimen/margin_small">
+
+    <TextView
+        android:id="@+id/item_view_discuss_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/grey1"
+        android:ellipsize="end"
+        android:maxLines="5"
+        tools:text="迷漫烛一迷漫胸垫迷漫雷理功能了东跑西颠量 连唱历史迷漫 摇摆不定喝药 "/>
+
+    <com.gxtc.huchuan.widget.CircleImageView
+        android:id="@+id/item_view_discuss_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        tools:src="@drawable/live_head_icom_temp"/>
+</LinearLayout>

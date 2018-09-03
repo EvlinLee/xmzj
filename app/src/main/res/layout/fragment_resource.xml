@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/module_divide_line">
+
+    <View style="@style/model_line"/>
+
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/discover_icon_live1"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableEnd="@drawable/discover_icon_more"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="直播课程"
+        style="@style/item_click_bg"
+        android:background="@color/white"/>
+
+    <View style="@style/model_line"/>
+
+    <TextView
+        android:id="@+id/tv_mall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/discover_icon_shop1"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableEnd="@drawable/discover_icon_more"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="软件商城"
+        style="@style/item_click_bg"
+        android:background="@color/white"/>
+
+    <View style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/discover_icon_resource1"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableEnd="@drawable/discover_icon_more"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="资源交易"
+        style="@style/item_click_bg"
+        android:background="@color/white"/>
+
+    <View style="@style/model_line"/>
+
+    <TextView
+        android:id="@+id/tv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/discover_icon_video1"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableEnd="@drawable/discover_icon_more"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="视频教程"
+        style="@style/item_click_bg"
+        android:background="@color/white"/>
+
+    <View style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_make_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/discover_icon_distribution1"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableEnd="@drawable/discover_icon_more"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        android:text="分销赚钱"
+        style="@style/item_click_bg"
+        android:background="@color/white"/>
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_welcome_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#333333"
+            android:textSize="28sp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.gxtc.commlibrary.widget.MyRadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="100dp"
+                android:layout_height="7dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_welcome_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:layout_marginBottomPercent="25%"
+            android:background="@drawable/shape_lanuch_btn"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_small"
+            android:text="立即体验"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_launch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="100%"
+            android:scaleType="fitXY"
+            tools:src="@drawable/boot_page"
+            />
+
+        <ImageView
+            android:id="@+id/img_ad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="80%"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/bg"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin_large"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="sm"
+        app:bootstrapText="跳过"
+        app:roundedCorners="true"
+        app:showOutline="true"/>
+
+</RelativeLayout>

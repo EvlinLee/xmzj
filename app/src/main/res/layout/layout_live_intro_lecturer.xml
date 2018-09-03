@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/content_live_intro">
+
+    <TextView
+        android:id="@+id/tv_live_intro_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle"
+        android:text="课堂介绍"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_live_intro_label"
+        android:background="@color/divide_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_middle">
+
+        <TextView
+            android:id="@+id/tv_emcee_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主讲人:"
+            android:textColor="@color/text_color_333" />
+
+        <!--主讲人名字-->
+        <TextView
+            android:id="@+id/tv_emcee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_333"
+            tools:text="一个非常好的人" />
+    </LinearLayout>
+
+
+    <!--主讲人介绍-->
+    <TextView
+        android:id="@+id/tv_lecturer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:lineSpacingMultiplier="1.3"
+        android:visibility="gone"
+        tools:text="希沃特签约讲师" />
+
+    <TextView
+        android:id="@+id/tv_live_simple_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lecturer_name"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:text="课堂简介"
+        android:textColor="@color/text_color_333" />
+
+    <com.gxtc.huchuan.widget.ExpandVideoPlayer
+        android:id="@+id/ep_live_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <!--课堂描述-->
+    <WebView
+        android:id="@+id/wv_live_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_live_simple_lable"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_tiny" />
+
+    <TextView
+        android:id="@+id/tv_live_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/margin_middle"
+        android:lineSpacingMultiplier="1.5"
+        android:visibility="gone"
+        tools:text="北京大成（青岛）律师事务所高级合伙人、青岛市律师协会劳动关系委员会，大成中国区劳动法鱼人资源顶替枯地顶替枯无可奈何 顶替枯无可奈何霜夺顶替枯无可奈何地顶替顶替枯无可奈何地顶替枯无可奈何地顶替顶替枯地顶替顶替枯霜夺顶替顶替枯" />
+
+
+    <ImageView
+        android:id="@+id/iv_desc_zk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wv_live_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:padding="@dimen/margin_tiny"
+        android:src="@drawable/live_particulars_icon_more_downward" />
+</LinearLayout>

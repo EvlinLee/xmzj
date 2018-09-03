@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px20dp"
+    android:paddingLeft="@dimen/px20dp"
+    android:paddingRight="@dimen/px20dp"
+    android:paddingTop="@dimen/px20dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/px10dp">
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99999999"
+            android:padding="@dimen/px10dp"
+            android:text="2017-5-20 13:14"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/textSize_s"
+            />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView_time"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_middle"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="content"
+            android:textColor="@color/text_color_333"/>
+
+    </LinearLayout>
+</RelativeLayout>

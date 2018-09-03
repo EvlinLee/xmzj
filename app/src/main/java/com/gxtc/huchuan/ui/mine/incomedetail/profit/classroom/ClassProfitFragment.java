@@ -1,0 +1,64 @@
+package com.gxtc.huchuan.ui.mine.incomedetail.profit.classroom;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+
+import com.flyco.tablayout.SlidingTabLayout;
+import com.gxtc.commlibrary.base.BaseTitleFragment;
+import com.gxtc.commlibrary.utils.WindowUtil;
+import com.gxtc.huchuan.R;
+import com.gxtc.huchuan.adapter.MineTabAdpter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+
+/**
+ * Describe:
+ * Created by ALing on 2017/5/16 0016.
+ */
+
+public class ClassProfitFragment extends BaseTitleFragment {
+
+    @BindView(R.id.tabLayout_main)
+    SlidingTabLayout mTabLayoutMain;
+    @BindView(R.id.vp_mian)
+    ViewPager mVpMian;
+
+    private List<Fragment> fragments;
+
+    @Override
+    public View initView(LayoutInflater inflater, ViewGroup container) {
+        View view = inflater.inflate(R.layout.fragment_profit_list, container, false);
+        return view;
+    }
+
+    @Override
+    public void initData() {
+        super.initData();
+        initViewPager();
+    }
+
+    private void initViewPager() {
+        String[] arrTabTitles = getResources().getStringArray(R.array.mine_profit_tab_class);
+        fragments = new ArrayList<>();
+        ClassRoomDistributionFragment classRoomDistributionFragment      = new ClassRoomDistributionFragment();
+        ClassRoomProfitFragment classRoomProfitFragment  = new ClassRoomProfitFragment();
+
+        fragments.add(classRoomProfitFragment);
+        fragments.add(classRoomDistributionFragment);
+
+        mVpMian.setAdapter(new MineTabAdpter(getFragmentManager(), fragments, arrTabTitles));
+        mTabLayoutMain.setViewPager(mVpMian);
+
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) mTabLayoutMain.getMsgView(
+                4).getLayoutParams();
+        params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+        params.rightMargin = WindowUtil.dip2px(getContext(), 10);
+    }
+}

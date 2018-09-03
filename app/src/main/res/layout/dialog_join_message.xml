@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_whit_bg_radius">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_m"
+        android:text="请输入验证信息"/>
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top|left"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:padding="@dimen/margin_small"
+        android:hint="输入验证信息，管理员审核通过后方可加入"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/text_color_333"
+        android:background="@color/grey_F4F4F4"/>
+
+    <View style="@style/item_line"/>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="@dimen/textSize_ml"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

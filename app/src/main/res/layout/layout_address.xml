@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_address_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/address_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_middle"
+        android:src="@drawable/deal_icon_location" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/address_icon"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_select_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:text="请添加收货人地址"
+            android:textColor="@color/text_color_666"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:text="收货人姓名"
+            android:textColor="@color/text_color_666"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@+id/tv_phone"
+            android:layout_alignBottom="@+id/tv_phone"
+            android:layout_alignStart="@+id/tv_select_address" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:text="18677067774"
+            android:textColor="@color/text_color_666"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_is_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@color/colorAccent"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:visibility="invisible"
+            android:text="默认"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:text="广西南宁市青秀区天健商务大厦 1206" />
+
+    </RelativeLayout>
+
+    <com.gxtc.huchuan.widget.MailLineView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:layout_below="@id/layout"/>
+
+</RelativeLayout>

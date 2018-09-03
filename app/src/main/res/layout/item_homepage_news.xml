@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_news_item_root"
+    style="@style/item_click_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:gravity="left"
+                android:maxLines="2"
+                android:textColor="@color/text_color_333"
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="15sp"
+                tools:text="我用我的心，去看去感觉，就算是执迷，让我执迷不悔" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_news_property"
+                    android:layout_width="@dimen/px60dp"
+                    android:layout_height="@dimen/px50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:visibility="gone" />
+
+                <!--<com.gxtc.huchuan.widget.RoundImageView-->
+                <!--android:id="@+id/iv_news_sourceicon"-->
+                <!--android:layout_width="@dimen/px40dp"-->
+                <!--android:layout_height="@dimen/px40dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="@dimen/px20dp"-->
+                <!--android:src="@drawable/news_icon_head_logo" />-->
+
+                <TextView
+                    android:id="@+id/tv_news_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_s"
+                    tools:text="作者" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_news_comment"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/px20dp"-->
+                <!--android:textColor="@color/text_color_999"-->
+                <!--android:textSize="@dimen/textSize_s"-->
+                <!--tools:text="评论" />-->
+                <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_s"
+                    tools:text="21分钟前" />
+                <TextView
+                    android:id="@+id/tv_news_readcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:textColor="@color/text_color_999"
+                    android:textSize="@dimen/textSize_s"
+                    tools:text="阅读：20" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_news_cover"
+            android:layout_width="@dimen/px230dp"
+            android:layout_height="@dimen/px160dp"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_marginLeft="@dimen/px10dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <View style="@style/item_line"/>
+
+</LinearLayout>

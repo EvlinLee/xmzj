@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/px10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_news_collect_property"
+            android:layout_width="@dimen/px50dp"
+            android:layout_height="@dimen/px50dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:src="@drawable/person_icon_head"/>
+
+        <TextView
+            android:id="@+id/tv_item_live_list_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            tools:text="作者"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px20dp"
+            android:gravity="right"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            tools:text="21分钟前"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_middle"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_333"
+        tools:text="整站打包pc+wap保质期到2025年"/>
+
+    <ImageView
+        android:id="@+id/img_face"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="@dimen/margin_middle"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_list_place_holder_120"/>
+
+</LinearLayout>

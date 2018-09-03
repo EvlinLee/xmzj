@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/module_divide_line">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:hint="输入标签"
+        android:textSize="@dimen/textSize_m"
+        android:background="@color/color_ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:gravity="center_vertical"
+        android:text="所有标签"
+        android:textColor="@color/text_color_999"/>
+    <com.gxtc.huchuan.widget.FlowLayout
+        android:id="@+id/flow_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="visible">
+
+    </com.gxtc.huchuan.widget.FlowLayout>
+
+</LinearLayout>

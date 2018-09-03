@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/margin_middle">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请嘉宾说明"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:text="嘉宾可以在当次课堂课程发言"
+        android:textColor="@color/text_color_999"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:text="嘉宾可以在当次课堂课程发言"
+        android:textColor="@color/text_color_999"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:text="嘉宾可以在当次课堂课程发言"
+        android:textColor="@color/text_color_999"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:text="邀请嘉宾的链接已复制，点击下方发送给微信好友，好友点击后即成为本次课堂嘉宾"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_middle"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@drawable/btn_green_selector_no_stroke"
+        android:text="发送给微信好友"
+        android:textColor="@color/white"/>
+</LinearLayout>

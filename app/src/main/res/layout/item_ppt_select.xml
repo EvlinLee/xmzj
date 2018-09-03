@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+
+    <ImageView
+        android:id="@+id/iv_item_ppt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_item_ppt_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px10dp"
+        android:layout_marginTop="@dimen/px10dp"
+        android:src="@drawable/live_picture_icon_delete"
+        android:visibility="gone" />
+
+</RelativeLayout>

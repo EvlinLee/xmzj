@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_mycircle_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:text="我的圈子"/>
+
+        <View
+            android:layout_width="@dimen/px100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_hint"
+            android:layout_alignBottom="@+id/tv_hint"
+            android:layout_toLeftOf="@+id/tv_hint"
+            android:background="@drawable/follow_line"/>
+
+        <View
+            android:layout_width="@dimen/px100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_hint"
+            android:layout_alignBottom="@+id/tv_hint"
+            android:layout_toRightOf="@+id/tv_hint"
+            android:background="@drawable/follow_line"/>
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/rv_mycircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px20dp">
+
+        </com.gxtc.commlibrary.recyclerview.RecyclerView>
+
+        <View
+            android:layout_below="@+id/rv_mycircle"
+            style="@style/model_line"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_top_hint_message"/>
+
+</LinearLayout>

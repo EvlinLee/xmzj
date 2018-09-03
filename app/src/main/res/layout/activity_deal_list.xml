@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deal_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gxtc.huchuan.ui.deal.deal.dealList.DealListActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line" />
+
+    <!--<LinearLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_middle"
+                android:drawableRight="@drawable/deal_arrow_down"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="交易分类"
+                android:textColor="@color/text_color_333" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line" />
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_middle"
+                android:drawableRight="@drawable/deal_arrow_down"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="交易类型"
+                android:textColor="@color/text_color_333" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line" />
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_Money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tv_Money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_middle"
+                android:drawableRight="@drawable/deal_arrow_down"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="价格"
+                android:textColor="@color/text_color_333" />
+
+        </RelativeLayout>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/btn_sub_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sub_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@drawable/deal_icon_up"
+                android:drawablePadding="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:singleLine="true"
+                android:text="不限"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/text_color_333"/>
+
+        </RelativeLayout>
+
+        <View style="@style/item_line_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/btn_sub_udef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sub_udef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@drawable/deal_icon_up"
+                android:drawablePadding="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_middle"
+                android:text="更多"
+                android:textSize="@dimen/textSize_m"
+                android:textColor="@color/text_color_333"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_deal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.gxtc.commlibrary.recyclerview.RecyclerView
+                android:id="@+id/rv_deallist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/base_empty_error"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#2b8cff</color>
+    <color name="grayAAAAAA">#aaaaaa</color>
+
+    <color name="bg_color">#EDEDED</color>
+    <color name="divider">#ffd2d2d2</color>
+    <color name="home_title_color">#1673AF</color>
+
+    <!--按钮不可按 灰色-->
+    <color name="btn_enable_false">#dddddd</color>
+    <color name="btn_text_enable_false">#4b000000</color>
+
+    <!--按钮按下的颜色-->
+    <color name="btn_pressed">#2479de</color>
+    <!--主色调-->
+    <color name="btn_nornal">#2b8cff</color>
+    <color name="pts_color">#44B1E8</color>
+    <color name="background_tab_pressed">#dddddd</color>
+
+    <!--按钮按下的颜色 绿色版-->
+    <color name="green_btn_pressed">#0ab70e</color>
+    <color name="green_btn_nornal">#0ab70e</color>
+    <color name="green_pts_color">#0ab70e</color>
+    <color name="green_background_tab_pressed">#dddddd</color>
+    <color name="circle_main_Btn_fabiao">#1ea564</color>
+
+    <color name="circle_name_color">#50597B</color>
+
+
+    <!--杂七杂八-->
+    <color name="crop_image_bg">#AA000000</color>
+    <color name="gray">#8F8F8F</color>
+    <color name="color_48baf3">#48BAF3</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_e5e5e5">#E5E5E5</color>
+    <color name="transparent_70_black">#4C000000</color>
+    <color name="transparent_70_white">#4CFFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="light_black">#333333</color>
+    <color name="color_d8d8d8">#D8D8D8</color>
+    <color name="light_blue">#F3F6F8</color>
+
+
+    <!--公共-->
+    <color name="white">#fff</color>
+    <color name="common_background">#F3F4F5</color>
+    <color name="transparency30">#55ffffff</color>
+    <color name="transparencyback30">#55000000</color>
+    <color name="transparencyv230">#504c5a70</color>
+    <color name="divide_line">#dddddd</color>
+    <color name="grey1">#999999</color>
+    <color name="greyd1d1d1">#d1d1d1</color>
+    <color name="greyd1d1d1d1">#d1d1d1d1</color>
+    <color name="grey_e5e5">#e5e5e5</color>
+    <color name="grey_efef">#efefef</color>
+    <color name="black1">#4D4D4D</color>
+    <color name="black">#000</color>
+    <color name="grey_F4F4F4">#F4F4F4</color>
+    <color name="mask">#3c000000</color>
+    <color name="tint">#4b000000</color>
+    <color name="touch_bg">#E8E8E8</color>
+    <color name="color_3582dd">#3582dd</color>
+
+    <!--浅灰 用于标签栏、不重要的辅助内容-->
+    <color name="text_color_999">#999</color>
+    <!--中灰 用于文章详情、大段内容-->
+    <color name="text_color_666">#666</color>
+    <!--深灰 用于标题、列表、主要内容-->
+    <color name="text_color_333">#333</color>
+
+    <!--灰色小标题颜色-->
+    <color name="sub_title_color">#5F6667</color>
+    <color name="color_d5d5d5">#d5d5d5</color>
+
+    <!--频道选择相关颜色-->
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="subscribe_item_text_color_normal">#ff454545</color>
+
+
+    <!--我的-->
+    <color name="mine_bg">#F1FCFE</color>
+    <color name="my_oroder_sub">#ABABAB</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_7ecef4">#7ecef4</color>
+    <color name="color_47abef">#47abef</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="article_resolve_background">#ECF0F3</color>
+    <color name="color_66000000">#66000000</color>  <!--40% 的黑色-->
+    <color name="color_4d2167bf">#4d2167bf</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_e05050">#e05050</color>
+    <color name="color_e23f3f">#e23f3f</color>
+    <color name="color_2b8cff">#2b8cff</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ddf1fc">#ddf1fc</color>
+    <color name="color_fa4717">#fa4717</color>
+    <color name="color_FFDCA8">#FFDCA8</color>
+    <color name="color_ff7531">#ff7531</color>
+
+    <!--支付-->
+    <color name="pay_finish">#34C84A</color>
+    <color name="pay_failure">#FC615D</color>
+
+    <color name="deal_tab_select">#96B2F4</color>
+    <color name="deal_EDF2FE">#EDF2FE</color>
+    <color name="deal_tab_color">#F9F9F9</color>
+
+    <!--基础颜色-->
+    <color name="blue">#0b2ffc</color>
+    <color name="red">#d40d0d</color>
+    <color name="transparency">#00ffffff</color>
+    <color name="color_676980">#576b95</color>
+
+    <!--直播-->
+    <color name="tool_bar_bg">#0096FF</color>
+    <color name="color_price_ec6b46">#fb4717</color>
+    <color name="series_free">#06b223</color>
+    <color name="series_normal">#25C851</color>
+    <color name="series_no_free">#fb4717</color>
+    <color name="btn6c8098">#6c8098</color>
+    <color name="blue_press">#4974B6</color>
+    <color name="color_fb4717">#fb4717</color>
+    <color name="color_23b15c">#23b15c</color>
+    <color name="deal_F63611">#F63611</color>
+    <color name="color_119b1e">#119b1e</color>
+    <color name="color_eab64f">#eab64f</color>
+
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <!--对话框阴影-->
+    <color name="cardBodyColor">#FFFFFF</color>
+    <color name="cardShadowColor_1">#0a8c8c8c</color>
+    <color name="cardShadowColor_2">#0f898989</color>
+    <color name="cardShadowColor_3">#14898989</color>
+    <color name="cardShadowColor_4">#19898989</color>
+    <color name="cardShadowColor_5">#1e898989</color>
+    <color name="cardShadowColor_6">#23898989</color>
+    <color name="cardShadowColor_7">#28898989</color>
+    <color name="cardShadowColor_8">#2d898989</color>
+    <color name="reply_button_disable">#f5f5f5</color>
+    <color name="reply_button_text">#dfFFFFFF</color>
+    <color name="reply_button_text_disable">#b8b8b8</color>
+    <color name="text_primary">#df000000</color>
+
+    <color name="bg_edittext_color">#00000000</color>
+
+    <color name="bg_horizontal_line_color">#80a3a4a7</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+
+    <color name="bg_indicator_point_normal">#D8D8D8</color>
+    <color name="bg_indicator_point_selected">#A6A6A6</color>
+
+    <!--商城-->
+    <color name="mall_red_text">#E35154</color>
+    <color name="mall_orange_text">#FD9526</color>
+
+    <!--商城消息-->
+    <color name="order_status_red">#f30909</color>
+    <color name="order_status_yellow">#e59d12</color>
+    <color name="order_status_blue">#0188ef</color>
+    <color name="order_status_green">#0bc158</color>
+    <color name="order_status_orange">#ff6600</color>
+
+
+    <!--二维码扫描-->
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">@color/colorAccent</color>
+
+    
+    <!--交易-->
+    <color name="guarantee_orange">#F5421E</color>
+    <color name="guarantee_orange_confirm">#FA5F37</color>
+
+</resources>

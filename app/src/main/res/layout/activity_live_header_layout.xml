@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:toots="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_live_banner"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px420dp"
+        android:background="@drawable/list_error_img" />
+
+    <LinearLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/btn_free"
+            style="@style/live_frament_self_btn_style"
+            android:drawableTop="@drawable/live_home_icon_xjkc"
+            android:text="免费课程"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/btn_hot"
+            style="@style/live_frament_self_btn_style"
+            android:drawableTop="@drawable/live_home_icon_wdgz"
+            android:text="人气课程"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/btn_boutique"
+            style="@style/live_frament_self_btn_style"
+            android:drawableTop="@drawable/live_home_icon_glkc"
+            android:text="精品课程"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/self_btn_ybck"
+            style="@style/live_frament_self_btn_style"
+            android:drawableTop="@drawable/live_home_icon_ybck"
+            android:text="已报课程"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_youlike_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px38dp"
+            android:paddingTop="@dimen/px38dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/px12dp"
+                android:gravity="center_vertical"
+                android:text="猜你喜欢"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/px20dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/live_home_icon_hyh"
+                android:text="换一换"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_s" />
+        </FrameLayout>
+        <!--<View style="@style/item_line"/>
+                android:drawableLeft="@drawable/live_home_icon_zbj"-->
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/boutiquelive_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/px20dp"
+            android:paddingRight="@dimen/px20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hot_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/module_divide_line"
+        android:visibility="gone"
+        toots:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableLeft="@drawable/live_home_icon_zuo"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/live_home_icon_you"
+            android:text="热门直播间"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s" />
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/hot_lecturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_e5e5"
+            android:paddingBottom="@dimen/px18dp" />
+
+    </LinearLayout>
+    <View style="@style/model_line"/>
+
+
+</LinearLayout>

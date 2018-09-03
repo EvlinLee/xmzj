@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_width="@dimen/px118dp"
+    android:layout_height="@dimen/px168dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_shield_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_shield_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px40dp"
+            android:layout_marginTop="@dimen/px10dp"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/textSize_s"
+            tools:text="莫名溜" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_shield_relieve"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/px10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="-10dp"
+        android:src="@drawable/person_set_icon_delete"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</RelativeLayout>

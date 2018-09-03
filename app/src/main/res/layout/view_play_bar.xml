@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_play_bar_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_play_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/live_playbar_bg"/>
+
+    <com.gxtc.huchuan.widget.BlurringView
+        android:id="@+id/blurringView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:visibility="gone"
+        app:blurRadius="20"
+        app:downsampleFactor="6"
+        app:overlayColor="#99FFFFFF"/>
+
+    <!--<ImageView
+        android:id="@+id/iv_play_bar_head"
+        android:layout_width="@dimen/px70dp"
+        android:layout_height="@dimen/px70dp"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/person_icon_head_120"/>-->
+
+    <com.gxtc.huchuan.widget.RotateImageButton
+        android:id="@+id/iv_play_bar_head"
+        android:layout_width="@dimen/px70dp"
+        android:layout_height="@dimen/px70dp"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/person_icon_head_120"/>
+
+    <ImageView
+        android:id="@+id/img_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:clickable="true"
+        android:src="@drawable/live_playbar_list"/>
+
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/img_list"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:clickable="true"
+        android:src="@drawable/live_playbar_next"/>
+
+    <ImageView
+        android:id="@+id/iv_play_bar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/img_next"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/ic_back_play"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_play_bar_head"
+        android:layout_toStartOf="@id/iv_play_bar_btn"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_666"
+            android:singleLine="true"
+            tools:text="课程名字"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"
+            android:singleLine="true"
+            tools:text="讲师名字"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/item_click_bg"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_live_room_image"
+        android:layout_width="@dimen/px268dp"
+        android:layout_height="@dimen/px180dp"
+        android:layout_margin="@dimen/margin_middle"
+        android:padding="@dimen/margin_tiny"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/live_class_icon_temp"/>
+
+    <TextView
+        android:id="@+id/item_live_room_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_live_room_image"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_toEndOf="@+id/item_live_room_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        tools:text="第二季第3期 过敏体质"/>
+
+    <TextView
+        android:id="@+id/item_live_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/item_live_room_title"
+        android:layout_below="@+id/item_live_room_title"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_toEndOf="@+id/item_live_room_image"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="陈伟健康说-健康说频道"/>
+
+    <LinearLayout
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px24dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/item_live_room_image"
+        android:layout_toEndOf="@+id/item_live_room_image">
+
+        <TextView
+            android:id="@+id/tv_item_live_list_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:background="@drawable/shape_circle_main_btn_bg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="系列课"
+            android:textColor="@color/circle_main_Btn_fabiao"
+            android:textSize="@dimen/textSize_xs"/>
+
+        <TextView
+            android:id="@+id/living_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2017/10/13/"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_s"/>
+
+        <TextView
+            android:id="@+id/living_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:text="110人次"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+
+        <TextView
+            android:id="@+id/item_live_room_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:gravity="end"
+            tools:text="￥909"
+            android:textColor="@color/color_fa4717"
+            android:textSize="@dimen/textSize_s"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divide_line"/>
+
+</RelativeLayout>

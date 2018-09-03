@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px260dp"
+    android:layout_gravity="center"
+    card:cardBackgroundColor="@color/white"
+    card:cardCornerRadius="4dp">
+
+    <TextView
+        android:id="@+id/tv_item_mine_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/px20dp"
+        android:drawableTop="@drawable/circle_topic_icon_add"
+        android:text="创建圈子"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_mine_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/iv_item_mine_circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_item_mine_circle_status"
+                android:layout_width="@dimen/px80dp"
+                android:layout_height="@dimen/px80dp"
+                android:layout_alignParentRight="true"
+                tools:src="@drawable/circle_topic_icon_no_pass" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_mine_circle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            android:singleLine="true"
+            tools:text="aaa" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

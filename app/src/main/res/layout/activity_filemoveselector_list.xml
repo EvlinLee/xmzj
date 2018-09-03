@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<TextView
+    android:padding="@dimen/margin_10"
+    tools:text="将新手写的推广文案.docx移动到："
+    android:textSize="@dimen/px28dp"
+    android:id="@+id/tv_move_file_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <com.gxtc.commlibrary.recyclerview.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_newfolder"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:text="新建文件夹"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/px28dp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/px120dp"
+            android:layout_height="@dimen/px68dp"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/btn_blue_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px28dp"/>
+    </LinearLayout>
+</LinearLayout>

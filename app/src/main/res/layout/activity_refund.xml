@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px20dp"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_999"
+        tool:text="最多可以退款金额：30"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="退款金额:"/>
+
+        <EditText
+            android:id="@+id/tv_mouney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@color/transparent"
+            android:textSize="@dimen/textSize_m"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_color_999"
+            android:hint="请输入退款金额"/>
+
+    </LinearLayout>
+
+    <View style="@style/item_line"  />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="退款原因:"/>
+
+        <EditText
+            android:id="@+id/tv_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:drawableRight="@drawable/person_icon_more"
+            android:background="@color/transparent"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_999"
+            android:hint="请选择退款原因"/>
+
+    </LinearLayout>
+
+    <View style="@style/item_line"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="联系人:"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="空城旧梦。"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="联系方式:"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="13610089957"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/select_btn_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_m"
+        android:text="申请退款"/>
+
+</LinearLayout>

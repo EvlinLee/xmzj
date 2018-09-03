@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_participation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.gxtc.commlibrary.recyclerview.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/rl_play_bar_area"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_play_bar_bg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_height="@dimen/px100dp"-->
+           <!--/>-->
+
+        <!--<com.gxtc.huchuan.widget.BlurringView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/blurringView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/px100dp"-->
+            <!--app:blurRadius="20"-->
+            <!--app:downsampleFactor="6"-->
+            <!--app:overlayColor="#99FFFFFF"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_play_bar_head"-->
+            <!--android:layout_width="@dimen/px100dp"-->
+            <!--android:layout_height="@dimen/px100dp"-->
+            <!--tools:src="@drawable/person_icon_head_120"/>-->
+
+        <!--<ImageView-->
+            <!--android:clickable="true"-->
+            <!--android:id="@+id/iv_play_bar_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/margin_10"-->
+            <!--android:src="@drawable/ic_back_play"/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

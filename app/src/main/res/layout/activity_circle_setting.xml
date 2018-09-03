@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_circle_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="编辑圈子资料"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_weight="1"
+            android:src="@drawable/person_icon_more" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="允许私聊"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <CheckBox
+            android:id="@+id/cb_circle_setting_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="开放成员"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <CheckBox
+            android:id="@+id/cb_circle_setting_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="禁止新用户加入"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <CheckBox
+            android:id="@+id/cb_circle_setting_user_jion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_circle_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="成员加入方式"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_weight="1"
+            android:src="@drawable/person_icon_more" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_circle_setting_isAudit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="成员加入是否审核"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_weight="1"
+            android:src="@drawable/person_icon_more" />
+
+        <CheckBox
+            android:id="@+id/cb_circle_setting_isAudit"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_weight="6"
+            android:text="成员加入是否需要实名认证"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_l" />
+
+        <CheckBox
+            android:id="@+id/cb_circle_setting_meaberaudit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/item_line" />
+</LinearLayout>

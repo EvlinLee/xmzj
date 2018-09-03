@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_emo"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/live_extension_bar_height"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/voice_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_voice_stop"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_voice_record_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25.0dip"
+        android:text="按住说话"
+        android:textColor="#ff999999"
+        android:textSize="14.0sp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_voice_time_left"/>
+
+        <TextView
+            android:id="@+id/tv_record_start_second_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:text="0"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="16.0sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="16.0sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="16.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_record_end_second_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="16.0sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="16.0sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12.0dip"
+            android:src="@drawable/icon_voice_time_right"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/start_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_voice_start"/>
+
+    <ImageView
+        android:id="@+id/long_model_start_voice"
+        android:layout_width="120.0dip"
+        android:layout_height="120.0dip"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_voice_1"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_state_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45.0dip"
+        android:src="@drawable/icon_topic_detail_point"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_model_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25.0dip">
+
+        <TextView
+            android:id="@+id/tv_voice_click_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="单击模式"
+            android:textColor="@color/tool_bar_bg"
+            android:textSize="14.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_voice_tips3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_voice_click_model"
+            android:text="    |    "
+            android:textColor="#ff999999"
+            android:textSize="14.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_voice_long_touch_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_voice_tips3"
+            android:text="长按模式"
+            android:textColor="@color/grey1"
+            android:textSize="14.0sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_voice_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="25.0dip"
+        android:background="@drawable/voice_cancel_gray_rect_bg"
+        android:paddingBottom="4.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="4.0dip"
+        android:text="取消"
+        android:textColor="#ff999999"
+        android:textSize="14.0sp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+    
+</RelativeLayout>

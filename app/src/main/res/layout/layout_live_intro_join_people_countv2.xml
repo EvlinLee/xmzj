@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:padding="@dimen/px30dp"
+        tools:text="19人"
+        android:textSize="@dimen/textSize_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_head_area"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margin_middle">
+        <!--<ImageView-->
+        <!--android:src="@drawable/person_icon_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/person_icon_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/person_icon_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/person_icon_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/person_icon_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_free_invite"
+        android:paddingRight="@dimen/margin_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="免费邀请"
+        android:textSize="@dimen/textSize_s"
+        android:textColor="@color/colorAccent"/>
+    <ImageView
+        android:id="@+id/img_sign_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margin_middle"
+        android:src="@drawable/person_icon_more"/>
+</LinearLayout>

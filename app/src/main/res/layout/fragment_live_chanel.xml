@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px70dp">
+
+        <ImageView
+            android:id="@+id/iv_news_search"
+            style="@style/item_click_bg"
+            android:layout_width="@dimen/px38dp"
+            android:layout_height="@dimen/px38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:visibility="gone"
+            android:src="@drawable/news_icon_search"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px38dp"
+            android:layout_height="@dimen/px38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/navigation_icon_back"
+            android:visibility="gone" />
+
+        <com.gxtc.huchuan.widget.MPagerSlidingTabStrip
+            android:id="@+id/pss_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_toLeftOf="@+id/iv_news_search"
+            android:layout_toRightOf="@+id/iv_back"
+            app:pstsDividerColor="#00ffffff"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorColor="@color/btn_nornal"
+            app:pstsIndicatorHeight="@dimen/px4dp"
+            app:pstsTabPaddingLeftRight="@dimen/px13dp"
+            app:pstsTabSelectedTextColor="@color/colorAccent"
+            app:pstsTabSelectedTextSize="@dimen/textSize_ms"
+            app:pstsTabTextColor="#333"
+            app:pstsTabTextSize="@dimen/textSize_ms"
+            app:pstsUnderlineHeight="0dp"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

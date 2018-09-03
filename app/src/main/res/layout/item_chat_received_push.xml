@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_push_area"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_F4F4F4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_push"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/shape_conversation_item_push_bg"
+        android:gravity="center"
+        android:text="推送广播"
+        android:textColor="#ff00acff"
+        android:textSize="@dimen/textSize_m"/>
+
+</LinearLayout>

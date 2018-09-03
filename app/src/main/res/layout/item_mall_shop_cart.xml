@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentView="@+id/content"
+    app:rightMenuView="@+id/right">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_middle">
+
+        <CheckBox
+            android:id="@+id/radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:button="@drawable/selector_mall_cart_radio"/>
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toEndOf="@id/radio_btn"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:src="@drawable/live_list_place_holder_120"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_head"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:maxLines="2"
+            android:text="这是商品的标题"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_head"
+            android:layout_alignBottom="@id/img_head"
+            android:textSize="@dimen/textSize_s"
+            android:textColor="@color/mall_orange_text"
+            android:text="148"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_middle"
+            android:layout_alignBaseline="@id/tv_money"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="x2"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_head"
+            android:layout_below="@id/tv_title"
+            android:layout_above="@id/tv_money">
+
+            <TextView
+                android:id="@+id/tv_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize_s"
+                android:textColor="@color/text_color_999"
+                android:text="一年永久"/>
+
+        </RelativeLayout>
+
+        <View style="@style/item_line"
+            android:layout_below="@id/img_head"
+            android:layout_marginTop="@dimen/margin_middle"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/pay_failure"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/white"
+            android:text="删除"/>
+    </LinearLayout>
+
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>

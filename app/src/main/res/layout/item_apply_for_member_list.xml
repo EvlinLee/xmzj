@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/item_click_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px160dp">
+
+    <ImageView
+        android:id="@+id/iv_apply_for_img"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:minHeight="@dimen/px120dp"
+        android:minWidth="@dimen/px120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/list_error_img" />
+
+    <TextView
+        android:id="@+id/tv_apply_for_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px35dp"
+        android:layout_toRightOf="@id/iv_apply_for_img"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        tools:text="李子明" />
+
+    <TextView
+        android:id="@+id/tv_apply_statu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px20dp"
+        android:background="@drawable/shape_lanuch_btn"
+        android:padding="@dimen/px20dp"
+        android:text="通过申请"
+        android:textColor="@color/btn_nornal"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/tv_apply_for_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_apply_for_name"
+        android:layout_marginBottom="@dimen/px35dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_toLeftOf="@id/tv_apply_statu"
+        android:layout_toRightOf="@id/iv_apply_for_img"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="是个帅哥" />
+
+
+    <View
+        style="@style/item_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

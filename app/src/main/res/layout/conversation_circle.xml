@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/item_click_bg"
+    >
+    <ImageView
+        android:id="@+id/iv_circle_home_img"
+        android:layout_width="@dimen/px46dp"
+        android:layout_height="@dimen/px46dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_icon_head" />
+
+    <TextView
+
+        android:id="@+id/tv_circle_home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px22dp"
+        android:layout_toRightOf="@id/iv_circle_home_img"
+        android:textColor="@color/text_color_666"
+        android:textSize="15sp"
+        tools:text="没事盼盼" />
+    <TextView
+        android:id="@+id/tv_news_collect_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignBaseline="@+id/tv_circle_home_name"
+        android:layout_marginRight="@dimen/px20dp"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        tools:text="21分钟前" />
+
+    <ImageView
+        android:id="@+id/collect_image"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="@dimen/px10dp"
+        android:layout_below="@+id/iv_circle_home_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bg"
+        android:layout_alignStart="@+id/iv_circle_home_img"
+         />
+    <TextView
+        android:id="@+id/tv_circle_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/collect_image"
+        android:layout_marginRight="@dimen/px20dp"
+        android:textColor="@color/text_color_999"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:textSize="@dimen/textSize_m"
+        tools:text="我的圈子" />
+     <TextView
+         android:id="@+id/content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/collect_image"
+         android:layout_alignBottom="@+id/collect_image"
+         android:layout_marginLeft="@dimen/margin_small"
+         android:paddingBottom="@dimen/px5dp"
+         tools:text="月光"/>
+</RelativeLayout>

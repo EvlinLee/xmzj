@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="取消"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:text="完成"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_pen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/compile_icon_bi"/>
+
+
+        <ImageView
+            android:id="@+id/img_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/compile_icon_wenzi"/>
+
+
+        <ImageView
+            android:id="@+id/img_mosaic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/compile_icon_masaike"/>
+
+        <ImageView
+            android:id="@+id/img_undo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/compile_icon_fanhui"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_color_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_tools"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot0"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#ffffff"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#000000"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#EE3722"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#FDBA55"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#1AAD20"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#2380FA"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#9061F8"/>
+
+        <com.luck.picture.lib.widget.ColorDotView
+            android:id="@+id/color_dot7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="14dp"
+            android:background="#F431B9"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

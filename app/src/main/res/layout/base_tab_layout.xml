@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gxtc.huchuan.ui.deal.liuliang.publicAccount.AccountInfoActivity">
+
+    <com.flyco.tablayout.CommonTabLayout
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/common_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_middle"
+        android:paddingBottom="@dimen/margin_middle"
+        tl:tl_iconHeight="@dimen/px36dp"
+        tl:tl_iconWidth="@dimen/px36dp"
+        tl:tl_indicator_color="#00bb9c"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="@color/colorAccent"
+        tl:tl_textUnselectColor="@color/text_color_999"
+        tl:tl_iconGravity="LEFT"
+        tl:tl_iconMargin="2dp"
+        tl:tl_textsize="@dimen/textSize_m" />
+
+    <com.gxtc.huchuan.widget.CustomViewPager
+        android:id="@+id/vp_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

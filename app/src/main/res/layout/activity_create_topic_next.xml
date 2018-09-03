@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_divide_line"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.gxtc.huchuan.widget.MultiRadioGroupV2
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:text="选择课堂类型"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="（选择后不能更改）"
+                    android:textColor="@color/color_e05050"
+                    android:textSize="@dimen/textSize_s"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:background="@color/color_ffffff">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:text="免费课堂"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rb_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/selector_rb_topic_bg"
+                    android:paddingLeft="@dimen/px40dp"/>
+            </LinearLayout>
+
+            <View style="@style/horizontal_line"/>
+
+            <LinearLayout
+                android:id="@+id/free_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:paddingTop="@dimen/px30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/px30dp"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/px24dp"
+                        android:text="介绍页说明"
+                        android:textColor="@color/text_color_333"
+                        android:textSize="@dimen/textSize_m"
+                        />
+
+                    <Switch
+                        android:id="@+id/sw_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px24dp"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sw_intro"
+                    android:background="@color/color_ffffff"
+                    android:lineSpacingExtra="@dimen/px8dp"
+                    android:paddingLeft="@dimen/px24dp"
+                    android:text="1.开启介绍页可以帮你统计报名人数、详细介绍课堂内容以及更快积累粉丝数"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    android:visibility="gone"/>
+
+                <!--任何人都可以用链接进入课堂；适合公开的课堂分享-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin_middle"
+                    android:paddingLeft="@dimen/px24dp"
+                    android:paddingTop="@dimen/margin_middle"
+                    android:text="任何人都可以免费进入课堂听课"
+                    android:textColor="@color/text_color_666"
+                    android:textSize="@dimen/textSize_m"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:background="@color/color_ffffff"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:text="收费课堂"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rb_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_rb_topic_bg"
+                    android:paddingLeft="@dimen/px40dp"/>
+            </LinearLayout>
+
+            <View style="@style/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/no_free_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center_vertical"
+                    android:text="设置入场票费用"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_topic_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:layout_marginBottom="@dimen/px20dp"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:layout_marginRight="@dimen/px20dp"
+                    android:background="@drawable/person_news_topic_border"
+                    android:enabled="false"
+                    android:hint="最小金额1元"
+                    android:inputType="number|numberDecimal"
+                    android:paddingLeft="@dimen/px20dp"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:background="@color/color_ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:text="加密课堂"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rb_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_rb_topic_bg"
+                    android:paddingLeft="@dimen/px40dp"/>
+            </LinearLayout>
+
+            <View style="@style/horizontal_line"/>
+
+            <LinearLayout
+                android:id="@+id/pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:background="@color/color_ffffff"
+                    android:drawablePadding="@dimen/px20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:text="设置一个固定密码"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_topic_pws"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:layout_marginRight="@dimen/px20dp"
+                    android:background="@drawable/person_news_topic_border"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                    android:enabled="false"
+                    android:hint="支持英文和数字。不区分大小写，不支持特殊符号"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/px20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:background="@color/color_ffffff"
+                    android:drawablePadding="@dimen/px20dp"
+                    android:gravity="center_vertical"
+                    android:text="请创建者自行将课堂密码告知用户"
+                    android:textColor="@color/color_e05050"
+                    android:textSize="@dimen/textSize_s"/>
+            </LinearLayout>
+
+        </com.gxtc.huchuan.widget.MultiRadioGroupV2>
+
+        <LinearLayout
+            android:id="@+id/persent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:background="@color/color_ffffff"
+                android:drawablePadding="@dimen/px20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_middle"
+                android:text="设置分销比例(%)"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_proportion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:layout_marginBottom="@dimen/margin_middle"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:background="@color/color_ededed"
+                android:hint="佣金可设5~70，不设填0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="@dimen/px20dp"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:foreground="?android:selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:background="@drawable/selector_touch"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px24dp"
+                android:paddingRight="@dimen/px24dp"
+                android:text="申请平台推广"
+                android:textColor="@color/text_color_333"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_tuiguang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_middle"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tuiguang_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_tiny"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/px24dp"
+            android:text="@string/string_tui_guang"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_savedraft"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px88dp"
+                android:layout_marginBottom="@dimen/px20dp"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/px30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_selector_no_stroke"
+                android:text="保存草稿"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/textSize_l"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px88dp"
+                android:layout_marginBottom="@dimen/px20dp"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/px30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_selector_no_stroke"
+                android:text="申请上线"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/textSize_l"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

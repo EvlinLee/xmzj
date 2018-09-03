@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/view_edit_menu"    />
+
+    <ScrollView
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+
+            <LinearLayout
+
+                android:id="@+id/layout_import"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+          >
+
+                <EditText
+                    android:id="@+id/et_article_link"
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="@dimen/px60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:layout_weight="4"
+                    android:background="@drawable/shap_news_search"
+                    android:hint="文章抓取URL链接"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <Button
+                    android:id="@+id/btn_article_import_link"
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="@dimen/px60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="导入内容"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_m"/>
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+
+            <View style="@style/model_line" android:visibility="gone"/>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_weight="1"
+                    android:text="标题"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/et_article_title"
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="(必填)"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_999"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/textSize_m"/>
+            </LinearLayout>
+
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:background="@color/divide_line"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_article_abstract_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="@dimen/px80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_weight="1"
+                    android:text="摘要"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <EditText
+                    android:id="@+id/et_article_abstract"
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="(选填)"
+                    android:maxLength="120"
+                    android:textColor="@color/text_color_999"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/textSize_m"/>
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+
+            <View style="@style/model_line" android:id="@+id/v_article_abstract_area_model" android:visibility="gone" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_article_ccover_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_weight="5"
+                    android:text="封面"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <ImageView
+                    android:id="@+id/iv_article_cover"
+                    android:layout_width="@dimen/px120dp"
+                    android:layout_height="@dimen/px120dp"
+                    android:layout_marginBottom="@dimen/px10dp"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:layout_marginTop="@dimen/px10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/news_compile_add"/>
+            </LinearLayout>
+
+            <View style="@style/model_line" android:visibility="gone"/>
+
+            <com.gxtc.huchuan.widget.richEditor.RichEditor
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

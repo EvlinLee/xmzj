@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/pent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_666"
+        tools:text="佣金：40"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_medium"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/text_color_666"
+        tools:text="2018-3-15"/>
+
+    <View
+        style="@style/item_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

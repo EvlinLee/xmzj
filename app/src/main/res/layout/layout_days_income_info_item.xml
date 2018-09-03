@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="支付:100"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_10"
+        tools:text="2017-12-22"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s" />
+
+    <TextView
+        android:id="@+id/text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/text_price"
+        android:layout_below="@+id/text_price"
+        android:layout_marginBottom="@dimen/margin_10"
+        tools:text="笔数:100"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/item_line"
+        android:layout_below="@+id/text_count" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:padding="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/pent_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="佣金:100"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/platform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="平台:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="实收:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+
+    <View
+        style="@style/model_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

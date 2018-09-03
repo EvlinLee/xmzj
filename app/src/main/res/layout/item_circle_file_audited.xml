@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/item_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_middle">
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="@dimen/px140dp"
+                android:layout_height="@dimen/px140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/live_host_defaual_bg"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="3分钟前"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_s"/>
+
+            <TextView
+                android:id="@+id/tv_filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:layout_toLeftOf="@id/tv_time"
+                android:layout_toRightOf="@id/img_bg"
+                android:maxLines="2"
+                android:text="新手写的推广文案.docx"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/textSize_m"/>
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_bg"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_toRightOf="@id/img_bg"
+                android:text="333.6k 来自"
+                android:textColor="@color/text_color_999"
+                android:textSize="@dimen/textSize_s"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_bg"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/tv_size"
+                android:text="空城旧梦"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/textSize_s"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

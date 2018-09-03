@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gxtc.huchuan.ui.live.intro.LiveIntroActivity">
+
+    <include layout="@layout/content_live_intro"/>
+
+    <LinearLayout
+        android:id="@+id/ll_owner_redact_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_owner_editPageBtn"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn6c8098"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/personage_topic_compile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="编辑介绍页"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_owner_enter_btn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn_nornal"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="进入课堂"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_audience_charge_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_audience_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/btn6c8098"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/personage_topic_compile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="优惠码"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_audience_play_btn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn_nornal"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="购买系列课：￥0.00"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_audience_simple_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_audience_free_enter"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn_nornal"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l"
+            tools:text="付费入场 ￥100"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_audience_password_model_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="@dimen/px0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_tiny"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_audience_password_edit"
+                    android:layout_width="@dimen/px0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_tiny"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@drawable/topic_detail_edit_icon"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:hint="输入密码"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/margin_tiny"
+                    android:textSize="@dimen/textSize_m"/>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_audience_password_send"
+                android:layout_width="54dp"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/margin_tiny"
+                android:background="@drawable/btn_blue_selector_no_stroke"
+                android:text="报名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_l"/>
+        </LinearLayout>
+
+        <cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout
+            style="@style/Panel"
+            android:id="@+id/panel_root"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+
+        </cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="center_horizontal"
+            app:collapsedTitleTextAppearance="@style/ToolbarTextAppearanceCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="10dp"
+            app:expandedTitleTextAppearance="@style/ToolbarTextAppearanceExpanded"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/live_intro_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px500dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"/>
+
+            <ImageView
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:src="@color/mask"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                android:id="@+id/tv_title_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_l"
+                app:layout_collapseMode="parallax"
+                tools:text="这是一个标题"/>
+
+            <!--"-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="top"
+                android:isScrollContainer="false"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/navigation_icon_back_white"
+                app:popupTheme="@style/AppTheme"
+                app:title=" ">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/textSize_l"
+                    android:visibility="gone"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

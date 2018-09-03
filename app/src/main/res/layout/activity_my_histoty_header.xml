@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.gxtc.huchuan.ui.deal.liuliang.publicAccount.AccountInfoActivity">
+
+    <TextView
+        android:id="@+id/class_home_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/px20dp"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:text="进入课堂首页"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_l"
+        tools:visibility="visible"/>
+
+</LinearLayout>

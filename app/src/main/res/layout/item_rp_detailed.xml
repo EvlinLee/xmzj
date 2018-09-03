@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_middle"
+    android:paddingRight="@dimen/margin_middle"
+    android:paddingTop="@dimen/margin_middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_middle">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/px80dp"
+            android:layout_height="@dimen/px80dp"
+            android:src="@drawable/circle_head_icon_80"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="南瓜"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/text_color_333"
+            android:text="0.01元"/>
+
+        <TextView
+            android:id="@+id/tv_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_below="@id/tv_money"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/crown"
+            android:drawablePadding="@dimen/margin_tiny"
+            android:textColor="#FDAD50"
+            android:textSize="@dimen/textSize_m"
+            android:text="手气最佳"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_below="@id/tv_money"
+            android:text="时间"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_s"/>
+
+    </RelativeLayout>
+
+    <View style="@style/item_line"  />
+
+</LinearLayout>

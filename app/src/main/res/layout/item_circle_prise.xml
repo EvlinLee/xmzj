@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/px24dp"
+    android:layout_marginRight="@dimen/px24dp"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/px20dp"
+        android:paddingTop="@dimen/px20dp">
+
+        <com.gxtc.huchuan.widget.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/px70dp"
+            android:layout_height="@dimen/px70dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px24dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m"
+            tools:text="新媒之家"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

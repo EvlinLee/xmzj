@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_tab_paidan"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px160dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@drawable/shape_deal_tab_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tab_paidan"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_tab_jiedan"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px160dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@drawable/shape_deal_tab_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tab_jiedanyingli"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_tab_wenzhang"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px160dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@drawable/shape_deal_tab_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tab_wenzhangguanli"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_deal_tab_info"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px160dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@drawable/shape_deal_tab_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tab_gongzhonghao"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingTop="@dimen/margin_middle"
+        android:paddingBottom="@dimen/margin_middle"
+        android:text="接单文章"
+        android:textSize="@dimen/textSize_m"
+        android:background="@color/deal_EDF2FE"/>
+
+</LinearLayout>

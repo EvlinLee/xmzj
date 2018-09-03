@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_my_avatar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px144dp"
+    android:layout_marginLeft="@dimen/px34dp"
+    android:layout_marginTop="@dimen/px114dp">
+
+
+    <com.gxtc.huchuan.widget.CircleImageView
+        android:id="@+id/iv_my_avatar"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_icon_head_120"
+        />
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/px120dp"
+        android:layout_height="@dimen/px120dp"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/person_icon_head_120"
+        />
+    <ImageView
+        android:id="@+id/iv_mediaLevel"
+        android:layout_width="@dimen/px30dp"
+        android:layout_height="@dimen/px30dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/px10dp"
+        android:layout_marginTop="-14dp"
+        android:src="@drawable/ver_gray" />
+</FrameLayout>
+

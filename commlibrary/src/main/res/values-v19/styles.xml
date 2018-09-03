@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="rippleBg">
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
+
+</resources>

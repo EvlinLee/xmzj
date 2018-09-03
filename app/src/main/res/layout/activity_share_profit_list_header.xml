@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px100dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/margin_middle"
+  >
+
+    <TextView
+        android:id="@+id/tv_share_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="共有0条分享记录  佣金总计："
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/tv_all_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_share_count"
+        android:text="￥0"
+        android:textColor="@color/color_fb4717"
+        android:textSize="@dimen/textSize_m" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableBottom="@drawable/deal_arrow_down"
+        android:text="今日"
+        android:textColor="@color/text_color_666" />
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_userlogo"
+        android:layout_width="@dimen/px92dp"
+        android:layout_height="@dimen/px92dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/margin_10"
+        android:src="@drawable/circle_head_icon_80"/>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_userlogo"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/iv_isseries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:background="@drawable/shape_circle_main_btn_bg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="系列课"
+            android:visibility="gone"
+            android:textColor="@color/circle_main_Btn_fabiao"
+            android:textSize="@dimen/textSize_xs"/>
+
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="新媒"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/textSize_m" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/ll_title"
+        android:layout_toRightOf="@+id/iv_userlogo"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="支付:100"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_10"
+        tools:text="2017-12-22"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s" />
+
+    <TextView
+        android:id="@+id/text_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/text_time"
+        android:layout_below="@+id/text_time"
+        android:layout_marginBottom="@dimen/margin_10"
+        tools:text="来源：app"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/textSize_s" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/item_line"
+        android:layout_below="@+id/text_source" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:padding="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/pent_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="佣金:100"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/platform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="平台:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="实收:100"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/textSize_s" />
+    </LinearLayout>
+
+    <View
+        style="@style/model_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

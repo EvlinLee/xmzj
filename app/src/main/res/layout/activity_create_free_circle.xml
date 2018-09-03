@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_create_free_circle"
+            android:layout_width="@dimen/px246dp"
+            android:layout_height="@dimen/px246dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_create_free_name"
+                android:layout_width="@dimen/px246dp"
+                android:layout_height="@dimen/px246dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/circle_place_holder_246" />
+
+            <ImageView
+                android:id="@+id/iv_create_free_circle_selectimg"
+                android:layout_width="@dimen/px50dp"
+                android:layout_height="@dimen/px50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px10dp"
+                android:src="@drawable/circle_create_pay_icon_camera" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_create_free_circle_name"
+            android:layout_width="@dimen/px246dp"
+            android:layout_height="@dimen/px100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="圈子名字"
+            android:maxLength="10"
+            android:textColor="@color/text_color_999"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/textSize_m" />
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="@dimen/px20dp"-->
+        <!--android:text="填写圈子简介"-->
+        <!--android:textColor="@color/text_color_999"-->
+        <!--android:textColorHint="@color/text_color_999"-->
+        <!--android:textSize="@dimen/textSize_m" />-->
+
+        <EditText
+            android:id="@+id/et_create_free_circle_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="圈子简介(选填,长按可进行复制粘贴等操作)"
+            android:padding="@dimen/px20dp"
+            android:textColor="@color/text_color_999"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40dp"
+            android:layout_marginRight="@dimen/px40dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="圈子创建成功之后可前往圈子设置界面对圈子进行详细介绍或修改圈子设置，如设置分销比例修改年费等。"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/textSize_m" />
+    </LinearLayout>
+</ScrollView>

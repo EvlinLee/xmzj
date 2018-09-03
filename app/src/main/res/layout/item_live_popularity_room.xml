@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="@dimen/px210dp"
+    android:gravity="center_horizontal"
+    android:layout_height="@dimen/px280dp"
+    android:layout_marginLeft="@dimen/px10dp"
+    android:padding="@dimen/px10dp"
+    android:background="@drawable/bg_all_orderlist">
+    <ImageView
+        android:id="@+id/iv_live_popularity_image"
+        android:layout_width="@dimen/px92dp"
+        android:layout_height="@dimen/px92dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/px42dp"
+        android:layout_marginBottom="@dimen/px30dp"
+        tools:src="@drawable/live_class_icon_temp"/>
+    <TextView
+        android:id="@+id/iv_live_popularity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/textSize_m"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="抢小猫绘画"/>
+    <TextView
+        android:id="@+id/iv_live_popularity_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px22dp"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/textSize_s"
+        android:text="11万关注"/>
+
+</LinearLayout>

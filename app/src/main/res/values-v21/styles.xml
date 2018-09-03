@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="HiddeStatus" parent="AppBaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/status_bg</item>
+    </style>
+
+    <style name="item_click_bg">
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="rippleBg">
+        <item name="android:foreground">?android:selectableItemBackgroundBorderless</item>
+        <item name="android:background">?android:selectableItemBackgroundBorderless</item>
+    </style>
+
+</resources>
